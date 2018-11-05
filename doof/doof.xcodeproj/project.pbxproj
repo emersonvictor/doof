@@ -12,10 +12,10 @@
 		D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99718D4218B7F3E00BFD710 /* Main.storyboard */; };
 		D99718D8218B7F4000BFD710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718D7218B7F4000BFD710 /* Assets.xcassets */; };
 		D99718DB218B7F4000BFD710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99718D9218B7F4000BFD710 /* LaunchScreen.storyboard */; };
-		D99718E0218B7F4000BFD710 /* mc4 WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D99718DF218B7F4000BFD710 /* mc4 WatchKit App.app */; };
+		D99718E0218B7F4000BFD710 /* doof WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D99718DF218B7F4000BFD710 /* doof WatchKit App.app */; };
 		D99718E6218B7F4000BFD710 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99718E4218B7F4000BFD710 /* Interface.storyboard */; };
 		D99718E8218B7F4000BFD710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718E7218B7F4000BFD710 /* Assets.xcassets */; };
-		D99718EF218B7F4000BFD710 /* mc4 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D99718EE218B7F4000BFD710 /* mc4 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D99718EF218B7F4000BFD710 /* doof WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D99718EE218B7F4000BFD710 /* doof WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D99718F4218B7F4000BFD710 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718F3218B7F4000BFD710 /* InterfaceController.swift */; };
 		D99718F6218B7F4000BFD710 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718F5218B7F4000BFD710 /* ExtensionDelegate.swift */; };
 		D99718F8218B7F4000BFD710 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718F7218B7F4000BFD710 /* NotificationController.swift */; };
@@ -47,7 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				D99718EF218B7F4000BFD710 /* mc4 WatchKit Extension.appex in Embed App Extensions */,
+				D99718EF218B7F4000BFD710 /* doof WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,7 +58,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				D99718E0218B7F4000BFD710 /* mc4 WatchKit App.app in Embed Watch Content */,
+				D99718E0218B7F4000BFD710 /* doof WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,18 +66,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D99718CD218B7F3E00BFD710 /* mc4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mc4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99718CD218B7F3E00BFD710 /* doof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99718D0218B7F3E00BFD710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99718D2218B7F3E00BFD710 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D99718D5218B7F3E00BFD710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D99718D7218B7F4000BFD710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D99718DA218B7F4000BFD710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D99718DC218B7F4000BFD710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D99718DF218B7F4000BFD710 /* mc4 WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mc4 WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99718DF218B7F4000BFD710 /* doof WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "doof WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99718E5218B7F4000BFD710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		D99718E7218B7F4000BFD710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D99718E9218B7F4000BFD710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D99718EE218B7F4000BFD710 /* mc4 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "mc4 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99718EE218B7F4000BFD710 /* doof WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "doof WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99718F3218B7F4000BFD710 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		D99718F5218B7F4000BFD710 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		D99718F7218B7F4000BFD710 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
@@ -118,9 +118,9 @@
 		D99718CE218B7F3E00BFD710 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D99718CD218B7F3E00BFD710 /* mc4.app */,
-				D99718DF218B7F4000BFD710 /* mc4 WatchKit App.app */,
-				D99718EE218B7F4000BFD710 /* mc4 WatchKit Extension.appex */,
+				D99718CD218B7F3E00BFD710 /* doof.app */,
+				D99718DF218B7F4000BFD710 /* doof WatchKit App.app */,
+				D99718EE218B7F4000BFD710 /* doof WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,17 +138,17 @@
 			path = ios;
 			sourceTree = "<group>";
 		};
-		D99718E3218B7F4000BFD710 /* mc4-watchkit-app */ = {
+		D99718E3218B7F4000BFD710 /* doof-watchkit-app */ = {
 			isa = PBXGroup;
 			children = (
 				D99718E4218B7F4000BFD710 /* Interface.storyboard */,
 				D99718E7218B7F4000BFD710 /* Assets.xcassets */,
 				D99718E9218B7F4000BFD710 /* Info.plist */,
 			);
-			path = "mc4-watchkit-app";
+			path = "doof-watchkit-app";
 			sourceTree = "<group>";
 		};
-		D99718F2218B7F4000BFD710 /* mc4-watchkit-extension */ = {
+		D99718F2218B7F4000BFD710 /* doof-watchkit-extension */ = {
 			isa = PBXGroup;
 			children = (
 				D9971913218B805300BFD710 /* Resources */,
@@ -157,7 +157,7 @@
 				D99718FD218B7F4100BFD710 /* Info.plist */,
 				D99718FE218B7F4100BFD710 /* PushNotificationPayload.apns */,
 			);
-			path = "mc4-watchkit-extension";
+			path = "doof-watchkit-extension";
 			sourceTree = "<group>";
 		};
 		D997190C218B7FC800BFD710 /* Controllers */ = {
@@ -220,8 +220,8 @@
 		D9971915218B80B700BFD710 /* watchos */ = {
 			isa = PBXGroup;
 			children = (
-				D99718E3218B7F4000BFD710 /* mc4-watchkit-app */,
-				D99718F2218B7F4000BFD710 /* mc4-watchkit-extension */,
+				D99718E3218B7F4000BFD710 /* doof-watchkit-app */,
+				D99718F2218B7F4000BFD710 /* doof-watchkit-extension */,
 			);
 			path = watchos;
 			sourceTree = "<group>";
@@ -269,9 +269,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D99718CC218B7F3E00BFD710 /* mc4 */ = {
+		D99718CC218B7F3E00BFD710 /* doof */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9971909218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "mc4" */;
+			buildConfigurationList = D9971909218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "doof" */;
 			buildPhases = (
 				D99718C9218B7F3E00BFD710 /* Sources */,
 				D99718CA218B7F3E00BFD710 /* Frameworks */,
@@ -283,14 +283,14 @@
 			dependencies = (
 				D99718E2218B7F4000BFD710 /* PBXTargetDependency */,
 			);
-			name = mc4;
+			name = doof;
 			productName = mc4;
-			productReference = D99718CD218B7F3E00BFD710 /* mc4.app */;
+			productReference = D99718CD218B7F3E00BFD710 /* doof.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D99718DE218B7F4000BFD710 /* mc4 WatchKit App */ = {
+		D99718DE218B7F4000BFD710 /* doof WatchKit App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9971905218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "mc4 WatchKit App" */;
+			buildConfigurationList = D9971905218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "doof WatchKit App" */;
 			buildPhases = (
 				D99718DD218B7F4000BFD710 /* Resources */,
 				D9971904218B7F4100BFD710 /* Embed App Extensions */,
@@ -300,14 +300,14 @@
 			dependencies = (
 				D99718F1218B7F4000BFD710 /* PBXTargetDependency */,
 			);
-			name = "mc4 WatchKit App";
+			name = "doof WatchKit App";
 			productName = "mc4 WatchKit App";
-			productReference = D99718DF218B7F4000BFD710 /* mc4 WatchKit App.app */;
+			productReference = D99718DF218B7F4000BFD710 /* doof WatchKit App.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		D99718ED218B7F4000BFD710 /* mc4 WatchKit Extension */ = {
+		D99718ED218B7F4000BFD710 /* doof WatchKit Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9971901218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "mc4 WatchKit Extension" */;
+			buildConfigurationList = D9971901218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "doof WatchKit Extension" */;
 			buildPhases = (
 				D99718EA218B7F4000BFD710 /* Sources */,
 				D99718EB218B7F4000BFD710 /* Frameworks */,
@@ -317,9 +317,9 @@
 			);
 			dependencies = (
 			);
-			name = "mc4 WatchKit Extension";
+			name = "doof WatchKit Extension";
 			productName = "mc4 WatchKit Extension";
-			productReference = D99718EE218B7F4000BFD710 /* mc4 WatchKit Extension.appex */;
+			productReference = D99718EE218B7F4000BFD710 /* doof WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
@@ -343,7 +343,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D99718C8218B7F3E00BFD710 /* Build configuration list for PBXProject "mc4" */;
+			buildConfigurationList = D99718C8218B7F3E00BFD710 /* Build configuration list for PBXProject "doof" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -356,9 +356,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D99718CC218B7F3E00BFD710 /* mc4 */,
-				D99718DE218B7F4000BFD710 /* mc4 WatchKit App */,
-				D99718ED218B7F4000BFD710 /* mc4 WatchKit Extension */,
+				D99718CC218B7F3E00BFD710 /* doof */,
+				D99718DE218B7F4000BFD710 /* doof WatchKit App */,
+				D99718ED218B7F4000BFD710 /* doof WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -419,12 +419,12 @@
 /* Begin PBXTargetDependency section */
 		D99718E2218B7F4000BFD710 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D99718DE218B7F4000BFD710 /* mc4 WatchKit App */;
+			target = D99718DE218B7F4000BFD710 /* doof WatchKit App */;
 			targetProxy = D99718E1218B7F4000BFD710 /* PBXContainerItemProxy */;
 		};
 		D99718F1218B7F4000BFD710 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D99718ED218B7F4000BFD710 /* mc4 WatchKit Extension */;
+			target = D99718ED218B7F4000BFD710 /* doof WatchKit Extension */;
 			targetProxy = D99718F0218B7F4000BFD710 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -694,7 +694,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D99718C8218B7F3E00BFD710 /* Build configuration list for PBXProject "mc4" */ = {
+		D99718C8218B7F3E00BFD710 /* Build configuration list for PBXProject "doof" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D99718FF218B7F4100BFD710 /* Debug */,
@@ -703,7 +703,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9971901218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "mc4 WatchKit Extension" */ = {
+		D9971901218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "doof WatchKit Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9971902218B7F4100BFD710 /* Debug */,
@@ -712,7 +712,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9971905218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "mc4 WatchKit App" */ = {
+		D9971905218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "doof WatchKit App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9971906218B7F4100BFD710 /* Debug */,
@@ -721,7 +721,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9971909218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "mc4" */ = {
+		D9971909218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "doof" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D997190A218B7F4100BFD710 /* Debug */,
