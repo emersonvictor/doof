@@ -122,6 +122,7 @@
 		B593DC732191B853006E2648 /* shared */ = {
 			isa = PBXGroup;
 			children = (
+				B593DC812191BD44006E2648 /* Enums */,
 				B593DC742191B85B006E2648 /* Models */,
 			);
 			path = shared;
@@ -152,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				B593DC732191B853006E2648 /* shared */,
-				B593DC812191BD44006E2648 /* Enums */,
 				D9971915218B80B700BFD710 /* watchos */,
 				D99718CF218B7F3E00BFD710 /* ios */,
 				D99718CE218B7F3E00BFD710 /* Products */,
