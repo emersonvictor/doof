@@ -12,10 +12,10 @@ class FoodStamp {
     
     var time : Date
     var meal : Meal
-    var healthy : Bool
+    var healthy : Healthiness
     // var petRef : PetId
     
-    init(time: Date, meal: Meal, healthy: Bool){
+    init(time: Date, meal: Meal, healthy: Healthiness){
         self.time = time
         self.meal = meal
         self.healthy = healthy

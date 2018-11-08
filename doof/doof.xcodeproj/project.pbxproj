@@ -14,8 +14,9 @@
 		B593DC7E2191BB31006E2648 /* Goal Stamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7D2191BB31006E2648 /* Goal Stamp.swift */; };
 		B593DC832191BD58006E2648 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC822191BD58006E2648 /* Day.swift */; };
 		B593DC852191BD71006E2648 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC842191BD71006E2648 /* Meal.swift */; };
+		B593DC872191D58F006E2648 /* Healthiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC862191D58F006E2648 /* Healthiness.swift */; };
 		D99718D1218B7F3E00BFD710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718D0218B7F3E00BFD710 /* AppDelegate.swift */; };
-		D99718D3218B7F3E00BFD710 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718D2218B7F3E00BFD710 /* ViewController.swift */; };
+		D99718D3218B7F3E00BFD710 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718D2218B7F3E00BFD710 /* MainController.swift */; };
 		D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99718D4218B7F3E00BFD710 /* Main.storyboard */; };
 		D99718D8218B7F4000BFD710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718D7218B7F4000BFD710 /* Assets.xcassets */; };
 		D99718DB218B7F4000BFD710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99718D9218B7F4000BFD710 /* LaunchScreen.storyboard */; };
@@ -80,9 +81,10 @@
 		B593DC7D2191BB31006E2648 /* Goal Stamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal Stamp.swift"; sourceTree = "<group>"; };
 		B593DC822191BD58006E2648 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		B593DC842191BD71006E2648 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		B593DC862191D58F006E2648 /* Healthiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Healthiness.swift; sourceTree = "<group>"; };
 		D99718CD218B7F3E00BFD710 /* doof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99718D0218B7F3E00BFD710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D99718D2218B7F3E00BFD710 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D99718D2218B7F3E00BFD710 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		D99718D5218B7F3E00BFD710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D99718D7218B7F4000BFD710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D99718DA218B7F4000BFD710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				B593DC822191BD58006E2648 /* Day.swift */,
 				B593DC842191BD71006E2648 /* Meal.swift */,
+				B593DC862191D58F006E2648 /* Healthiness.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -205,7 +208,7 @@
 		D997190C218B7FC800BFD710 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D99718D2218B7F3E00BFD710 /* ViewController.swift */,
+				D99718D2218B7F3E00BFD710 /* MainController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -400,9 +403,10 @@
 				B593DC832191BD58006E2648 /* Day.swift in Sources */,
 				B593DC7E2191BB31006E2648 /* Goal Stamp.swift in Sources */,
 				B593DC852191BD71006E2648 /* Meal.swift in Sources */,
-				D99718D3218B7F3E00BFD710 /* ViewController.swift in Sources */,
+				D99718D3218B7F3E00BFD710 /* MainController.swift in Sources */,
 				D99718D1218B7F3E00BFD710 /* AppDelegate.swift in Sources */,
 				B593DC7C2191BA16006E2648 /* Water Stamp.swift in Sources */,
+				B593DC872191D58F006E2648 /* Healthiness.swift in Sources */,
 				B593DC7A2191B992006E2648 /* Food Stamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,8 +586,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XP4ML92KUD;
-				INFOPLIST_FILE = "mc4 WatchKit Extension/Info.plist";
+				DEVELOPMENT_TEAM = 866MXJ7W57;
+				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -604,8 +608,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XP4ML92KUD;
-				INFOPLIST_FILE = "mc4 WatchKit Extension/Info.plist";
+				DEVELOPMENT_TEAM = 866MXJ7W57;
+				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -627,9 +631,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XP4ML92KUD;
+				DEVELOPMENT_TEAM = 866MXJ7W57;
 				IBSC_MODULE = mc4_WatchKit_Extension;
-				INFOPLIST_FILE = "mc4 WatchKit App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-app/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = bdsm.mc4.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -646,9 +650,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XP4ML92KUD;
+				DEVELOPMENT_TEAM = 866MXJ7W57;
 				IBSC_MODULE = mc4_WatchKit_Extension;
-				INFOPLIST_FILE = "mc4 WatchKit App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-app/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = bdsm.mc4.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -665,7 +669,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 866MXJ7W57;
-				INFOPLIST_FILE = mc4/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ios/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -683,7 +687,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 866MXJ7W57;
-				INFOPLIST_FILE = mc4/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ios/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
