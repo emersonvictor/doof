@@ -28,6 +28,9 @@ class MainController: UIViewController {
     // Sleep Bool
     var isSleeping = false
     
+    // User Selected Sleeping Time
+    var userSelectedSleepingTime = 8.0 // será selecionado pelo usuário!
+    
     
     
     
@@ -99,21 +102,46 @@ class MainController: UIViewController {
     @IBAction func petTapGesture(_ sender: Any) {
         happinessProgressView.progress += 0.05
     }
+
+ 
     
-    
-    
-    
+
     
     // MARK: Elements time update
     
     // Food time update
     @objc func foodUpdate() {
-        foodProgressView.progress -= 0.01
+        
+        // CÁLCULO DO TEMPO DE DECAIMENTO DA FOME:
+        // Considerei como base: uma pessoa que dorme 8h por dia deve comer a cada 3,2h. Então, por consideração própria, achei que se ela perder uma refeição, a barra de fome deve estar na metade. Por isso já deixei definido no primeiro if o tempo exato no caso da pessoa dormir 8h. No else, fiz a proporção para essa lógica variando de acordo com o tempo de sono da pessoa.
+        
+        if userSelectedSleepingTime == 8.0 {
+            foodProgressView.progress += (50 / 11.520)
+        } else {
+            let calc = ((3.2 * self.userSelectedSleepingTime)/8.0) * 360.0
+            let calc2 = 5.0 / calc
+            foodProgressView.progress += Float(calc2)
+        }
+        
+        
+//        let calc = ((24.0 - self.userSelectedSleepingTime)/5.0) * 360.0
+//        let calc2 = 5.0 / calc
+        
     }
     
     // Water time update
     @objc func waterUpdate() {
-        waterProgressView.progress -= 0.01
+        
+        // CÁLCULO DO TEMPO DE DECAIMENTO DA SEDE:
+        // Considerei como base: uma pessoa que dorme 8h por dia deveria tomar 250mL de água a cada 2h. Então, por consideração própria, achei que se ela passar 3h sem tomar água, a barra de água deve estar na metade. or isso já deixei definido no primeiro if o tempo exato no caso da pessoa dormir 8h. No else, fiz a proporção para essa lógica variando de acordo com o tempo de sono da pessoa.
+        
+        if userSelectedSleepingTime == 8.0 {
+            waterProgressView.progress += (50 / 10.800)
+        } else {
+            let calc = ((3.0 * self.userSelectedSleepingTime)/8.0) * 360.0
+            let calc2 = 5.0 / calc
+            waterProgressView.progress += Float(calc2)
+        }
     }
     
     // Energy time update
