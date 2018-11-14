@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B593DC762191B878006E2648 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC752191B878006E2648 /* Pet.swift */; };
 		B593DC782191B90C006E2648 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC772191B90C006E2648 /* Goal.swift */; };
-		B593DC7A2191B992006E2648 /* Food Stamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC792191B992006E2648 /* Food Stamp.swift */; };
 		B593DC7C2191BA16006E2648 /* Water Stamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7B2191BA16006E2648 /* Water Stamp.swift */; };
 		B593DC7E2191BB31006E2648 /* Goal Stamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7D2191BB31006E2648 /* Goal Stamp.swift */; };
 		D99718D1218B7F3E00BFD710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718D0218B7F3E00BFD710 /* AppDelegate.swift */; };
@@ -73,7 +72,6 @@
 /* Begin PBXFileReference section */
 		B593DC752191B878006E2648 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		B593DC772191B90C006E2648 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
-		B593DC792191B992006E2648 /* Food Stamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Food Stamp.swift"; sourceTree = "<group>"; };
 		B593DC7B2191BA16006E2648 /* Water Stamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Water Stamp.swift"; sourceTree = "<group>"; };
 		B593DC7D2191BB31006E2648 /* Goal Stamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal Stamp.swift"; sourceTree = "<group>"; };
 		D99718CD218B7F3E00BFD710 /* doof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doof.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,7 +126,6 @@
 			children = (
 				B593DC752191B878006E2648 /* Pet.swift */,
 				B593DC772191B90C006E2648 /* Goal.swift */,
-				B593DC792191B992006E2648 /* Food Stamp.swift */,
 				B593DC7B2191BA16006E2648 /* Water Stamp.swift */,
 				B593DC7D2191BB31006E2648 /* Goal Stamp.swift */,
 			);
@@ -387,7 +384,6 @@
 				D99718D3218B7F3E00BFD710 /* MainController.swift in Sources */,
 				D99718D1218B7F3E00BFD710 /* AppDelegate.swift in Sources */,
 				B593DC7C2191BA16006E2648 /* Water Stamp.swift in Sources */,
-				B593DC7A2191B992006E2648 /* Food Stamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
