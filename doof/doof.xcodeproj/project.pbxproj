@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B593DC762191B878006E2648 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC752191B878006E2648 /* Pet.swift */; };
-		B593DC782191B90C006E2648 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC772191B90C006E2648 /* Goal.swift */; };
-		B593DC7C2191BA16006E2648 /* Water Stamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7B2191BA16006E2648 /* Water Stamp.swift */; };
-		B593DC7E2191BB31006E2648 /* Goal Stamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7D2191BB31006E2648 /* Goal Stamp.swift */; };
+		B593DC7A2191B992006E2648 /* Foodstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC792191B992006E2648 /* Foodstamp.swift */; };
+		B593DC7C2191BA16006E2648 /* Waterstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7B2191BA16006E2648 /* Waterstamp.swift */; };
+		B593DC852191BD71006E2648 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC842191BD71006E2648 /* Meal.swift */; };
+		D9650EBC219C48C3001CB668 /* Healthiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EBB219C48C3001CB668 /* Healthiness.swift */; };
 		D99718D1218B7F3E00BFD710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718D0218B7F3E00BFD710 /* AppDelegate.swift */; };
 		D99718D3218B7F3E00BFD710 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718D2218B7F3E00BFD710 /* MainController.swift */; };
 		D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99718D4218B7F3E00BFD710 /* Main.storyboard */; };
@@ -71,9 +72,10 @@
 
 /* Begin PBXFileReference section */
 		B593DC752191B878006E2648 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
-		B593DC772191B90C006E2648 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
-		B593DC7B2191BA16006E2648 /* Water Stamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Water Stamp.swift"; sourceTree = "<group>"; };
-		B593DC7D2191BB31006E2648 /* Goal Stamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal Stamp.swift"; sourceTree = "<group>"; };
+		B593DC792191B992006E2648 /* Foodstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foodstamp.swift; sourceTree = "<group>"; };
+		B593DC7B2191BA16006E2648 /* Waterstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waterstamp.swift; sourceTree = "<group>"; };
+		B593DC842191BD71006E2648 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		D9650EBB219C48C3001CB668 /* Healthiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Healthiness.swift; sourceTree = "<group>"; };
 		D99718CD218B7F3E00BFD710 /* doof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99718D0218B7F3E00BFD710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99718D2218B7F3E00BFD710 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		B593DC732191B853006E2648 /* shared */ = {
 			isa = PBXGroup;
 			children = (
+				B593DC812191BD44006E2648 /* Enums */,
 				B593DC742191B85B006E2648 /* Models */,
 			);
 			path = shared;
@@ -125,11 +128,19 @@
 			isa = PBXGroup;
 			children = (
 				B593DC752191B878006E2648 /* Pet.swift */,
-				B593DC772191B90C006E2648 /* Goal.swift */,
-				B593DC7B2191BA16006E2648 /* Water Stamp.swift */,
-				B593DC7D2191BB31006E2648 /* Goal Stamp.swift */,
+				B593DC792191B992006E2648 /* Foodstamp.swift */,
+				B593DC7B2191BA16006E2648 /* Waterstamp.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B593DC812191BD44006E2648 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				B593DC842191BD71006E2648 /* Meal.swift */,
+				D9650EBB219C48C3001CB668 /* Healthiness.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		D99718C4218B7F3E00BFD710 = {
@@ -378,12 +389,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B593DC782191B90C006E2648 /* Goal.swift in Sources */,
 				B593DC762191B878006E2648 /* Pet.swift in Sources */,
-				B593DC7E2191BB31006E2648 /* Goal Stamp.swift in Sources */,
 				D99718D3218B7F3E00BFD710 /* MainController.swift in Sources */,
+				D9650EBC219C48C3001CB668 /* Healthiness.swift in Sources */,
+				B593DC852191BD71006E2648 /* Meal.swift in Sources */,
 				D99718D1218B7F3E00BFD710 /* AppDelegate.swift in Sources */,
-				B593DC7C2191BA16006E2648 /* Water Stamp.swift in Sources */,
+				B593DC7C2191BA16006E2648 /* Waterstamp.swift in Sources */,
+				B593DC7A2191B992006E2648 /* Foodstamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

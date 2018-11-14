@@ -8,12 +8,14 @@
 
 import Foundation
 
-class WaterStamp {
+class Waterstamp {
     
     var time : Date
+    var quantity: Int
     //var petRef : PetId
     
-    init(time: Date){
+    init(time: Date, quantity: Int){
         self.time = time
+        self.quantity = quantity
     }
 }

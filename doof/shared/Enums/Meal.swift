@@ -1,5 +1,5 @@
 //
-//  Goal Stamp.swift
+//  Meal.swift
 //  doof
 //
 //  Created by João Melo on 06/11/18.
@@ -8,11 +8,6 @@
 
 import Foundation
 
-class GoalStamp {
-    
-    var time : Date
-    
-    init(time : Date){
-        self.time = time
-    }
+enum Meal {
+    case breakfast, lunch, dinner, snack
 }
