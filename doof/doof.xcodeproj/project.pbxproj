@@ -12,9 +12,6 @@
 		B593DC7A2191B992006E2648 /* Food Stamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC792191B992006E2648 /* Food Stamp.swift */; };
 		B593DC7C2191BA16006E2648 /* Water Stamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7B2191BA16006E2648 /* Water Stamp.swift */; };
 		B593DC7E2191BB31006E2648 /* Goal Stamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7D2191BB31006E2648 /* Goal Stamp.swift */; };
-		B593DC832191BD58006E2648 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC822191BD58006E2648 /* Day.swift */; };
-		B593DC852191BD71006E2648 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC842191BD71006E2648 /* Meal.swift */; };
-		B593DC872191D58F006E2648 /* Healthiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC862191D58F006E2648 /* Healthiness.swift */; };
 		D99718D1218B7F3E00BFD710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718D0218B7F3E00BFD710 /* AppDelegate.swift */; };
 		D99718D3218B7F3E00BFD710 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718D2218B7F3E00BFD710 /* MainController.swift */; };
 		D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99718D4218B7F3E00BFD710 /* Main.storyboard */; };
@@ -79,9 +76,6 @@
 		B593DC792191B992006E2648 /* Food Stamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Food Stamp.swift"; sourceTree = "<group>"; };
 		B593DC7B2191BA16006E2648 /* Water Stamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Water Stamp.swift"; sourceTree = "<group>"; };
 		B593DC7D2191BB31006E2648 /* Goal Stamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal Stamp.swift"; sourceTree = "<group>"; };
-		B593DC822191BD58006E2648 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
-		B593DC842191BD71006E2648 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
-		B593DC862191D58F006E2648 /* Healthiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Healthiness.swift; sourceTree = "<group>"; };
 		D99718CD218B7F3E00BFD710 /* doof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99718D0218B7F3E00BFD710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99718D2218B7F3E00BFD710 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -141,21 +135,10 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		B593DC812191BD44006E2648 /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-				B593DC822191BD58006E2648 /* Day.swift */,
-				B593DC842191BD71006E2648 /* Meal.swift */,
-				B593DC862191D58F006E2648 /* Healthiness.swift */,
-			);
-			path = Enums;
-			sourceTree = "<group>";
-		};
 		D99718C4218B7F3E00BFD710 = {
 			isa = PBXGroup;
 			children = (
 				B593DC732191B853006E2648 /* shared */,
-				B593DC812191BD44006E2648 /* Enums */,
 				D9971915218B80B700BFD710 /* watchos */,
 				D99718CF218B7F3E00BFD710 /* ios */,
 				D99718CE218B7F3E00BFD710 /* Products */,
@@ -400,13 +383,10 @@
 			files = (
 				B593DC782191B90C006E2648 /* Goal.swift in Sources */,
 				B593DC762191B878006E2648 /* Pet.swift in Sources */,
-				B593DC832191BD58006E2648 /* Day.swift in Sources */,
 				B593DC7E2191BB31006E2648 /* Goal Stamp.swift in Sources */,
-				B593DC852191BD71006E2648 /* Meal.swift in Sources */,
 				D99718D3218B7F3E00BFD710 /* MainController.swift in Sources */,
 				D99718D1218B7F3E00BFD710 /* AppDelegate.swift in Sources */,
 				B593DC7C2191BA16006E2648 /* Water Stamp.swift in Sources */,
-				B593DC872191D58F006E2648 /* Healthiness.swift in Sources */,
 				B593DC7A2191B992006E2648 /* Food Stamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
