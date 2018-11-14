@@ -10,21 +10,37 @@ import UIKit
 
 class FoodController: UIViewController {
 
+    // MARK: - Outlets
+    @IBOutlet weak var confirm: UIButton!
+    @IBOutlet weak var cancel: UIButton!
+    // Food option
+    @IBOutlet weak var breakfast: UIButton!
+    @IBOutlet weak var lunch: UIButton!
+    @IBOutlet weak var dinner: UIButton!
+    @IBOutlet weak var snack: UIButton!
+    // Slider
+    @IBOutlet weak var healthinessSlider: UISlider!
+    
+    // MARK: - Initializer
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Modal options
+    @IBAction func confirmAction(_ sender: UIButton) {
+        print("I confirmed my food")
     }
-    */
-
+    
+    @IBAction func cancelAction(_ sender: UIButton) {
+        print("I cancel the food")
+    }
+    
+    // MARK: - Food actions
+    @IBAction func chooseMealAction(_ sender: UIButton) {
+        print("I choose my meal")
+    }
+    
+    @IBAction func changeHealthiness(_ sender: UISlider) {
+        print("I changed my healthiness")
+    }
 }
