@@ -15,7 +15,6 @@ class Pet {
     var water : Int
     var happiness : Int
     var energy : Int
-    var goals : [Goal]
     var foodHistory : [FoodStamp]
     var waterHistory : [WaterStamp]
     

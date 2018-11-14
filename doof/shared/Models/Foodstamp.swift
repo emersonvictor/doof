@@ -8,16 +8,16 @@
 
 import Foundation
 
-class FoodStamp {
+class Foodstamp {
     
     var time : Date
     var meal : Meal
-    var healthy : Bool
+    var healthiness : Healthiness
     // var petRef : PetId
     
-    init(time: Date, meal: Meal, healthy: Bool){
+    init(time: Date, meal: Meal, healthiness: Healthiness){
         self.time = time
         self.meal = meal
-        self.healthy = healthy
+        self.healthiness = healthiness
     }
 }
