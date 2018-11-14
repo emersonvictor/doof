@@ -12,72 +12,49 @@ import UIKit
 class MainController: UIViewController {
     
     // MARK: Vars
-    
     // Food Timer
     var foodTimer = Timer()
-    
     // Water Timer
     var waterTimer = Timer()
-    
     // Happiness Timer
     var happinessTimer = Timer()
-    
     // Energy Timer
     var energyTimer = Timer()
-    
     // Sleep Bool
     var isSleeping = false
-    
     // User Selected Sleeping Time
     var userSelectedSleepingTime = 8.0 // será selecionado pelo usuário!
-    
-    
-    
+    // Slide transition
+    lazy var slideTransitioningDelegate = SlidePresentationManager()
     
     
     // MARK: Outlets
-    
     // Outlet Scenery SKView
     @IBOutlet weak var scenerySKView: SKView!
-    
     // Outlet Character SKView
     @IBOutlet weak var characterSKView: SKView!
-    
     // Outlet Food ProgressView
     @IBOutlet weak var foodProgressView: UIProgressView!
-    
     // Outlet Water ProgressView
     @IBOutlet weak var waterProgressView: UIProgressView!
-    
     // Outlet Happiness ProgressView
     @IBOutlet weak var happinessProgressView: UIProgressView!
-    
     // Outlet Energy ProgressView
     @IBOutlet weak var energyProgressView: UIProgressView!
-    
     // Outlet Food Button
     @IBOutlet weak var foodButton: UIButton!
-    
     // Outlet Water Button
     @IBOutlet weak var waterButton: UIButton!
-    
     // Outlet Sleep Button
     @IBOutlet weak var sleepButton: UIButton!
-    
     // Outlet Goals Button
     @IBOutlet weak var goalsButton: UIButton!
-    
     // Outlet Graphics Button
     @IBOutlet weak var graphicsButton: UIButton!
-    
     @IBOutlet weak var shitpost: UILabel!
     
     
-    
-    
-    
     // MARK: Actions & Funcs
-    
     // Action foodButton
     @IBAction func foodButtonAction(_ sender: Any) {
         shitpost.isHidden = false
@@ -103,12 +80,7 @@ class MainController: UIViewController {
         happinessProgressView.progress += 0.05
     }
 
- 
-    
-
-    
     // MARK: Elements time update
-    
     // Food time update
     @objc func foodUpdate() {
         
@@ -179,6 +151,12 @@ class MainController: UIViewController {
         
     }
     
-    
+    // Prepare for segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let controller = segue.destination as? FoodController {
+            controller.transitioningDelegate = self.slideTransitioningDelegate
+            controller.modalPresentationStyle = .custom
+        }
+    }
 }
 

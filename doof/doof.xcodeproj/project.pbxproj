@@ -12,6 +12,10 @@
 		B593DC7C2191BA16006E2648 /* Waterstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7B2191BA16006E2648 /* Waterstamp.swift */; };
 		B593DC852191BD71006E2648 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC842191BD71006E2648 /* Meal.swift */; };
 		D9650EBC219C48C3001CB668 /* Healthiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EBB219C48C3001CB668 /* Healthiness.swift */; };
+		D9650EC1219C5245001CB668 /* SlidePresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */; };
+		D9650EC3219C5298001CB668 /* PresentationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC2219C5298001CB668 /* PresentationDirection.swift */; };
+		D9650EC5219C546E001CB668 /* FoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC4219C546E001CB668 /* FoodController.swift */; };
+		D9650EC7219C560A001CB668 /* SlidePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC6219C560A001CB668 /* SlidePresentationController.swift */; };
 		D99718D1218B7F3E00BFD710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718D0218B7F3E00BFD710 /* AppDelegate.swift */; };
 		D99718D3218B7F3E00BFD710 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718D2218B7F3E00BFD710 /* MainController.swift */; };
 		D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99718D4218B7F3E00BFD710 /* Main.storyboard */; };
@@ -76,6 +80,10 @@
 		B593DC7B2191BA16006E2648 /* Waterstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waterstamp.swift; sourceTree = "<group>"; };
 		B593DC842191BD71006E2648 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		D9650EBB219C48C3001CB668 /* Healthiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Healthiness.swift; sourceTree = "<group>"; };
+		D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidePresentationManager.swift; sourceTree = "<group>"; };
+		D9650EC2219C5298001CB668 /* PresentationDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationDirection.swift; sourceTree = "<group>"; };
+		D9650EC4219C546E001CB668 /* FoodController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodController.swift; sourceTree = "<group>"; };
+		D9650EC6219C560A001CB668 /* SlidePresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidePresentationController.swift; sourceTree = "<group>"; };
 		D99718CD218B7F3E00BFD710 /* doof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99718D0218B7F3E00BFD710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99718D2218B7F3E00BFD710 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -139,8 +147,18 @@
 			children = (
 				B593DC842191BD71006E2648 /* Meal.swift */,
 				D9650EBB219C48C3001CB668 /* Healthiness.swift */,
+				D9650EC2219C5298001CB668 /* PresentationDirection.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		D9650EBD219C51FB001CB668 /* SlidePresentation */ = {
+			isa = PBXGroup;
+			children = (
+				D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */,
+				D9650EC6219C560A001CB668 /* SlidePresentationController.swift */,
+			);
+			path = SlidePresentation;
 			sourceTree = "<group>";
 		};
 		D99718C4218B7F3E00BFD710 = {
@@ -166,6 +184,7 @@
 		D99718CF218B7F3E00BFD710 /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				D9650EBD219C51FB001CB668 /* SlidePresentation */,
 				D9971919218B81CF00BFD710 /* Application */,
 				D997190E218B7FDF00BFD710 /* Resources */,
 				D997190F218B7FE800BFD710 /* Storyboards */,
@@ -200,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				D99718D2218B7F3E00BFD710 /* MainController.swift */,
+				D9650EC4219C546E001CB668 /* FoodController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -390,10 +410,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B593DC762191B878006E2648 /* Pet.swift in Sources */,
+				D9650EC1219C5245001CB668 /* SlidePresentationManager.swift in Sources */,
 				D99718D3218B7F3E00BFD710 /* MainController.swift in Sources */,
 				D9650EBC219C48C3001CB668 /* Healthiness.swift in Sources */,
 				B593DC852191BD71006E2648 /* Meal.swift in Sources */,
 				D99718D1218B7F3E00BFD710 /* AppDelegate.swift in Sources */,
+				D9650EC3219C5298001CB668 /* PresentationDirection.swift in Sources */,
+				D9650EC7219C560A001CB668 /* SlidePresentationController.swift in Sources */,
+				D9650EC5219C546E001CB668 /* FoodController.swift in Sources */,
 				B593DC7C2191BA16006E2648 /* Waterstamp.swift in Sources */,
 				B593DC7A2191B992006E2648 /* Foodstamp.swift in Sources */,
 			);
@@ -574,7 +598,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -596,7 +620,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -619,7 +643,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				IBSC_MODULE = mc4_WatchKit_Extension;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-app/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = bdsm.mc4.watchkitapp;
@@ -638,7 +662,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				IBSC_MODULE = mc4_WatchKit_Extension;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-app/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = bdsm.mc4.watchkitapp;
@@ -656,7 +680,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/ios/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -674,7 +698,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/ios/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

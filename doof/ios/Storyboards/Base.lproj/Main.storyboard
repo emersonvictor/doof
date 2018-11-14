@@ -86,6 +86,9 @@
                                 <rect key="frame" x="306" y="62" width="58" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Gráficos"/>
+                                <connections>
+                                    <segue destination="j4b-Aa-fVY" kind="presentation" identifier="FoodSegue" id="qq3-Cq-c6H"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Se fudeu vai morrer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Uh-hO-Q6B">
                                 <rect key="frame" x="112" y="498" width="151" height="21"/>
@@ -121,6 +124,33 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Food Controller-->
+        <scene sceneID="k4L-7u-Lhh">
+            <objects>
+                <viewController id="j4b-Aa-fVY" customClass="FoodController" customModule="doof" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A5g-BV-q4W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsa-qJ-dmb">
+                                <rect key="frame" x="178" y="323" width="19" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qsa-qJ-dmb" firstAttribute="centerY" secondItem="A5g-BV-q4W" secondAttribute="centerY" id="f0A-oX-66W"/>
+                            <constraint firstItem="qsa-qJ-dmb" firstAttribute="centerX" secondItem="A5g-BV-q4W" secondAttribute="centerX" id="iz2-w0-rFV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MrZ-gR-0oh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BPK-46-k5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936.79999999999995" y="133.5832083958021"/>
         </scene>
     </scenes>
     <resources>

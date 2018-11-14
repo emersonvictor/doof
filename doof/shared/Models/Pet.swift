@@ -15,16 +15,15 @@ class Pet {
     var water : Int
     var happiness : Int
     var energy : Int
-    var foodHistory : [FoodStamp]
-    var waterHistory : [WaterStamp]
+    var foodHistory : [Foodstamp]
+    var waterHistory : [Waterstamp]
     
-    init(name: String, food: Int, water: Int, happiness: Int, energy: Int, goals: [Goal], foodHistory: [FoodStamp], waterHistory: [WaterStamp]){
+    init(name: String, food: Int, water: Int, happiness: Int, energy: Int, foodHistory: [Foodstamp], waterHistory: [Waterstamp]){
         self.name = name
         self.food = food
         self.water = water
         self.happiness = happiness
         self.energy = energy
-        self.goals = goals
         self.foodHistory = foodHistory
         self.waterHistory = waterHistory
     }
