@@ -16,6 +16,10 @@
 		D9650EC3219C5298001CB668 /* PresentationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC2219C5298001CB668 /* PresentationDirection.swift */; };
 		D9650EC5219C546E001CB668 /* FoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC4219C546E001CB668 /* FoodController.swift */; };
 		D9650EC7219C560A001CB668 /* SlidePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC6219C560A001CB668 /* SlidePresentationController.swift */; };
+		D9650ECA219C6326001CB668 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC9219C6326001CB668 /* UIColor.swift */; };
+		D9650ECC219C644C001CB668 /* BABIL___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D9650ECB219C644C001CB668 /* BABIL___.TTF */; };
+		D9650ECD219C644C001CB668 /* BABIL___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D9650ECB219C644C001CB668 /* BABIL___.TTF */; };
+		D9650ECE219C644C001CB668 /* BABIL___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D9650ECB219C644C001CB668 /* BABIL___.TTF */; };
 		D99718D1218B7F3E00BFD710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718D0218B7F3E00BFD710 /* AppDelegate.swift */; };
 		D99718D3218B7F3E00BFD710 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718D2218B7F3E00BFD710 /* MainController.swift */; };
 		D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99718D4218B7F3E00BFD710 /* Main.storyboard */; };
@@ -84,6 +88,8 @@
 		D9650EC2219C5298001CB668 /* PresentationDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationDirection.swift; sourceTree = "<group>"; };
 		D9650EC4219C546E001CB668 /* FoodController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodController.swift; sourceTree = "<group>"; };
 		D9650EC6219C560A001CB668 /* SlidePresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidePresentationController.swift; sourceTree = "<group>"; };
+		D9650EC9219C6326001CB668 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		D9650ECB219C644C001CB668 /* BABIL___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BABIL___.TTF"; sourceTree = "<group>"; };
 		D99718CD218B7F3E00BFD710 /* doof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99718D0218B7F3E00BFD710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99718D2218B7F3E00BFD710 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -126,6 +132,7 @@
 		B593DC732191B853006E2648 /* shared */ = {
 			isa = PBXGroup;
 			children = (
+				D9650EC8219C6314001CB668 /* Extensions */,
 				B593DC812191BD44006E2648 /* Enums */,
 				B593DC742191B85B006E2648 /* Models */,
 			);
@@ -159,6 +166,14 @@
 				D9650EC6219C560A001CB668 /* SlidePresentationController.swift */,
 			);
 			path = SlidePresentation;
+			sourceTree = "<group>";
+		};
+		D9650EC8219C6314001CB668 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D9650EC9219C6326001CB668 /* UIColor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D99718C4218B7F3E00BFD710 = {
@@ -227,6 +242,7 @@
 		D997190E218B7FDF00BFD710 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D9650ECB219C644C001CB668 /* BABIL___.TTF */,
 				D99718D7218B7F4000BFD710 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -382,6 +398,7 @@
 				D99718DB218B7F4000BFD710 /* LaunchScreen.storyboard in Resources */,
 				D99718D8218B7F4000BFD710 /* Assets.xcassets in Resources */,
 				D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */,
+				D9650ECC219C644C001CB668 /* BABIL___.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +408,7 @@
 			files = (
 				D99718E8218B7F4000BFD710 /* Assets.xcassets in Resources */,
 				D99718E6218B7F4000BFD710 /* Interface.storyboard in Resources */,
+				D9650ECD219C644C001CB668 /* BABIL___.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D99718FC218B7F4100BFD710 /* Assets.xcassets in Resources */,
+				D9650ECE219C644C001CB668 /* BABIL___.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B593DC762191B878006E2648 /* Pet.swift in Sources */,
+				D9650ECA219C6326001CB668 /* UIColor.swift in Sources */,
 				D9650EC1219C5245001CB668 /* SlidePresentationManager.swift in Sources */,
 				D99718D3218B7F3E00BFD710 /* MainController.swift in Sources */,
 				D9650EBC219C48C3001CB668 /* Healthiness.swift in Sources */,
