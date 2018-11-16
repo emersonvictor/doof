@@ -56,6 +56,18 @@ class MainController: UIViewController {
     
     // MARK: Actions & Funcs
     // Action foodButton
+    
+    func customProgessBars(progressBar: UIProgressView) {
+        // Deixar redondo
+        progressBar.layer.cornerRadius = 5
+        progressBar.clipsToBounds = true
+        progressBar.layer.sublayers![1].cornerRadius = 5
+        progressBar.subviews[1].clipsToBounds = true
+        
+        // Deixar o fundo branco
+        progressBar.trackTintColor = UIColor.white
+    }
+    
     @IBAction func foodButtonAction(_ sender: Any) {
         shitpost.isHidden = false
     }
@@ -149,6 +161,11 @@ class MainController: UIViewController {
         // Happiness Progress
         self.happinessTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MainController.happinessUpdate), userInfo: nil, repeats: true)
         
+        // Custom Progress Bars
+        customProgessBars(progressBar: foodProgressView)
+        customProgessBars(progressBar: waterProgressView)
+        customProgessBars(progressBar: energyProgressView)
+        customProgessBars(progressBar: happinessProgressView)
     }
     
     // Prepare for segue
