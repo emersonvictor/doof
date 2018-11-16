@@ -13,11 +13,16 @@ class Foodstamp {
     var time : Date
     var meal : Meal
     var healthiness : Healthiness
-    // var petRef : PetId
     
+    // MARK: - Initializer
     init(time: Date, meal: Meal, healthiness: Healthiness){
         self.time = time
         self.meal = meal
         self.healthiness = healthiness
+    }
+    
+    // MARK: - Save model to CoreData
+    func save() {
+        
     }
 }

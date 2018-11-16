@@ -18,6 +18,7 @@ class Pet {
     var foodHistory : [Foodstamp]
     var waterHistory : [Waterstamp]
     
+    // MARK: - Initializer
     init(name: String, food: Int, water: Int, happiness: Int, energy: Int, foodHistory: [Foodstamp], waterHistory: [Waterstamp]){
         self.name = name
         self.food = food
