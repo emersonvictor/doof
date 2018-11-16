@@ -97,7 +97,7 @@ private extension SlidePresentationController {
     func setupDimmingView() {
         dimmingView = UIView()
         dimmingView.translatesAutoresizingMaskIntoConstraints = false
-        dimmingView.backgroundColor = UIColor(white: 0.0, alpha: 0.5)
+        dimmingView.backgroundColor = UIColor(white: 0.0, alpha: 0.4)
         dimmingView.alpha = 0.0
         
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(recognizer:)))

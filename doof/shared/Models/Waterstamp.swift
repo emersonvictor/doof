@@ -12,10 +12,15 @@ class Waterstamp {
     
     var time : Date
     var quantity: Int
-    //var petRef : PetId
     
+    // MARK: - Initializer 
     init(time: Date, quantity: Int){
         self.time = time
         self.quantity = quantity
+    }
+    
+    // MARK: - Save model to CoreData
+    func save() {
+        
     }
 }
