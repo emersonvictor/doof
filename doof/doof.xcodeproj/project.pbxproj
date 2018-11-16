@@ -199,7 +199,7 @@
 		D99718CF218B7F3E00BFD710 /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				D9650EBD219C51FB001CB668 /* SlidePresentation */,
+				D9FD9257219F0E320080BB89 /* Custom */,
 				D9971919218B81CF00BFD710 /* Application */,
 				D997190E218B7FDF00BFD710 /* Resources */,
 				D997190F218B7FE800BFD710 /* Storyboards */,
@@ -291,6 +291,14 @@
 				D99718DC218B7F4000BFD710 /* Info.plist */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		D9FD9257219F0E320080BB89 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				D9650EBD219C51FB001CB668 /* SlidePresentation */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
