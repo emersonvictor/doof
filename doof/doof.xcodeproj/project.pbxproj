@@ -11,7 +11,6 @@
 		B593DC7A2191B992006E2648 /* Foodstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC792191B992006E2648 /* Foodstamp.swift */; };
 		B593DC7C2191BA16006E2648 /* Waterstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7B2191BA16006E2648 /* Waterstamp.swift */; };
 		B593DC852191BD71006E2648 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC842191BD71006E2648 /* Meal.swift */; };
-		B59842B1219F0E4E00F33622 /* Progressbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59842B0219F0E4E00F33622 /* Progressbar.swift */; };
 		D9650EBC219C48C3001CB668 /* Healthiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EBB219C48C3001CB668 /* Healthiness.swift */; };
 		D9650EC1219C5245001CB668 /* SlidePresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */; };
 		D9650EC3219C5298001CB668 /* PresentationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC2219C5298001CB668 /* PresentationDirection.swift */; };
@@ -84,7 +83,6 @@
 		B593DC792191B992006E2648 /* Foodstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foodstamp.swift; sourceTree = "<group>"; };
 		B593DC7B2191BA16006E2648 /* Waterstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waterstamp.swift; sourceTree = "<group>"; };
 		B593DC842191BD71006E2648 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
-		B59842B0219F0E4E00F33622 /* Progressbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progressbar.swift; sourceTree = "<group>"; };
 		D9650EBB219C48C3001CB668 /* Healthiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Healthiness.swift; sourceTree = "<group>"; };
 		D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidePresentationManager.swift; sourceTree = "<group>"; };
 		D9650EC2219C5298001CB668 /* PresentationDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationDirection.swift; sourceTree = "<group>"; };
@@ -165,7 +163,6 @@
 		B59842AF219F0E3700F33622 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				B59842B0219F0E4E00F33622 /* Progressbar.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -449,7 +446,6 @@
 				D9650EC3219C5298001CB668 /* PresentationDirection.swift in Sources */,
 				D9650EC7219C560A001CB668 /* SlidePresentationController.swift in Sources */,
 				D9650EC5219C546E001CB668 /* FoodController.swift in Sources */,
-				B59842B1219F0E4E00F33622 /* Progressbar.swift in Sources */,
 				B593DC7C2191BA16006E2648 /* Waterstamp.swift in Sources */,
 				B593DC7A2191B992006E2648 /* Foodstamp.swift in Sources */,
 			);
