@@ -175,7 +175,6 @@ class MainController: UIViewController {
         customProgessBars(progressBar: energyProgressView)
         customProgessBars(progressBar: happinessProgressView)
         
-        
     }
     
     
