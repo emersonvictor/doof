@@ -11,8 +11,6 @@
 		B593DC7A2191B992006E2648 /* Foodstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC792191B992006E2648 /* Foodstamp.swift */; };
 		B593DC7C2191BA16006E2648 /* Waterstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7B2191BA16006E2648 /* Waterstamp.swift */; };
 		B593DC852191BD71006E2648 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC842191BD71006E2648 /* Meal.swift */; };
-		B5CB752121A4419A00AF52DD /* doof_eyeless.png in Resources */ = {isa = PBXBuildFile; fileRef = B5CB751F21A4419A00AF52DD /* doof_eyeless.png */; };
-		B5CB752221A4419A00AF52DD /* doof_eyes.png in Resources */ = {isa = PBXBuildFile; fileRef = B5CB752021A4419A00AF52DD /* doof_eyes.png */; };
 		D916461321A2E0EF009FFC80 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916461221A2E0EF009FFC80 /* CircleButton.swift */; };
 		D9650EBC219C48C3001CB668 /* Healthiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EBB219C48C3001CB668 /* Healthiness.swift */; };
 		D9650EC1219C5245001CB668 /* SlidePresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */; };
@@ -24,6 +22,8 @@
 		D9650ECD219C644C001CB668 /* BABIL___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D9650ECB219C644C001CB668 /* BABIL___.TTF */; };
 		D9650ECE219C644C001CB668 /* BABIL___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D9650ECB219C644C001CB668 /* BABIL___.TTF */; };
 		D98C687C21A43E8000A039F1 /* MainScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D98C687B21A43E8000A039F1 /* MainScene.sks */; };
+		D98C687E21A4433400A039F1 /* doof_eyeless.png in Resources */ = {isa = PBXBuildFile; fileRef = D98C687D21A4433400A039F1 /* doof_eyeless.png */; };
+		D98C688021A4433C00A039F1 /* doof_eyes.png in Resources */ = {isa = PBXBuildFile; fileRef = D98C687F21A4433B00A039F1 /* doof_eyes.png */; };
 		D99718D1218B7F3E00BFD710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718D0218B7F3E00BFD710 /* AppDelegate.swift */; };
 		D99718D3218B7F3E00BFD710 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718D2218B7F3E00BFD710 /* MainController.swift */; };
 		D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99718D4218B7F3E00BFD710 /* Main.storyboard */; };
@@ -87,8 +87,6 @@
 		B593DC792191B992006E2648 /* Foodstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foodstamp.swift; sourceTree = "<group>"; };
 		B593DC7B2191BA16006E2648 /* Waterstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waterstamp.swift; sourceTree = "<group>"; };
 		B593DC842191BD71006E2648 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
-		B5CB751F21A4419A00AF52DD /* doof_eyeless.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = doof_eyeless.png; path = ../../../../../PNG/doof_eyeless.png; sourceTree = "<group>"; };
-		B5CB752021A4419A00AF52DD /* doof_eyes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = doof_eyes.png; path = ../../../../../PNG/doof_eyes.png; sourceTree = "<group>"; };
 		D916461221A2E0EF009FFC80 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		D9650EBB219C48C3001CB668 /* Healthiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Healthiness.swift; sourceTree = "<group>"; };
 		D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidePresentationManager.swift; sourceTree = "<group>"; };
@@ -98,6 +96,8 @@
 		D9650EC9219C6326001CB668 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		D9650ECB219C644C001CB668 /* BABIL___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BABIL___.TTF"; sourceTree = "<group>"; };
 		D98C687B21A43E8000A039F1 /* MainScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainScene.sks; sourceTree = "<group>"; };
+		D98C687D21A4433400A039F1 /* doof_eyeless.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = doof_eyeless.png; path = ../../../../../Downloads/doof_eyeless.png; sourceTree = "<group>"; };
+		D98C687F21A4433B00A039F1 /* doof_eyes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = doof_eyes.png; path = ../../../../../Downloads/doof_eyes.png; sourceTree = "<group>"; };
 		D99718CD218B7F3E00BFD710 /* doof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99718D0218B7F3E00BFD710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99718D2218B7F3E00BFD710 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -258,9 +258,9 @@
 		D997190E218B7FDF00BFD710 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B5CB751F21A4419A00AF52DD /* doof_eyeless.png */,
-				B5CB752021A4419A00AF52DD /* doof_eyes.png */,
 				D9650ECB219C644C001CB668 /* BABIL___.TTF */,
+				D98C687D21A4433400A039F1 /* doof_eyeless.png */,
+				D98C687F21A4433B00A039F1 /* doof_eyes.png */,
 				D99718D7218B7F4000BFD710 /* Assets.xcassets */,
 				D98C687B21A43E8000A039F1 /* MainScene.sks */,
 			);
@@ -427,9 +427,9 @@
 				D99718D8218B7F4000BFD710 /* Assets.xcassets in Resources */,
 				D98C687C21A43E8000A039F1 /* MainScene.sks in Resources */,
 				D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */,
-				B5CB752121A4419A00AF52DD /* doof_eyeless.png in Resources */,
+				D98C687E21A4433400A039F1 /* doof_eyeless.png in Resources */,
 				D9650ECC219C644C001CB668 /* BABIL___.TTF in Resources */,
-				B5CB752221A4419A00AF52DD /* doof_eyes.png in Resources */,
+				D98C688021A4433C00A039F1 /* doof_eyes.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

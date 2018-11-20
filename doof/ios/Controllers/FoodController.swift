@@ -24,6 +24,8 @@ class FoodController: UIViewController {
     // MARK: - Variables
     var selectedMeal:Meal?
     var selectedHealthiness:Healthiness = .unhealthy
+    let selectionFeedback = UISelectionFeedbackGenerator()
+    let notificationFeedback = UINotificationFeedbackGenerator()
     
     // MARK: - Initializer
     override func viewDidLoad() {
@@ -41,6 +43,7 @@ class FoodController: UIViewController {
             let foodstamp = Foodstamp(time: Date(), meal: meal, healthiness: self.selectedHealthiness)
             foodstamp.save()
             self.presentingViewController?.dismiss(animated: true)
+            self.notificationFeedback.notificationOccurred(.success)
         } else {
             let alert = UIAlertController(title: "Refeição não selecionada", message: "Antes de alimentar doof você precisa selecionar uma refeição", preferredStyle: .alert)
             
@@ -55,6 +58,7 @@ class FoodController: UIViewController {
         self.selectedMeal = nil
         self.selectedHealthiness = .unhealthy
         self.presentingViewController?.dismiss(animated: true)
+        self.notificationFeedback.notificationOccurred(.warning)
     }
     
     // MARK: - Food actions
@@ -82,6 +86,7 @@ class FoodController: UIViewController {
         // Set new state of the button
         customButton.isSelected = true
         customButton.setSelectedState()
+        self.selectionFeedback.selectionChanged()
     }
     
     @IBAction func changeHealthiness(_ sender: UISlider) {
@@ -100,5 +105,10 @@ class FoodController: UIViewController {
             sender.setValue(0.9, animated: true)
             self.selectedHealthiness = .veryHealthy
         }
+        self.selectionFeedback.selectionChanged()
     }
+    
+    // TODO: - Touch selection to slider
 }
+
+

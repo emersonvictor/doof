@@ -31,13 +31,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="r52-qN-lh8" appends="YES" id="PFD-tK-kjV"/>
-                                </connections>
                             </skView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2n7-9u-xNK">
+                                <rect key="frame" x="306" y="62" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Gráficos"/>
+                            </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="M3D-nZ-3su">
                                 <rect key="frame" x="35.5" y="63.5" width="154" height="10"/>
-                                <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.74117647058823533" green="0.32549019607843138" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="154" id="qGP-fW-2CO"/>
                                     <constraint firstAttribute="height" constant="10" id="y5g-od-MZc"/>
@@ -45,6 +47,7 @@
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="u5k-5B-dut">
                                 <rect key="frame" x="35.5" y="81" width="154" height="10"/>
+                                <color key="tintColor" red="0.74901960784313726" green="0.30196078431372547" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="4tB-qE-eiE"/>
                                     <constraint firstAttribute="width" constant="154" id="orQ-yp-3vD"/>
@@ -52,7 +55,7 @@
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="BlG-42-5zr">
                                 <rect key="frame" x="35.5" y="98" width="154" height="10"/>
-                                <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.74117647058823533" green="0.32549019607843138" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="154" id="ltC-2X-k1K"/>
                                     <constraint firstAttribute="height" constant="10" id="tyb-fq-aIj"/>
@@ -60,68 +63,95 @@
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="a5E-2v-vD3">
                                 <rect key="frame" x="35.5" y="115" width="154" height="10"/>
-                                <color key="tintColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.74117647058823533" green="0.32549019607843138" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="154" id="VOS-l2-C7u"/>
                                     <constraint firstAttribute="height" constant="10" id="WaQ-41-NwP"/>
                                 </constraints>
                             </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWt-oN-ICZ" customClass="CircleButton" customModule="doof" customModuleProvider="target">
-                                <rect key="frame" x="163" y="517" width="48" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Bebida"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWt-oN-ICZ" customClass="CircleButton" customModule="doof" customModuleProvider="target">
+                                <rect key="frame" x="165" y="498" width="45" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Y2h-SN-f5M"/>
+                                    <constraint firstAttribute="width" constant="45" id="zI5-ac-rQh"/>
+                                </constraints>
                                 <connections>
-                                    <action selector="waterButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JLC-eD-OUs"/>
+                                    <action selector="foodButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sej-6o-TX3"/>
+                                    <segue destination="j4b-Aa-fVY" kind="presentation" identifier="FoodSegue" id="rwZ-YX-ASq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkA-XV-lbR" customClass="CircleButton" customModule="doof" customModuleProvider="target">
-                                <rect key="frame" x="239" y="511" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Dormir"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkA-XV-lbR" customClass="CircleButton" customModule="doof" customModuleProvider="target">
+                                <rect key="frame" x="240" y="534.5" width="45" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="NuT-db-Jyq"/>
+                                    <constraint firstAttribute="width" constant="45" id="xmY-hb-cnY"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="sleepButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4WF-Yg-AAZ"/>
+                                    <action selector="sleepButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lo7-xz-WOr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2n7-9u-xNK">
-                                <rect key="frame" x="306" y="62" width="58" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Gráficos"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2S8-7E-T1A" customClass="CircleButton" customModule="doof" customModuleProvider="target">
-                                <rect key="frame" x="86" y="515" width="53" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Comida"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2S8-7E-T1A" customClass="CircleButton" customModule="doof" customModuleProvider="target">
+                                <rect key="frame" x="90" y="534.5" width="45" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="nkK-0m-4ce"/>
+                                    <constraint firstAttribute="width" constant="45" id="ty6-ET-qqF"/>
+                                </constraints>
                                 <connections>
-                                    <segue destination="j4b-Aa-fVY" kind="presentation" identifier="FoodSegue" id="8tq-90-sVh"/>
+                                    <action selector="waterButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Nf-dr-m8q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaK-ZN-dxg" customClass="CircleButton" customModule="doof" customModuleProvider="target">
+                                <rect key="frame" x="145" y="558" width="85" height="85"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="fIO-tN-EX6"/>
+                                    <constraint firstAttribute="height" constant="85" id="mNo-Hc-zSZ"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="mainAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D7X-lA-MX8"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BlG-42-5zr" firstAttribute="centerY" secondItem="Uee-0j-aNJ" secondAttribute="centerY" multiplier="0.3" id="17p-Ab-Dei"/>
+                            <constraint firstItem="jaK-ZN-dxg" firstAttribute="top" secondItem="FWt-oN-ICZ" secondAttribute="bottom" constant="15" id="1XP-jM-lYu"/>
+                            <constraint firstItem="FWt-oN-ICZ" firstAttribute="centerX" secondItem="jaK-ZN-dxg" secondAttribute="centerX" id="2OD-vQ-2Pj"/>
+                            <constraint firstItem="ZkA-XV-lbR" firstAttribute="centerY" secondItem="2S8-7E-T1A" secondAttribute="centerY" id="4OX-A1-erm"/>
                             <constraint firstItem="a5E-2v-vD3" firstAttribute="centerY" secondItem="Uee-0j-aNJ" secondAttribute="centerY" multiplier="0.35" id="8vg-Td-r30"/>
+                            <constraint firstItem="ZkA-XV-lbR" firstAttribute="leading" secondItem="jaK-ZN-dxg" secondAttribute="trailing" constant="10" id="CnN-Nk-tDx"/>
+                            <constraint firstItem="jaK-ZN-dxg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fpc-ge-0ya"/>
                             <constraint firstItem="M3D-nZ-3su" firstAttribute="centerX" secondItem="Uee-0j-aNJ" secondAttribute="centerX" multiplier="0.6" id="K4F-EM-o0b"/>
                             <constraint firstItem="M3D-nZ-3su" firstAttribute="centerY" secondItem="Uee-0j-aNJ" secondAttribute="centerY" multiplier="0.2" id="Qw0-SH-FBE"/>
                             <constraint firstItem="u5k-5B-dut" firstAttribute="centerY" secondItem="Uee-0j-aNJ" secondAttribute="centerY" multiplier="0.25" id="WZr-Vs-b6d"/>
                             <constraint firstItem="JJa-wF-hNY" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" id="ZA4-Yc-EBe"/>
+                            <constraint firstItem="jaK-ZN-dxg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.8" id="aLV-Kh-ieY"/>
                             <constraint firstItem="BlG-42-5zr" firstAttribute="centerX" secondItem="Uee-0j-aNJ" secondAttribute="centerX" multiplier="0.6" id="arC-MH-pJ2"/>
                             <constraint firstItem="JJa-wF-hNY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eaw-ag-f5e"/>
+                            <constraint firstItem="2S8-7E-T1A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.67" id="f6Y-Fh-e2u"/>
                             <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="JJa-wF-hNY" secondAttribute="trailing" id="hmw-hy-jzP"/>
                             <constraint firstItem="JJa-wF-hNY" firstAttribute="bottom" secondItem="Uee-0j-aNJ" secondAttribute="bottom" id="jhb-7Z-BgQ"/>
                             <constraint firstItem="u5k-5B-dut" firstAttribute="centerX" secondItem="Uee-0j-aNJ" secondAttribute="centerX" multiplier="0.6" id="qdw-tT-Lbg"/>
                             <constraint firstItem="a5E-2v-vD3" firstAttribute="centerX" secondItem="Uee-0j-aNJ" secondAttribute="centerX" multiplier="0.6" id="tti-uD-AYR"/>
+                            <constraint firstItem="jaK-ZN-dxg" firstAttribute="leading" secondItem="2S8-7E-T1A" secondAttribute="trailing" constant="10" id="v6Q-me-wjW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
                     </view>
                     <connections>
                         <outlet property="energyProgressView" destination="a5E-2v-vD3" id="V50-ee-hMn"/>
-                        <outlet property="foodButton" destination="2S8-7E-T1A" id="zsn-qz-CrM"/>
+                        <outlet property="foodButton" destination="FWt-oN-ICZ" id="ZqR-zV-oD0"/>
                         <outlet property="foodProgressView" destination="M3D-nZ-3su" id="kuZ-P1-gkk"/>
                         <outlet property="graphicsButton" destination="2n7-9u-xNK" id="AdR-DZ-3iI"/>
                         <outlet property="happinessProgressView" destination="BlG-42-5zr" id="ps0-1A-vlt"/>
+                        <outlet property="mainButton" destination="jaK-ZN-dxg" id="quU-bH-YnH"/>
                         <outlet property="mainSKView" destination="JJa-wF-hNY" id="uvs-XG-c3A"/>
-                        <outlet property="sleepButton" destination="ZkA-XV-lbR" id="Acp-BC-Nj5"/>
-                        <outlet property="waterButton" destination="FWt-oN-ICZ" id="F4i-jr-cKo"/>
+                        <outlet property="sleepButton" destination="ZkA-XV-lbR" id="AFk-Pg-zmL"/>
+                        <outlet property="waterButton" destination="2S8-7E-T1A" id="OuU-OV-NIN"/>
                         <outlet property="waterProgressView" destination="u5k-5B-dut" id="X5G-lW-IN0"/>
                     </connections>
                 </viewController>
