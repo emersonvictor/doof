@@ -39,24 +39,36 @@
                                     <outletCollection property="gestureRecognizers" destination="r52-qN-lh8" appends="YES" id="PFD-tK-kjV"/>
                                 </connections>
                             </skView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="M3D-nZ-3su">
-                                <rect key="frame" x="110" y="90" width="154" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="M3D-nZ-3su">
+                                <rect key="frame" x="35.5" y="81" width="154" height="10"/>
                                 <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="qGP-fW-2CO"/>
+                                    <constraint firstAttribute="height" constant="10" id="y5g-od-MZc"/>
+                                </constraints>
                             </progressView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="u5k-5B-dut">
-                                <rect key="frame" x="110" y="100" width="154" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="u5k-5B-dut">
+                                <rect key="frame" x="35.5" y="94.5" width="154" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="4tB-qE-eiE"/>
+                                    <constraint firstAttribute="width" constant="154" id="orQ-yp-3vD"/>
+                                </constraints>
                             </progressView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="BlG-42-5zr">
-                                <rect key="frame" x="110" y="110" width="154" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="BlG-42-5zr">
+                                <rect key="frame" x="35.5" y="108.5" width="154" height="10"/>
                                 <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="ltC-2X-k1K"/>
+                                    <constraint firstAttribute="height" constant="10" id="tyb-fq-aIj"/>
+                                </constraints>
                             </progressView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="a5E-2v-vD3">
-                                <rect key="frame" x="110" y="120" width="154" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="a5E-2v-vD3">
+                                <rect key="frame" x="35.5" y="122" width="154" height="10"/>
                                 <color key="tintColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="VOS-l2-C7u"/>
+                                    <constraint firstAttribute="height" constant="10" id="WaQ-41-NwP"/>
+                                </constraints>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2S8-7E-T1A">
                                 <rect key="frame" x="13" y="617" width="53" height="30"/>
@@ -104,6 +116,16 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BlG-42-5zr" firstAttribute="centerY" secondItem="Uee-0j-aNJ" secondAttribute="centerY" multiplier="0.33" id="17p-Ab-Dei"/>
+                            <constraint firstItem="a5E-2v-vD3" firstAttribute="centerY" secondItem="Uee-0j-aNJ" secondAttribute="centerY" multiplier="0.37" id="8vg-Td-r30"/>
+                            <constraint firstItem="M3D-nZ-3su" firstAttribute="centerX" secondItem="Uee-0j-aNJ" secondAttribute="centerX" multiplier="0.6" id="K4F-EM-o0b"/>
+                            <constraint firstItem="M3D-nZ-3su" firstAttribute="centerY" secondItem="Uee-0j-aNJ" secondAttribute="centerY" multiplier="0.25" id="Qw0-SH-FBE"/>
+                            <constraint firstItem="u5k-5B-dut" firstAttribute="centerY" secondItem="Uee-0j-aNJ" secondAttribute="centerY" multiplier="0.29" id="WZr-Vs-b6d"/>
+                            <constraint firstItem="BlG-42-5zr" firstAttribute="centerX" secondItem="Uee-0j-aNJ" secondAttribute="centerX" multiplier="0.6" id="arC-MH-pJ2"/>
+                            <constraint firstItem="u5k-5B-dut" firstAttribute="centerX" secondItem="Uee-0j-aNJ" secondAttribute="centerX" multiplier="0.6" id="qdw-tT-Lbg"/>
+                            <constraint firstItem="a5E-2v-vD3" firstAttribute="centerX" secondItem="Uee-0j-aNJ" secondAttribute="centerX" multiplier="0.6" id="tti-uD-AYR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
                     </view>
                     <connections>
