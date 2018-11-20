@@ -32,11 +32,6 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                             </skView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2n7-9u-xNK">
-                                <rect key="frame" x="306" y="62" width="58" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Gráficos"/>
-                            </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="M3D-nZ-3su">
                                 <rect key="frame" x="35.5" y="63.5" width="154" height="10"/>
                                 <color key="tintColor" red="0.74117647058823533" green="0.32549019607843138" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -146,7 +141,6 @@
                         <outlet property="energyProgressView" destination="a5E-2v-vD3" id="V50-ee-hMn"/>
                         <outlet property="foodButton" destination="FWt-oN-ICZ" id="ZqR-zV-oD0"/>
                         <outlet property="foodProgressView" destination="M3D-nZ-3su" id="kuZ-P1-gkk"/>
-                        <outlet property="graphicsButton" destination="2n7-9u-xNK" id="AdR-DZ-3iI"/>
                         <outlet property="happinessProgressView" destination="BlG-42-5zr" id="ps0-1A-vlt"/>
                         <outlet property="mainButton" destination="jaK-ZN-dxg" id="quU-bH-YnH"/>
                         <outlet property="mainSKView" destination="JJa-wF-hNY" id="uvs-XG-c3A"/>

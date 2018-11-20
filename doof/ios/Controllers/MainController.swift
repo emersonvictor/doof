@@ -32,7 +32,6 @@ class MainController: UIViewController {
     @IBOutlet weak var happinessProgressView: UIProgressView!
     @IBOutlet weak var energyProgressView: UIProgressView!
     // Buttons
-    @IBOutlet weak var graphicsButton: UIButton!
     @IBOutlet weak var mainButton: CircleButton!
     @IBOutlet weak var waterButton: UIButton!
     @IBOutlet weak var foodButton: UIButton!
