@@ -29,6 +29,10 @@ class FoodController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.healthinessSlider.isContinuous = false
+        
+        // Round corner
+        self.view.layer.cornerRadius = 30
+        self.view.layer.masksToBounds = true
     }
     
     // MARK: - Modal options
@@ -56,24 +60,28 @@ class FoodController: UIViewController {
     // MARK: - Food actions
     @IBAction func chooseMealAction(_ sender: UIButton) {
         // Remove selected state of all buttons
-        self.breakfast.isSelected = false
-        self.lunch.isSelected = false
-        self.dinner.isSelected = false
-        self.snack.isSelected = false
+        let buttons = [self.breakfast, self.lunch, self.dinner, self.snack]
+        for button in buttons {
+            let circularButton = button as! CircleButton
+            circularButton.isSelected = false
+            circularButton.setSelectedState()
+        }
         
         // Set a variable to indicate which meal is selected
-        if sender == self.breakfast {
+        let customButton = sender as! CircleButton
+        if customButton == self.breakfast {
             self.selectedMeal = .breakfast
-        } else if sender == self.lunch {
+        } else if customButton == self.lunch {
             self.selectedMeal = .lunch
-        } else if sender == self.dinner {
+        } else if customButton == self.dinner {
             self.selectedMeal = .dinner
         } else {
             self.selectedMeal = .snack
         }
         
         // Set new state of the button
-        sender.isSelected = true
+        customButton.isSelected = true
+        customButton.setSelectedState()
     }
     
     @IBAction func changeHealthiness(_ sender: UISlider) {
