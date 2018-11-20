@@ -28,6 +28,8 @@ class MainController: UIViewController {
     lazy var slideTransitioningDelegate = SlidePresentationManager()
     
     
+    
+    
     // MARK: Outlets
     // Outlet Scenery SKView
     @IBOutlet weak var scenerySKView: SKView!
@@ -52,6 +54,9 @@ class MainController: UIViewController {
     // Outlet Graphics Button
     @IBOutlet weak var graphicsButton: UIButton!
     @IBOutlet weak var shitpost: UILabel!
+    
+    
+    
     
     
     // MARK: Actions & Funcs
@@ -143,6 +148,9 @@ class MainController: UIViewController {
     }
     
     
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -166,7 +174,13 @@ class MainController: UIViewController {
         customProgessBars(progressBar: waterProgressView)
         customProgessBars(progressBar: energyProgressView)
         customProgessBars(progressBar: happinessProgressView)
+        
+        
     }
+    
+    
+    
+    
     
     // Prepare for segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -176,4 +190,3 @@ class MainController: UIViewController {
         }
     }
 }
-

@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B50E3F6721A42C6100B3B9A3 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B50E3F6621A42C6100B3B9A3 /* SpriteKit.framework */; };
 		B593DC762191B878006E2648 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC752191B878006E2648 /* Pet.swift */; };
 		B593DC7A2191B992006E2648 /* Foodstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC792191B992006E2648 /* Foodstamp.swift */; };
 		B593DC7C2191BA16006E2648 /* Waterstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7B2191BA16006E2648 /* Waterstamp.swift */; };
 		B593DC852191BD71006E2648 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC842191BD71006E2648 /* Meal.swift */; };
+		B5B15CC221A2FBD400D6C7E7 /* doof_eyes.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B15CC021A2FBD400D6C7E7 /* doof_eyes.png */; };
+		B5B15CC321A2FBD400D6C7E7 /* doof_eyeless.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B15CC121A2FBD400D6C7E7 /* doof_eyeless.png */; };
+		B5B15CC521A2FBE700D6C7E7 /* Doof.sks in Resources */ = {isa = PBXBuildFile; fileRef = B5B15CC421A2FBE700D6C7E7 /* Doof.sks */; };
 		D9650EBC219C48C3001CB668 /* Healthiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EBB219C48C3001CB668 /* Healthiness.swift */; };
 		D9650EC1219C5245001CB668 /* SlidePresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */; };
 		D9650EC3219C5298001CB668 /* PresentationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC2219C5298001CB668 /* PresentationDirection.swift */; };
@@ -79,10 +83,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B50E3F6621A42C6100B3B9A3 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		B593DC752191B878006E2648 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		B593DC792191B992006E2648 /* Foodstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foodstamp.swift; sourceTree = "<group>"; };
 		B593DC7B2191BA16006E2648 /* Waterstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waterstamp.swift; sourceTree = "<group>"; };
 		B593DC842191BD71006E2648 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		B5B15CC021A2FBD400D6C7E7 /* doof_eyes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doof_eyes.png; sourceTree = "<group>"; };
+		B5B15CC121A2FBD400D6C7E7 /* doof_eyeless.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doof_eyeless.png; sourceTree = "<group>"; };
+		B5B15CC421A2FBE700D6C7E7 /* Doof.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Doof.sks; sourceTree = "<group>"; };
 		D9650EBB219C48C3001CB668 /* Healthiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Healthiness.swift; sourceTree = "<group>"; };
 		D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidePresentationManager.swift; sourceTree = "<group>"; };
 		D9650EC2219C5298001CB668 /* PresentationDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationDirection.swift; sourceTree = "<group>"; };
@@ -116,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B50E3F6721A42C6100B3B9A3 /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +138,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B50E3F6521A42C6000B3B9A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B50E3F6621A42C6100B3B9A3 /* SpriteKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B593DC732191B853006E2648 /* shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +208,7 @@
 				D9971915218B80B700BFD710 /* watchos */,
 				D99718CF218B7F3E00BFD710 /* ios */,
 				D99718CE218B7F3E00BFD710 /* Products */,
+				B50E3F6521A42C6000B3B9A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -250,8 +268,11 @@
 		D997190E218B7FDF00BFD710 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B5B15CC121A2FBD400D6C7E7 /* doof_eyeless.png */,
+				B5B15CC021A2FBD400D6C7E7 /* doof_eyes.png */,
 				D9650ECB219C644C001CB668 /* BABIL___.TTF */,
 				D99718D7218B7F4000BFD710 /* Assets.xcassets */,
+				B5B15CC421A2FBE700D6C7E7 /* Doof.sks */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -405,8 +426,11 @@
 			files = (
 				D99718DB218B7F4000BFD710 /* LaunchScreen.storyboard in Resources */,
 				D99718D8218B7F4000BFD710 /* Assets.xcassets in Resources */,
+				B5B15CC221A2FBD400D6C7E7 /* doof_eyes.png in Resources */,
 				D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */,
+				B5B15CC321A2FBD400D6C7E7 /* doof_eyeless.png in Resources */,
 				D9650ECC219C644C001CB668 /* BABIL___.TTF in Resources */,
+				B5B15CC521A2FBE700D6C7E7 /* Doof.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
