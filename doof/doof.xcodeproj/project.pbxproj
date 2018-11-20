@@ -21,6 +21,7 @@
 		D9650ECC219C644C001CB668 /* BABIL___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D9650ECB219C644C001CB668 /* BABIL___.TTF */; };
 		D9650ECD219C644C001CB668 /* BABIL___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D9650ECB219C644C001CB668 /* BABIL___.TTF */; };
 		D9650ECE219C644C001CB668 /* BABIL___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D9650ECB219C644C001CB668 /* BABIL___.TTF */; };
+		D98C687C21A43E8000A039F1 /* MainScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D98C687B21A43E8000A039F1 /* MainScene.sks */; };
 		D99718D1218B7F3E00BFD710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718D0218B7F3E00BFD710 /* AppDelegate.swift */; };
 		D99718D3218B7F3E00BFD710 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718D2218B7F3E00BFD710 /* MainController.swift */; };
 		D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99718D4218B7F3E00BFD710 /* Main.storyboard */; };
@@ -92,6 +93,7 @@
 		D9650EC6219C560A001CB668 /* SlidePresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidePresentationController.swift; sourceTree = "<group>"; };
 		D9650EC9219C6326001CB668 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		D9650ECB219C644C001CB668 /* BABIL___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BABIL___.TTF"; sourceTree = "<group>"; };
+		D98C687B21A43E8000A039F1 /* MainScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainScene.sks; sourceTree = "<group>"; };
 		D99718CD218B7F3E00BFD710 /* doof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99718D0218B7F3E00BFD710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99718D2218B7F3E00BFD710 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 			children = (
 				D9650ECB219C644C001CB668 /* BABIL___.TTF */,
 				D99718D7218B7F4000BFD710 /* Assets.xcassets */,
+				D98C687B21A43E8000A039F1 /* MainScene.sks */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 			files = (
 				D99718DB218B7F4000BFD710 /* LaunchScreen.storyboard in Resources */,
 				D99718D8218B7F4000BFD710 /* Assets.xcassets in Resources */,
+				D98C687C21A43E8000A039F1 /* MainScene.sks in Resources */,
 				D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */,
 				D9650ECC219C644C001CB668 /* BABIL___.TTF in Resources */,
 			);
@@ -638,7 +642,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -660,7 +664,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -683,7 +687,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				IBSC_MODULE = mc4_WatchKit_Extension;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-app/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = bdsm.mc4.watchkitapp;
@@ -702,7 +706,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				IBSC_MODULE = mc4_WatchKit_Extension;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-app/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = bdsm.mc4.watchkitapp;
@@ -720,7 +724,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/ios/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -738,7 +742,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/ios/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
