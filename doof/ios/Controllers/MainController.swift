@@ -30,9 +30,7 @@ class MainController: UIViewController {
     
     // MARK: Outlets
     // Outlet Scenery SKView
-    @IBOutlet weak var scenerySKView: SKView!
-    // Outlet Character SKView
-    @IBOutlet weak var characterSKView: SKView!
+    @IBOutlet weak var mainSKView: SKView!
     // Outlet Food ProgressView
     @IBOutlet weak var foodProgressView: UIProgressView!
     // Outlet Water ProgressView
@@ -47,16 +45,39 @@ class MainController: UIViewController {
     @IBOutlet weak var waterButton: UIButton!
     // Outlet Sleep Button
     @IBOutlet weak var sleepButton: UIButton!
-    // Outlet Goals Button
-    @IBOutlet weak var goalsButton: UIButton!
     // Outlet Graphics Button
     @IBOutlet weak var graphicsButton: UIButton!
-    @IBOutlet weak var shitpost: UILabel!
+    
+    // MARK: - Initializer
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Food Progress
+        self.foodTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MainController.foodUpdate), userInfo: nil, repeats: true)
+        
+        // Water Progress
+        self.waterTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MainController.waterUpdate), userInfo: nil, repeats: true)
+        
+        // Energy Progress
+        self.waterTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MainController.energyUpdate), userInfo: nil, repeats: true)
+        
+        // Happiness Progress
+        self.happinessTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MainController.happinessUpdate), userInfo: nil, repeats: true)
+        
+        // Custom Progress Bars
+        customProgessBars(progressBar: foodProgressView)
+        customProgessBars(progressBar: waterProgressView)
+        customProgessBars(progressBar: energyProgressView)
+        customProgessBars(progressBar: happinessProgressView)
+        
+        // SpriteKit
+        let scene = SKScene(fileNamed: "MainScene.sks")
+        self.mainSKView.presentScene(scene)
+    }
     
     
     // MARK: Actions & Funcs
     // Action foodButton
-    
     func customProgessBars(progressBar: UIProgressView) {
         // Deixar redondo
         progressBar.layer.cornerRadius = 5
@@ -66,10 +87,6 @@ class MainController: UIViewController {
         
         // Deixar o fundo branco
         progressBar.trackTintColor = UIColor.white
-    }
-    
-    @IBAction func foodButtonAction(_ sender: Any) {
-        shitpost.isHidden = false
     }
     
     // Action waterButton
@@ -140,32 +157,6 @@ class MainController: UIViewController {
     // Happiness time update
     @objc func happinessUpdate() {
         happinessProgressView.progress -= 0.01
-    }
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        shitpost.isHidden = true
-        
-        // Food Progress
-        self.foodTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MainController.foodUpdate), userInfo: nil, repeats: true)
-        
-        // Water Progress
-        self.waterTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MainController.waterUpdate), userInfo: nil, repeats: true)
-        
-        // Energy Progress
-        self.waterTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MainController.energyUpdate), userInfo: nil, repeats: true)
-        
-        // Happiness Progress
-        self.happinessTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MainController.happinessUpdate), userInfo: nil, repeats: true)
-        
-        // Custom Progress Bars
-        customProgessBars(progressBar: foodProgressView)
-        customProgessBars(progressBar: waterProgressView)
-        customProgessBars(progressBar: energyProgressView)
-        customProgessBars(progressBar: happinessProgressView)
     }
     
     // Prepare for segue
