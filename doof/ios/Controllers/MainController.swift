@@ -18,10 +18,12 @@ class MainController: UIViewController {
     var energyTimer = Timer()
     var isSleeping = false
     var userSelectedSleepingTime = 8.0
-    //
+    // Haptic Feedback
     let selectionFeedback = UISelectionFeedbackGenerator()
     // Slide transition
     lazy var slideTransitioningDelegate = SlidePresentationManager()
+    // SpriteKit
+    var scene:GuiozaScene?
     
     
     // MARK: Outlets
@@ -55,9 +57,10 @@ class MainController: UIViewController {
         customProgessBars(progressBar: happinessProgressView)
         
         // SpriteKit
-        let scene = SKScene(fileNamed: "MainScene.sks")
-        scene?.scaleMode = .aspectFill
-        self.mainSKView.presentScene(scene)
+//        let scene = SKScene(fileNamed: "MainScene.sks")
+//        scene?.scaleMode = .aspectFill
+//        self.mainSKView.presentScene(scene)
+        
         
         // Hide interaction buttons
         let x: CGFloat = 60
@@ -65,7 +68,22 @@ class MainController: UIViewController {
         self.waterButton.transform = CGAffineTransform(translationX: x, y: y)
         self.foodButton.transform = CGAffineTransform(translationX: 0, y: 60)
         self.sleepButton.transform = CGAffineTransform(translationX: -x, y: y)
+        
+        
+        //########################################################################
+        // MARK: Teste!!!
+        //SpriteKit
+        
+        self.scene = GuiozaScene(size: CGSize(width: self.mainSKView.frame.size.width, height: self.mainSKView.frame.size.height))
+        if let scene = self.scene {
+            scene.jumpGuioza()
+            self.mainSKView.presentScene(scene)
+        }
+        
     }
+    
+    //########################################################################
+    
     
     
     // MARK: Main Button Interaction
