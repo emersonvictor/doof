@@ -20,9 +20,8 @@ class MainController: UIViewController {
     // Sleeping state
     var isSleeping = false
     // User information
-    var userSleepingTime: Float?
-    var userMeals: Float?
-    var userWaterQtt: Float?
+    var userSleepingTime: Float? = 8
+    var userMeals: Float? = 5
     var awake: Float?
     // Haptic Feedback
     let selectionFeedback = UISelectionFeedbackGenerator()
@@ -76,7 +75,7 @@ class MainController: UIViewController {
         //SpriteKit
         
         let scene = DoofScene(size: CGSize(width: self.mainSKView.frame.size.width, height: self.mainSKView.frame.size.height))
-        scene.jumpGuioza()
+        scene.animateDoof()
         self.mainSKView.presentScene(scene)
         
     }

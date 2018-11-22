@@ -11,7 +11,7 @@ import SpriteKit
 
 class DoofScene: SKScene {
 
-    var guiozaFrames:[SKTexture]?
+    var doofFrames:[SKTexture]?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -22,20 +22,18 @@ class DoofScene: SKScene {
         self.backgroundColor = UIColor.white
         var frames:[SKTexture] = []
         
-        let guiozaAtlas = SKTextureAtlas(named: "Guioza")
+        let doofAtlas = SKTextureAtlas(named: "Guioza")
         
         for index in 1 ... 5 {
             let textureName = "\(index)"
-            let texture = guiozaAtlas.textureNamed(textureName)
+            let texture = doofAtlas.textureNamed(textureName)
             frames.append(texture)
         }
-        
-        self.guiozaFrames = frames
-        
+        self.doofFrames = frames
     }
     
-    func jumpGuioza() {
-        let texture = self.guiozaFrames![0]
+    func animateDoof() {
+        let texture = self.doofFrames![0]
         let guioza = SKSpriteNode(texture: texture)
         
         guioza.size = CGSize(width: 200, height: 250)
@@ -47,7 +45,7 @@ class DoofScene: SKScene {
         
         self.addChild(guioza)
         
-        guioza.run(SKAction.repeatForever(SKAction.animate(with: self.guiozaFrames!, timePerFrame: 0.1, resize: false, restore: true)))
+        guioza.run(SKAction.repeatForever(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.1, resize: false, restore: true)))
         
     }
     
