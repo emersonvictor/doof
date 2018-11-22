@@ -111,14 +111,6 @@
                                     <action selector="mainAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D7X-lA-MX8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prE-Vh-aDa">
-                                <rect key="frame" x="165" y="403" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="TESTE"/>
-                                <connections>
-                                    <action selector="showGuioza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="su0-Lu-faz"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -153,7 +145,6 @@
                         <outlet property="mainButton" destination="jaK-ZN-dxg" id="quU-bH-YnH"/>
                         <outlet property="mainSKView" destination="JJa-wF-hNY" id="uvs-XG-c3A"/>
                         <outlet property="sleepButton" destination="ZkA-XV-lbR" id="AFk-Pg-zmL"/>
-                        <outlet property="testeOutlt" destination="prE-Vh-aDa" id="bum-fd-Yyi"/>
                         <outlet property="waterButton" destination="2S8-7E-T1A" id="OuU-OV-NIN"/>
                         <outlet property="waterProgressView" destination="u5k-5B-dut" id="X5G-lW-IN0"/>
                     </connections>

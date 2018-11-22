@@ -74,26 +74,14 @@ class MainController: UIViewController {
         // MARK: Teste!!!
         //SpriteKit
         
-    }
-    
-    
-    @IBOutlet weak var testeOutlt: UIButton!
-    
-    @IBAction func showGuioza(_ sender: Any) {
+        self.scene = GuiozaScene(size: CGSize(width: self.mainSKView.frame.size.width, height: self.mainSKView.frame.size.height))
         if let scene = self.scene {
             scene.jumpGuioza()
-            testeOutlt.alpha = 0
+            self.mainSKView.presentScene(scene)
         }
-    }
-    
-    
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         
-        self.scene = GuiozaScene(size: CGSize(width: self.mainSKView.frame.size.width, height: self.mainSKView.frame.size.height))
-        self.mainSKView.presentScene(scene)
     }
+    
     //########################################################################
     
     
