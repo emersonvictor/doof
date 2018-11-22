@@ -149,7 +149,6 @@
 		B593DC732191B853006E2648 /* shared */ = {
 			isa = PBXGroup;
 			children = (
-				B59842AF219F0E3700F33622 /* Custom */,
 				D9650EC8219C6314001CB668 /* Extensions */,
 				B593DC812191BD44006E2648 /* Enums */,
 				B593DC742191B85B006E2648 /* Models */,
@@ -175,13 +174,6 @@
 				D9650EC2219C5298001CB668 /* PresentationDirection.swift */,
 			);
 			path = Enums;
-			sourceTree = "<group>";
-		};
-		B59842AF219F0E3700F33622 /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Custom;
 			sourceTree = "<group>";
 		};
 		D9650EBD219C51FB001CB668 /* SlidePresentation */ = {
