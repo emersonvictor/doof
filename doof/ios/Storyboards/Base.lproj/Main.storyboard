@@ -15,18 +15,18 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Page View Controller-->
+        <!--On Boarding Page Controller-->
         <scene sceneID="quR-ej-Url">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="NuP-eR-KQ0" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="NuP-eR-KQ0" customClass="OnBoardingPageController" customModule="doof" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kam-IV-KCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1478" y="-701"/>
+            <point key="canvasLocation" x="-1479" y="-661"/>
         </scene>
-        <!--View Controller-->
+        <!--On Boarding Controller-->
         <scene sceneID="ZR1-7A-BcA">
             <objects>
-                <viewController storyboardIdentifier="Introduction" id="e8J-0v-fcK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Introduction" id="e8J-0v-fcK" customClass="OnBoardingController" customModule="doof" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SCA-x3-RBB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gzp-P3-x0a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2279.1999999999998" y="89.505247376311857"/>
+            <point key="canvasLocation" x="-2194" y="90"/>
         </scene>
         <!--Main Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -191,7 +191,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1479" y="849"/>
+            <point key="canvasLocation" x="226" y="90"/>
         </scene>
         <!--Food Controller-->
         <scene sceneID="k4L-7u-Lhh">
@@ -408,12 +408,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BPK-46-k5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1479" y="1634"/>
+            <point key="canvasLocation" x="226" y="835"/>
         </scene>
-        <!--View Controller-->
+        <!--On Boarding Controller-->
         <scene sceneID="ESB-yI-Oaq">
             <objects>
-                <viewController storyboardIdentifier="Objectives" id="uz9-Vc-IcT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Objectives" id="uz9-Vc-IcT" customClass="OnBoardingController" customModule="doof" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MQW-vB-i91">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -438,10 +438,10 @@
             </objects>
             <point key="canvasLocation" x="-1479" y="90"/>
         </scene>
-        <!--View Controller-->
+        <!--On Boarding Controller-->
         <scene sceneID="zVK-HN-fwT">
             <objects>
-                <viewController storyboardIdentifier="Information" id="Ync-no-RPl" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Information" id="Ync-no-RPl" customClass="OnBoardingController" customModule="doof" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wr5-do-0FO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -451,7 +451,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vBN-mg-NlJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-638" y="90"/>
+            <point key="canvasLocation" x="-766" y="90"/>
         </scene>
     </scenes>
     <resources>

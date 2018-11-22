@@ -23,7 +23,7 @@ class MainController: UIViewController {
     // Slide transition
     lazy var slideTransitioningDelegate = SlidePresentationManager()
     // SpriteKit
-    var scene:GuiozaScene?
+    var scene:DoofScene?
     
     
     // MARK: Outlets
@@ -74,7 +74,7 @@ class MainController: UIViewController {
         // MARK: Teste!!!
         //SpriteKit
         
-        self.scene = GuiozaScene(size: CGSize(width: self.mainSKView.frame.size.width, height: self.mainSKView.frame.size.height))
+        self.scene = DoofScene(size: CGSize(width: self.mainSKView.frame.size.width, height: self.mainSKView.frame.size.height))
         if let scene = self.scene {
             scene.jumpGuioza()
             self.mainSKView.presentScene(scene)

@@ -9,7 +9,7 @@
 import UIKit
 import SpriteKit
 
-class GuiozaScene: SKScene {
+class DoofScene: SKScene {
 
     var guiozaFrames:[SKTexture]?
     
