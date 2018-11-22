@@ -11,24 +11,23 @@ import UIKit
 
 class MainController: UIViewController {
     
-    // MARK: Vars
+    // MARK: Variables
+    // Timers
     var foodTimer = Timer()
     var waterTimer = Timer()
     var happinessTimer = Timer()
     var energyTimer = Timer()
+    // Sleeping state
     var isSleeping = false
-    // User vars
-    var userSleepingTime: Float = 8
+    // User information
+    var userSleepingTime: Float?
+    var userMeals: Float?
+    var userWaterQtt: Float?
     var awake: Float?
-    var userMeals: Float = 5.0
-    var userWaterQtt: Float = 2000.0
     // Haptic Feedback
     let selectionFeedback = UISelectionFeedbackGenerator()
     // Slide transition
     lazy var slideTransitioningDelegate = SlidePresentationManager()
-    // SpriteKit
-    var scene:DoofScene?
-    
     
     // MARK: Outlets
     @IBOutlet weak var mainSKView: SKView!
@@ -46,8 +45,7 @@ class MainController: UIViewController {
     // MARK: - Initializer
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.awake = 24 - userSleepingTime
+        self.awake = 24 - userSleepingTime!
         
         // Progress timers
         self.foodTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MainController.foodUpdate), userInfo: nil, repeats: true)
@@ -77,23 +75,18 @@ class MainController: UIViewController {
         
         //SpriteKit
         
-        self.scene = DoofScene(size: CGSize(width: self.mainSKView.frame.size.width, height: self.mainSKView.frame.size.height))
-        if let scene = self.scene {
-            scene.jumpGuioza() // Change later
-            self.mainSKView.presentScene(scene)
-        }
+        let scene = DoofScene(size: CGSize(width: self.mainSKView.frame.size.width, height: self.mainSKView.frame.size.height))
+        scene.jumpGuioza()
+        self.mainSKView.presentScene(scene)
         
     }
 
     // MARK: - Progress Bar customization
     func customProgessBars(progressBar: UIProgressView) {
-        // Deixar redondo
         progressBar.layer.cornerRadius = 5
         progressBar.clipsToBounds = true
         progressBar.layer.sublayers![1].cornerRadius = 5
         progressBar.subviews[1].clipsToBounds = true
-        
-        // Deixar o fundo branco
         progressBar.trackTintColor = UIColor.white
     }
     
@@ -116,7 +109,7 @@ extension MainController {
     
     // Food time update
     @objc func foodUpdate() {
-        let timeSpaceToEat = (awake! / userMeals) * 3600
+        let timeSpaceToEat = (awake! / userMeals!) * 3600
         let fooodProgress = 0.8 / timeSpaceToEat
         foodProgressView.progress -= fooodProgress
     }
@@ -124,7 +117,7 @@ extension MainController {
     // Energy time update
     @objc func energyUpdate() {
         if isSleeping == true {
-            energyProgressView.progress += 1 / (3600 * userSleepingTime)
+            energyProgressView.progress += 1 / (3600 * userSleepingTime!)
         } else {
             energyProgressView.progress -= 1 / (3600 * awake!)
         }
