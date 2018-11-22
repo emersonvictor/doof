@@ -108,6 +108,7 @@ class FoodController: UIViewController {
         self.selectionFeedback.selectionChanged()
     }
     
+    // TODO: - Food recharge calc
     // TODO: - Touch selection to slider
 }
 
