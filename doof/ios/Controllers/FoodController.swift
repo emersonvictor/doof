@@ -107,7 +107,6 @@ class FoodController: UIViewController {
         }
         self.selectionFeedback.selectionChanged()
     }
-    
     // TODO: - Touch selection to slider
 }
 

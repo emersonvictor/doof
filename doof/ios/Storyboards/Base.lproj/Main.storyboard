@@ -15,6 +15,41 @@
         </array>
     </customFonts>
     <scenes>
+        <!--On Boarding Page Controller-->
+        <scene sceneID="quR-ej-Url">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="NuP-eR-KQ0" customClass="OnBoardingPageController" customModule="doof" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kam-IV-KCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1479" y="-661"/>
+        </scene>
+        <!--On Boarding Controller-->
+        <scene sceneID="ZR1-7A-BcA">
+            <objects>
+                <viewController storyboardIdentifier="Introduction" id="e8J-0v-fcK" customClass="OnBoardingController" customModule="doof" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SCA-x3-RBB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, I'm Doof" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBk-6j-NFP">
+                                <rect key="frame" x="108.5" y="308.5" width="158" height="50"/>
+                                <fontDescription key="fontDescription" name="BabioleLight" family="Babiole" pointSize="50"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tBk-6j-NFP" firstAttribute="centerX" secondItem="SCA-x3-RBB" secondAttribute="centerX" id="IT6-rr-WlS"/>
+                            <constraint firstItem="tBk-6j-NFP" firstAttribute="centerY" secondItem="SCA-x3-RBB" secondAttribute="centerY" id="i5x-YQ-EgU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="r0K-cu-Czi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzp-P3-x0a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2194" y="90"/>
+        </scene>
         <!--Main Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -156,7 +191,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="226" y="90"/>
         </scene>
         <!--Food Controller-->
         <scene sceneID="k4L-7u-Lhh">
@@ -373,7 +408,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BPK-46-k5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="936.79999999999995" y="133.5832083958021"/>
+            <point key="canvasLocation" x="226" y="835"/>
+        </scene>
+        <!--On Boarding Controller-->
+        <scene sceneID="ESB-yI-Oaq">
+            <objects>
+                <viewController storyboardIdentifier="Objectives" id="uz9-Vc-IcT" customClass="OnBoardingController" customModule="doof" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MQW-vB-i91">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And I'm going to help you to take care of your habits!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73R-8D-4b5">
+                                <rect key="frame" x="0.0" y="291.5" width="375" height="84"/>
+                                <fontDescription key="fontDescription" name="BabioleLight" family="Babiole" pointSize="42"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="73R-8D-4b5" firstAttribute="centerX" secondItem="MQW-vB-i91" secondAttribute="centerX" id="4aQ-SD-W41"/>
+                            <constraint firstItem="73R-8D-4b5" firstAttribute="width" secondItem="MQW-vB-i91" secondAttribute="width" id="Xps-Ne-pnt"/>
+                            <constraint firstItem="73R-8D-4b5" firstAttribute="centerY" secondItem="MQW-vB-i91" secondAttribute="centerY" id="kOt-KU-ZlB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tAw-rG-WYj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4l6-GZ-jOA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1479" y="90"/>
+        </scene>
+        <!--On Boarding Controller-->
+        <scene sceneID="zVK-HN-fwT">
+            <objects>
+                <viewController storyboardIdentifier="Information" id="Ync-no-RPl" customClass="OnBoardingController" customModule="doof" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wr5-do-0FO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="G94-wX-Ehl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vBN-mg-NlJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-766" y="90"/>
         </scene>
     </scenes>
     <resources>

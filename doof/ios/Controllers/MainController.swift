@@ -11,20 +11,22 @@ import UIKit
 
 class MainController: UIViewController {
     
-    // MARK: Vars
+    // MARK: Variables
+    // Timers
     var foodTimer = Timer()
     var waterTimer = Timer()
     var happinessTimer = Timer()
     var energyTimer = Timer()
+    // Sleeping state
     var isSleeping = false
-    var userSelectedSleepingTime = 8.0
+    // User information
+    var userSleepingTime: Float? = 8
+    var userMeals: Float? = 5
+    var awake: Float?
     // Haptic Feedback
     let selectionFeedback = UISelectionFeedbackGenerator()
     // Slide transition
     lazy var slideTransitioningDelegate = SlidePresentationManager()
-    // SpriteKit
-    var scene:GuiozaScene?
-    
     
     // MARK: Outlets
     @IBOutlet weak var mainSKView: SKView!
@@ -38,13 +40,13 @@ class MainController: UIViewController {
     @IBOutlet weak var waterButton: UIButton!
     @IBOutlet weak var foodButton: UIButton!
     @IBOutlet weak var sleepButton: UIButton!
-   
     
     // MARK: - Initializer
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.awake = 24 - userSleepingTime!
         
-        // Food Progress
+        // Progress timers
         self.foodTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MainController.foodUpdate), userInfo: nil, repeats: true)
         self.waterTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MainController.waterUpdate), userInfo: nil, repeats: true)
         self.energyTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MainController.energyUpdate), userInfo: nil, repeats: true)
@@ -70,28 +72,90 @@ class MainController: UIViewController {
         self.sleepButton.transform = CGAffineTransform(translationX: -x, y: y)
         
         
-        //########################################################################
-        // MARK: Teste!!!
         //SpriteKit
         
-        self.scene = GuiozaScene(size: CGSize(width: self.mainSKView.frame.size.width, height: self.mainSKView.frame.size.height))
-        if let scene = self.scene {
-            scene.jumpGuioza()
-            self.mainSKView.presentScene(scene)
-        }
+        let scene = DoofScene(size: CGSize(width: self.mainSKView.frame.size.width, height: self.mainSKView.frame.size.height))
+        scene.animateDoof()
+        self.mainSKView.presentScene(scene)
         
     }
+
+    // MARK: - Progress Bar customization
+    func customProgessBars(progressBar: UIProgressView) {
+        progressBar.layer.cornerRadius = 5
+        progressBar.clipsToBounds = true
+        progressBar.layer.sublayers![1].cornerRadius = 5
+        progressBar.subviews[1].clipsToBounds = true
+        progressBar.trackTintColor = UIColor.white
+    }
     
-    //########################################################################
+    // MARK: Modal segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let controller = segue.destination as? FoodController {
+            controller.transitioningDelegate = self.slideTransitioningDelegate
+            controller.modalPresentationStyle = .custom
+        }
+    }
+}
+
+// MARK: - Progress update
+extension MainController {
+    // Water time update
+    @objc func waterUpdate() {
+        let timeSpaceToDrink: Float = 0.6 / 7200
+        waterProgressView.progress -= timeSpaceToDrink
+    }
     
+    // Food time update
+    @objc func foodUpdate() {
+        let timeSpaceToEat = (awake! / userMeals!) * 3600
+        let fooodProgress = 0.8 / timeSpaceToEat
+        foodProgressView.progress -= fooodProgress
+    }
+
+    // Energy time update
+    @objc func energyUpdate() {
+        if isSleeping == true {
+            energyProgressView.progress += 1 / (3600 * userSleepingTime!)
+        } else {
+            energyProgressView.progress -= 1 / (3600 * awake!)
+        }
+    }
     
+    // Happiness time update
+    @objc func happinessUpdate() {
+        happinessProgressView.progress -= 1 / ((awake! / 3) * 3600)
+    }
+}
+
+// MARK: - Interaction buttons
+extension MainController {
+    @IBAction func waterButtonAction(_ sender: Any) {
+        self.selectionFeedback.selectionChanged()
+        waterProgressView.progress += 0.1
+    }
     
-    // MARK: Main Button Interaction
+    // Action foodButton
+    @IBAction func foodButtonAction(_ sender: Any) {
+        self.selectionFeedback.selectionChanged()
+    }
+    
+    // Action sleepButton
+    @IBAction func sleepButtonAction(_ sender: Any) {
+        self.selectionFeedback.selectionChanged()
+        isSleeping = !isSleeping
+        if isSleeping {
+            sleepButton.setTitle("Acordar", for: .normal)
+        } else {
+            sleepButton.setTitle("Dormir", for: .normal)
+        }
+    }
+    
+    // Main Button Interaction
     @IBAction func mainAction(_ sender: CircleButton) {
         sender.isSelected = !sender.isSelected
         sender.setSelectedState()
         self.willHideInteractionButtons(!sender.isSelected)
-        // TODO: - Add haptic feedback
         self.selectionFeedback.selectionChanged()
     }
     
@@ -111,88 +175,6 @@ class MainController: UIViewController {
                 self.foodButton.transform = CGAffineTransform(translationX: 0, y: 0)
                 self.sleepButton.transform = CGAffineTransform(translationX: 0, y: 0)
             }
-        }
-    }
-    
-    
-    // MARK: - Progress Bar customization
-    func customProgessBars(progressBar: UIProgressView) {
-        // Deixar redondo
-        progressBar.layer.cornerRadius = 5
-        progressBar.clipsToBounds = true
-        progressBar.layer.sublayers![1].cornerRadius = 5
-        progressBar.subviews[1].clipsToBounds = true
-        
-        // Deixar o fundo branco
-        progressBar.trackTintColor = UIColor.white
-    }
-    
-    
-    // MARK: - Actions and functions
-    // Action waterButton
-    @IBAction func waterButtonAction(_ sender: Any) {
-        self.selectionFeedback.selectionChanged()
-        waterProgressView.progress += 1
-    }
-    
-    // Action foodButton
-    @IBAction func foodButtonAction(_ sender: Any) {
-        self.selectionFeedback.selectionChanged()
-    }
-    
-    // Action sleepButton
-    @IBAction func sleepButtonAction(_ sender: Any) {
-        self.selectionFeedback.selectionChanged()
-        isSleeping = !isSleeping
-        if isSleeping {
-            sleepButton.setTitle("Acordar", for: .normal)
-        } else {
-            sleepButton.setTitle("Dormir", for: .normal)
-        }
-    }
-
-    // MARK: Elements time update
-    // Food time update
-    @objc func foodUpdate() {
-        if userSelectedSleepingTime == 8.0 {
-            foodProgressView.progress += (50 / 11.520)
-        } else {
-            let calc = ((3.2 * self.userSelectedSleepingTime)/8.0) * 360.0
-            let calc2 = 5.0 / calc
-            foodProgressView.progress += Float(calc2)
-        }
-    }
-    
-    // Water time update
-    @objc func waterUpdate() {
-        if userSelectedSleepingTime == 8.0 {
-            waterProgressView.progress += (50 / 10.800)
-        } else {
-            let calc = ((3.0 * self.userSelectedSleepingTime)/8.0) * 360.0
-            let calc2 = 5.0 / calc
-            waterProgressView.progress += Float(calc2)
-        }
-    }
-    
-    // Energy time update
-    @objc func energyUpdate() {
-        if isSleeping == true {
-            energyProgressView.progress += 0.01
-        } else {
-            energyProgressView.progress -= 0.01
-        }
-    }
-    
-    // Happiness time update
-    @objc func happinessUpdate() {
-        happinessProgressView.progress -= 0.01
-    }
-    
-    // MARK: Modal segue
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let controller = segue.destination as? FoodController {
-            controller.transitioningDelegate = self.slideTransitioningDelegate
-            controller.modalPresentationStyle = .custom
         }
     }
 }
