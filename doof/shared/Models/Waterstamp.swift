@@ -8,15 +8,12 @@
 
 import Foundation
 
-class Waterstamp {
-    
-    var time : Date
-    var quantity: Int
+class WaterstampObject {
+    var time: Date
     
     // MARK: - Initializer 
-    init(time: Date, quantity: Int){
+    init(time: Date){
         self.time = time
-        self.quantity = quantity
     }
     
     // MARK: - Save model to CoreData

@@ -10,13 +10,14 @@
 		B52C2F7421A6388600DF6CD1 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */; };
 		B52C2F7A21A63AB500DF6CD1 /* DoofScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52C2F7921A63AB500DF6CD1 /* DoofScene.swift */; };
 		B52C2F7E21A64A0E00DF6CD1 /* Guioza.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B52C2F7D21A64A0E00DF6CD1 /* Guioza.atlas */; };
-		B593DC762191B878006E2648 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC752191B878006E2648 /* Pet.swift */; };
+		B593DC762191B878006E2648 /* Doof.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC752191B878006E2648 /* Doof.swift */; };
 		B593DC7A2191B992006E2648 /* Foodstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC792191B992006E2648 /* Foodstamp.swift */; };
 		B593DC7C2191BA16006E2648 /* Waterstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7B2191BA16006E2648 /* Waterstamp.swift */; };
 		B593DC852191BD71006E2648 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC842191BD71006E2648 /* Meal.swift */; };
 		D916337821A6D39000D500B4 /* OnBoardingPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916337721A6D39000D500B4 /* OnBoardingPageController.swift */; };
 		D916337A21A6DC4B00D500B4 /* OnBoardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916337921A6DC4B00D500B4 /* OnBoardingController.swift */; };
 		D916461321A2E0EF009FFC80 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916461221A2E0EF009FFC80 /* CircleButton.swift */; };
+		D93CC13421A73006008B7535 /* Doof.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D93CC13221A73006008B7535 /* Doof.xcdatamodeld */; };
 		D9650EBC219C48C3001CB668 /* Healthiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EBB219C48C3001CB668 /* Healthiness.swift */; };
 		D9650EC1219C5245001CB668 /* SlidePresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */; };
 		D9650EC3219C5298001CB668 /* PresentationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC2219C5298001CB668 /* PresentationDirection.swift */; };
@@ -40,6 +41,9 @@
 		D99718F8218B7F4000BFD710 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718F7218B7F4000BFD710 /* NotificationController.swift */; };
 		D99718FA218B7F4000BFD710 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718F9218B7F4000BFD710 /* ComplicationController.swift */; };
 		D99718FC218B7F4100BFD710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718FB218B7F4100BFD710 /* Assets.xcassets */; };
+		D9A574EA21A73AD900BF7A2D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574E921A73AD900BF7A2D /* CoreDataManager.swift */; };
+		D9A574EC21A73D8C00BF7A2D /* UserSingletoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574EB21A73D8C00BF7A2D /* UserSingletoon.swift */; };
+		D9A574EE21A73EC500BF7A2D /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574ED21A73EC500BF7A2D /* UserObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,13 +92,14 @@
 		B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		B52C2F7921A63AB500DF6CD1 /* DoofScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoofScene.swift; sourceTree = "<group>"; };
 		B52C2F7D21A64A0E00DF6CD1 /* Guioza.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Guioza.atlas; sourceTree = "<group>"; };
-		B593DC752191B878006E2648 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		B593DC752191B878006E2648 /* Doof.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doof.swift; sourceTree = "<group>"; };
 		B593DC792191B992006E2648 /* Foodstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foodstamp.swift; sourceTree = "<group>"; };
 		B593DC7B2191BA16006E2648 /* Waterstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waterstamp.swift; sourceTree = "<group>"; };
 		B593DC842191BD71006E2648 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		D916337721A6D39000D500B4 /* OnBoardingPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnBoardingPageController.swift; path = ios/Controllers/OnBoardingPageController.swift; sourceTree = SOURCE_ROOT; };
 		D916337921A6DC4B00D500B4 /* OnBoardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnBoardingController.swift; path = ios/Controllers/OnBoardingController.swift; sourceTree = SOURCE_ROOT; };
 		D916461221A2E0EF009FFC80 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		D93CC13321A73006008B7535 /* Doof.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Doof.xcdatamodel; sourceTree = "<group>"; };
 		D9650EBB219C48C3001CB668 /* Healthiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Healthiness.swift; sourceTree = "<group>"; };
 		D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidePresentationManager.swift; sourceTree = "<group>"; };
 		D9650EC2219C5298001CB668 /* PresentationDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationDirection.swift; sourceTree = "<group>"; };
@@ -121,6 +126,9 @@
 		D99718FB218B7F4100BFD710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D99718FD218B7F4100BFD710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D99718FE218B7F4100BFD710 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D9A574E921A73AD900BF7A2D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		D9A574EB21A73D8C00BF7A2D /* UserSingletoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingletoon.swift; sourceTree = "<group>"; };
+		D9A574ED21A73EC500BF7A2D /* UserObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +161,7 @@
 		B593DC732191B853006E2648 /* shared */ = {
 			isa = PBXGroup;
 			children = (
+				D93CC13121A72F3C008B7535 /* Coredata */,
 				D9650EC8219C6314001CB668 /* Extensions */,
 				B593DC812191BD44006E2648 /* Enums */,
 				B593DC742191B85B006E2648 /* Models */,
@@ -163,9 +172,11 @@
 		B593DC742191B85B006E2648 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B593DC752191B878006E2648 /* Pet.swift */,
+				B593DC752191B878006E2648 /* Doof.swift */,
 				B593DC792191B992006E2648 /* Foodstamp.swift */,
 				B593DC7B2191BA16006E2648 /* Waterstamp.swift */,
+				D9A574EB21A73D8C00BF7A2D /* UserSingletoon.swift */,
+				D9A574ED21A73EC500BF7A2D /* UserObject.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -178,6 +189,15 @@
 				D9650EC2219C5298001CB668 /* PresentationDirection.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		D93CC13121A72F3C008B7535 /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				D93CC13221A73006008B7535 /* Doof.xcdatamodeld */,
+				D9A574E921A73AD900BF7A2D /* CoreDataManager.swift */,
+			);
+			path = Coredata;
 			sourceTree = "<group>";
 		};
 		D9650EBD219C51FB001CB668 /* SlidePresentation */ = {
@@ -464,9 +484,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B593DC762191B878006E2648 /* Pet.swift in Sources */,
+				B593DC762191B878006E2648 /* Doof.swift in Sources */,
 				D9650ECA219C6326001CB668 /* UIColor.swift in Sources */,
 				D9650EC1219C5245001CB668 /* SlidePresentationManager.swift in Sources */,
+				D9A574EA21A73AD900BF7A2D /* CoreDataManager.swift in Sources */,
 				D99718D3218B7F3E00BFD710 /* MainController.swift in Sources */,
 				D9650EBC219C48C3001CB668 /* Healthiness.swift in Sources */,
 				B52C2F7A21A63AB500DF6CD1 /* DoofScene.swift in Sources */,
@@ -474,9 +495,12 @@
 				B593DC852191BD71006E2648 /* Meal.swift in Sources */,
 				D99718D1218B7F3E00BFD710 /* AppDelegate.swift in Sources */,
 				D9650EC3219C5298001CB668 /* PresentationDirection.swift in Sources */,
+				D93CC13421A73006008B7535 /* Doof.xcdatamodeld in Sources */,
 				D9650EC7219C560A001CB668 /* SlidePresentationController.swift in Sources */,
+				D9A574EE21A73EC500BF7A2D /* UserObject.swift in Sources */,
 				D9650EC5219C546E001CB668 /* FoodController.swift in Sources */,
 				D916337A21A6DC4B00D500B4 /* OnBoardingController.swift in Sources */,
+				D9A574EC21A73D8C00BF7A2D /* UserSingletoon.swift in Sources */,
 				D916337821A6D39000D500B4 /* OnBoardingPageController.swift in Sources */,
 				B593DC7C2191BA16006E2648 /* Waterstamp.swift in Sources */,
 				B593DC7A2191B992006E2648 /* Foodstamp.swift in Sources */,
@@ -811,6 +835,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D93CC13221A73006008B7535 /* Doof.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D93CC13321A73006008B7535 /* Doof.xcdatamodel */,
+			);
+			currentVersion = D93CC13321A73006008B7535 /* Doof.xcdatamodel */;
+			path = Doof.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D99718C5218B7F3E00BFD710 /* Project object */;
 }

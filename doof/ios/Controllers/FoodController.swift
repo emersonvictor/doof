@@ -40,7 +40,7 @@ class FoodController: UIViewController {
     // MARK: - Modal options
     @IBAction func confirmAction(_ sender: UIButton) {
         if let meal = self.selectedMeal {
-            let foodstamp = Foodstamp(time: Date(), meal: meal, healthiness: self.selectedHealthiness)
+            let foodstamp = FoodstampObject(time: Date(), meal: meal, healthiness: self.selectedHealthiness)
             foodstamp.save()
             self.presentingViewController?.dismiss(animated: true)
             self.notificationFeedback.notificationOccurred(.success)

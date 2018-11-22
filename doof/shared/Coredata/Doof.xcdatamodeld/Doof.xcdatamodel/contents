@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18B75" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Doof" representedClassName="Doof" syncable="YES" codeGenerationType="class">
+        <attribute name="energy" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="food" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="happiness" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="water" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="foodstamp" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Foodstamp" inverseName="doof" inverseEntity="Foodstamp" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="doof" inverseEntity="User" syncable="YES"/>
+        <relationship name="waterstamp" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Waterstamp" inverseName="doof" inverseEntity="Waterstamp" syncable="YES"/>
+    </entity>
+    <entity name="Foodstamp" representedClassName="Foodstamp" syncable="YES" codeGenerationType="class">
+        <attribute name="healthiness" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="meal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="doof" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Doof" inverseName="foodstamp" inverseEntity="Doof" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="mealsNumber" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sleepTime" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="doof" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Doof" inverseName="user" inverseEntity="Doof" syncable="YES"/>
+    </entity>
+    <entity name="Waterstamp" representedClassName="Waterstamp" syncable="YES" codeGenerationType="class">
+        <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="doof" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Doof" inverseName="waterstamp" inverseEntity="Doof" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Doof" positionX="-54" positionY="18" width="128" height="150"/>
+        <element name="Foodstamp" positionX="-36" positionY="45" width="128" height="105"/>
+        <element name="User" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Waterstamp" positionX="-18" positionY="63" width="128" height="75"/>
+    </elements>
+</model>

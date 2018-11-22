@@ -8,10 +8,10 @@
 
 import Foundation
 
-class Foodstamp {
+class FoodstampObject {
     
-    var time : Date
-    var meal : Meal
+    var time: Date
+    var meal: Meal
     var healthiness : Healthiness
     
     // MARK: - Initializer

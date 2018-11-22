@@ -1,5 +1,5 @@
 //
-//  Pet.swift
+//  Doof.swift
 //  doof
 //
 //  Created by João Melo on 06/11/18.
@@ -8,19 +8,16 @@
 
 import Foundation
 
-class Pet {
-    
-    var name : String
-    var food : Int
-    var water : Int
-    var happiness : Int
-    var energy : Int
-    var foodHistory : [Foodstamp]
-    var waterHistory : [Waterstamp]
+class DoofObject {
+    var food: Float
+    var water: Float
+    var happiness: Float
+    var energy: Float
+    var foodHistory: [FoodstampObject]
+    var waterHistory: [WaterstampObject]
     
     // MARK: - Initializer
-    init(name: String, food: Int, water: Int, happiness: Int, energy: Int, foodHistory: [Foodstamp], waterHistory: [Waterstamp]){
-        self.name = name
+    init(food: Float, water: Float, happiness: Float, energy: Float, foodHistory: [FoodstampObject], waterHistory: [WaterstampObject]){
         self.food = food
         self.water = water
         self.happiness = happiness
