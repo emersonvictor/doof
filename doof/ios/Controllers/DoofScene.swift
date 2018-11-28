@@ -19,10 +19,10 @@ class DoofScene: SKScene {
     
     override init(size: CGSize) {
         super.init(size: size)
-        self.backgroundColor = UIColor.white
+        // Texture animation
         var frames:[SKTexture] = []
         
-        let doofAtlas = SKTextureAtlas(named: "Guioza")
+        let doofAtlas = SKTextureAtlas(named: "Doof")
         
         for index in 1 ... 5 {
             let textureName = "\(index)"
@@ -34,18 +34,18 @@ class DoofScene: SKScene {
     
     func animateDoof() {
         let texture = self.doofFrames![0]
-        let guioza = SKSpriteNode(texture: texture)
+        let doof = SKSpriteNode(texture: texture)
         
-        guioza.size = CGSize(width: 200, height: 250)
+        doof.size = CGSize(width: 200, height: 250)
         
-        let guiozaX = self.frame.size.width / 2
-        let guiozaY = self.frame.size.height / 2
+        let doofX = self.frame.size.width / 2
+        let doofY = self.frame.size.height / 2
         
-        guioza.position = CGPoint(x: guiozaX, y: guiozaY)
+        doof.position = CGPoint(x: doofX, y: doofY)
         
-        self.addChild(guioza)
+        self.addChild(doof)
         
-        guioza.run(SKAction.repeatForever(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.1, resize: false, restore: true)))
+        doof.run(SKAction.repeatForever(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.1, resize: false, restore: true)))
         
     }
     

@@ -59,9 +59,9 @@ class MainController: UIViewController {
         customProgessBars(progressBar: happinessProgressView)
         
         // SpriteKit
-//        let scene = SKScene(fileNamed: "MainScene.sks")
-//        scene?.scaleMode = .aspectFill
-//        self.mainSKView.presentScene(scene)
+        let scene = SKScene(fileNamed: "Main.sks")
+        scene?.scaleMode = .aspectFill
+        self.mainSKView.presentScene(scene)
         
         
         // Hide interaction buttons
@@ -70,14 +70,11 @@ class MainController: UIViewController {
         self.waterButton.transform = CGAffineTransform(translationX: x, y: y)
         self.foodButton.transform = CGAffineTransform(translationX: 0, y: 60)
         self.sleepButton.transform = CGAffineTransform(translationX: -x, y: y)
-        
-        
-        //SpriteKit
-        
-        let scene = DoofScene(size: CGSize(width: self.mainSKView.frame.size.width, height: self.mainSKView.frame.size.height))
-        scene.animateDoof()
-        self.mainSKView.presentScene(scene)
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        super.viewWillAppear(animated)
     }
 
     // MARK: - Progress Bar customization

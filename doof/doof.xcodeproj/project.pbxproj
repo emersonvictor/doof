@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B52C2F7421A6388600DF6CD1 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */; };
 		B52C2F7A21A63AB500DF6CD1 /* DoofScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52C2F7921A63AB500DF6CD1 /* DoofScene.swift */; };
-		B52C2F7E21A64A0E00DF6CD1 /* Guioza.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B52C2F7D21A64A0E00DF6CD1 /* Guioza.atlas */; };
 		B593DC762191B878006E2648 /* Doof.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC752191B878006E2648 /* Doof.swift */; };
 		B593DC7A2191B992006E2648 /* Foodstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC792191B992006E2648 /* Foodstamp.swift */; };
 		B593DC7C2191BA16006E2648 /* Waterstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7B2191BA16006E2648 /* Waterstamp.swift */; };
@@ -44,6 +43,9 @@
 		D9A574EA21A73AD900BF7A2D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574E921A73AD900BF7A2D /* CoreDataManager.swift */; };
 		D9A574EC21A73D8C00BF7A2D /* UserSingletoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574EB21A73D8C00BF7A2D /* UserSingletoon.swift */; };
 		D9A574EE21A73EC500BF7A2D /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574ED21A73EC500BF7A2D /* UserObject.swift */; };
+		D9C72EA721AECE7C0026C1FC /* Main.sks in Resources */ = {isa = PBXBuildFile; fileRef = D9C72EA621AECE7C0026C1FC /* Main.sks */; };
+		D9C72EA921AED60D0026C1FC /* Doof.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D9C72EA821AED60D0026C1FC /* Doof.atlas */; };
+		D9C72EAB21AEECFF0026C1FC /* StatisticsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C72EAA21AEECFF0026C1FC /* StatisticsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,7 +93,6 @@
 /* Begin PBXFileReference section */
 		B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		B52C2F7921A63AB500DF6CD1 /* DoofScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoofScene.swift; sourceTree = "<group>"; };
-		B52C2F7D21A64A0E00DF6CD1 /* Guioza.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Guioza.atlas; sourceTree = "<group>"; };
 		B593DC752191B878006E2648 /* Doof.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doof.swift; sourceTree = "<group>"; };
 		B593DC792191B992006E2648 /* Foodstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foodstamp.swift; sourceTree = "<group>"; };
 		B593DC7B2191BA16006E2648 /* Waterstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waterstamp.swift; sourceTree = "<group>"; };
@@ -129,6 +130,9 @@
 		D9A574E921A73AD900BF7A2D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		D9A574EB21A73D8C00BF7A2D /* UserSingletoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingletoon.swift; sourceTree = "<group>"; };
 		D9A574ED21A73EC500BF7A2D /* UserObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
+		D9C72EA621AECE7C0026C1FC /* Main.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Main.sks; sourceTree = "<group>"; };
+		D9C72EA821AED60D0026C1FC /* Doof.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Doof.atlas; sourceTree = "<group>"; };
+		D9C72EAA21AEECFF0026C1FC /* StatisticsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +284,7 @@
 				D99718D2218B7F3E00BFD710 /* MainController.swift */,
 				D9650EC4219C546E001CB668 /* FoodController.swift */,
 				B52C2F7921A63AB500DF6CD1 /* DoofScene.swift */,
+				D9C72EAA21AEECFF0026C1FC /* StatisticsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -287,7 +292,7 @@
 		D997190E218B7FDF00BFD710 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B52C2F7D21A64A0E00DF6CD1 /* Guioza.atlas */,
+				D9C72EA821AED60D0026C1FC /* Doof.atlas */,
 				D9650ECB219C644C001CB668 /* BABIL___.TTF */,
 				D99718D7218B7F4000BFD710 /* Assets.xcassets */,
 			);
@@ -297,6 +302,7 @@
 		D997190F218B7FE800BFD710 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				D9C72EA621AECE7C0026C1FC /* Main.sks */,
 				D99718D4218B7F3E00BFD710 /* Main.storyboard */,
 				D99718D9218B7F4000BFD710 /* LaunchScreen.storyboard */,
 			);
@@ -450,9 +456,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9C72EA721AECE7C0026C1FC /* Main.sks in Resources */,
 				D99718DB218B7F4000BFD710 /* LaunchScreen.storyboard in Resources */,
-				B52C2F7E21A64A0E00DF6CD1 /* Guioza.atlas in Resources */,
 				D99718D8218B7F4000BFD710 /* Assets.xcassets in Resources */,
+				D9C72EA921AED60D0026C1FC /* Doof.atlas in Resources */,
 				D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */,
 				D9650ECC219C644C001CB668 /* BABIL___.TTF in Resources */,
 			);
@@ -488,6 +495,7 @@
 				D9650ECA219C6326001CB668 /* UIColor.swift in Sources */,
 				D9650EC1219C5245001CB668 /* SlidePresentationManager.swift in Sources */,
 				D9A574EA21A73AD900BF7A2D /* CoreDataManager.swift in Sources */,
+				D9C72EAB21AEECFF0026C1FC /* StatisticsController.swift in Sources */,
 				D99718D3218B7F3E00BFD710 /* MainController.swift in Sources */,
 				D9650EBC219C48C3001CB668 /* Healthiness.swift in Sources */,
 				B52C2F7A21A63AB500DF6CD1 /* DoofScene.swift in Sources */,
