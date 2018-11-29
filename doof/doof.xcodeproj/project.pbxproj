@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5089BD921B065F900AF51F6 /* Doof_Eating in Resources */ = {isa = PBXBuildFile; fileRef = B5089BD821B065F900AF51F6 /* Doof_Eating */; };
+		B5089BDB21B070F500AF51F6 /* Doof_StartSleeping.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B5089BDA21B070F500AF51F6 /* Doof_StartSleeping.atlas */; };
+		B5089BDD21B0710D00AF51F6 /* Doof_Eating.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B5089BDC21B0710D00AF51F6 /* Doof_Eating.atlas */; };
 		B52C2F7421A6388600DF6CD1 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */; };
 		B52C2F7A21A63AB500DF6CD1 /* DoofScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52C2F7921A63AB500DF6CD1 /* DoofScene.swift */; };
 		B5645C5821B01F14002AE802 /* Doof_Smiling.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B5645C5721B01F14002AE802 /* Doof_Smiling.atlas */; };
@@ -98,7 +99,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B5089BD821B065F900AF51F6 /* Doof_Eating */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Doof_Eating; sourceTree = "<group>"; };
+		B5089BDA21B070F500AF51F6 /* Doof_StartSleeping.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Doof_StartSleeping.atlas; sourceTree = "<group>"; };
+		B5089BDC21B0710D00AF51F6 /* Doof_Eating.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Doof_Eating.atlas; sourceTree = "<group>"; };
 		B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		B52C2F7921A63AB500DF6CD1 /* DoofScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoofScene.swift; sourceTree = "<group>"; };
 		B5645C5721B01F14002AE802 /* Doof_Smiling.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Doof_Smiling.atlas; sourceTree = "<group>"; };
@@ -326,7 +328,8 @@
 		D997190E218B7FDF00BFD710 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B5089BD821B065F900AF51F6 /* Doof_Eating */,
+				B5089BDC21B0710D00AF51F6 /* Doof_Eating.atlas */,
+				B5089BDA21B070F500AF51F6 /* Doof_StartSleeping.atlas */,
 				B5645C5721B01F14002AE802 /* Doof_Smiling.atlas */,
 				D9C72EA821AED60D0026C1FC /* Doof.atlas */,
 				D9650ECB219C644C001CB668 /* BABIL___.TTF */,
@@ -496,11 +499,12 @@
 				D9C72EA721AECE7C0026C1FC /* Main.sks in Resources */,
 				D99718DB218B7F4000BFD710 /* LaunchScreen.storyboard in Resources */,
 				D99718D8218B7F4000BFD710 /* Assets.xcassets in Resources */,
+				B5089BDB21B070F500AF51F6 /* Doof_StartSleeping.atlas in Resources */,
 				D91A5F4221AF52A500F3538B /* StatisticsWeekCell.xib in Resources */,
-				B5089BD921B065F900AF51F6 /* Doof_Eating in Resources */,
 				D9C72EA921AED60D0026C1FC /* Doof.atlas in Resources */,
 				D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */,
 				D91A5F4621AF52BE00F3538B /* StatisticsCell.xib in Resources */,
+				B5089BDD21B0710D00AF51F6 /* Doof_Eating.atlas in Resources */,
 				B5645C5821B01F14002AE802 /* Doof_Smiling.atlas in Resources */,
 				D9650ECC219C644C001CB668 /* BABIL___.TTF in Resources */,
 			);

@@ -34,11 +34,13 @@ class DoofNode: SKSpriteNode {
         
         let doofAtlas = SKTextureAtlas(named: "Doof")
         
+        
         for index in 1 ... 5 {
             let textureName = "\(index)"
             let texture = doofAtlas.textureNamed(textureName)
             frames.append(texture)
         }
+
         
         for index in stride(from:5,through:1,by:-1)  {
             let textureName = "\(index)"
