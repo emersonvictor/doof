@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B52C2F7421A6388600DF6CD1 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */; };
 		B52C2F7A21A63AB500DF6CD1 /* DoofScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52C2F7921A63AB500DF6CD1 /* DoofScene.swift */; };
-		B5645C5821B01F14002AE802 /* Doof_Smiling.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B5645C5721B01F14002AE802 /* Doof_Smiling.atlas */; };
+		B5645C5821B01F14002AE802 /* DoofSmiling.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B5645C5721B01F14002AE802 /* DoofSmiling.atlas */; };
 		B593DC762191B878006E2648 /* Doof.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC752191B878006E2648 /* Doof.swift */; };
 		B593DC7A2191B992006E2648 /* Foodstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC792191B992006E2648 /* Foodstamp.swift */; };
 		B593DC7C2191BA16006E2648 /* Waterstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7B2191BA16006E2648 /* Waterstamp.swift */; };
@@ -25,10 +25,18 @@
 		D91A5F4821B01E7000F3538B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718D7218B7F4000BFD710 /* Assets.xcassets */; };
 		D91A5F4921B01E7000F3538B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718D7218B7F4000BFD710 /* Assets.xcassets */; };
 		D91A5F4B21B0303800F3538B /* MainWatch.sks in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4A21B0303800F3538B /* MainWatch.sks */; };
-		D91A5F4D21B030F700F3538B /* Doof.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D9C72EA821AED60D0026C1FC /* Doof.atlas */; };
 		D91A5F4E21B030F800F3538B /* Doof.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D9C72EA821AED60D0026C1FC /* Doof.atlas */; };
 		D91A5F4F21B0339700F3538B /* MainWatch.sks in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4A21B0303800F3538B /* MainWatch.sks */; };
+		D923B58F21B07BD9003EA137 /* DoofSmiling.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B5645C5721B01F14002AE802 /* DoofSmiling.atlas */; };
+		D923B59021B07BD9003EA137 /* Doof.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D9C72EA821AED60D0026C1FC /* Doof.atlas */; };
+		D923B59121B07BD9003EA137 /* DoofSmiling.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B5645C5721B01F14002AE802 /* DoofSmiling.atlas */; };
 		D93CC13421A73006008B7535 /* Doof.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D93CC13221A73006008B7535 /* Doof.xcdatamodeld */; };
+		D94A0BC621B0845E00ED7807 /* WKHealthinessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BC521B0845E00ED7807 /* WKHealthinessController.swift */; };
+		D94A0BC721B0846C00ED7807 /* WKMealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BC221B0843900ED7807 /* WKMealController.swift */; };
+		D94A0BC921B084FE00ED7807 /* WKMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BC821B084FE00ED7807 /* WKMainController.swift */; };
+		D94A0BCA21B0878200ED7807 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC842191BD71006E2648 /* Meal.swift */; };
+		D94A0BCB21B0878500ED7807 /* Healthiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EBB219C48C3001CB668 /* Healthiness.swift */; };
+		D94A0BCC21B0878D00ED7807 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC9219C6326001CB668 /* UIColor.swift */; };
 		D9650EBC219C48C3001CB668 /* Healthiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EBB219C48C3001CB668 /* Healthiness.swift */; };
 		D9650EC1219C5245001CB668 /* SlidePresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */; };
 		D9650EC3219C5298001CB668 /* PresentationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC2219C5298001CB668 /* PresentationDirection.swift */; };
@@ -46,11 +54,9 @@
 		D99718E0218B7F4000BFD710 /* doof WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D99718DF218B7F4000BFD710 /* doof WatchKit App.app */; };
 		D99718E6218B7F4000BFD710 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99718E4218B7F4000BFD710 /* Interface.storyboard */; };
 		D99718EF218B7F4000BFD710 /* doof WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D99718EE218B7F4000BFD710 /* doof WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		D99718F4218B7F4000BFD710 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718F3218B7F4000BFD710 /* InterfaceController.swift */; };
 		D99718F6218B7F4000BFD710 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718F5218B7F4000BFD710 /* ExtensionDelegate.swift */; };
 		D99718F8218B7F4000BFD710 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718F7218B7F4000BFD710 /* NotificationController.swift */; };
 		D99718FA218B7F4000BFD710 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718F9218B7F4000BFD710 /* ComplicationController.swift */; };
-		D99718FC218B7F4100BFD710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718FB218B7F4100BFD710 /* Assets.xcassets */; };
 		D9A574EA21A73AD900BF7A2D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574E921A73AD900BF7A2D /* CoreDataManager.swift */; };
 		D9A574EC21A73D8C00BF7A2D /* UserSingletoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574EB21A73D8C00BF7A2D /* UserSingletoon.swift */; };
 		D9A574EE21A73EC500BF7A2D /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574ED21A73EC500BF7A2D /* UserObject.swift */; };
@@ -104,7 +110,7 @@
 /* Begin PBXFileReference section */
 		B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		B52C2F7921A63AB500DF6CD1 /* DoofScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoofScene.swift; sourceTree = "<group>"; };
-		B5645C5721B01F14002AE802 /* Doof_Smiling.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Doof_Smiling.atlas; sourceTree = "<group>"; };
+		B5645C5721B01F14002AE802 /* DoofSmiling.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = DoofSmiling.atlas; sourceTree = "<group>"; };
 		B593DC752191B878006E2648 /* Doof.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doof.swift; sourceTree = "<group>"; };
 		B593DC792191B992006E2648 /* Foodstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foodstamp.swift; sourceTree = "<group>"; };
 		B593DC7B2191BA16006E2648 /* Waterstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waterstamp.swift; sourceTree = "<group>"; };
@@ -119,6 +125,9 @@
 		D91A5F4421AF52BE00F3538B /* StatisticsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticsCell.xib; sourceTree = "<group>"; };
 		D91A5F4A21B0303800F3538B /* MainWatch.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainWatch.sks; sourceTree = "<group>"; };
 		D93CC13321A73006008B7535 /* Doof.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Doof.xcdatamodel; sourceTree = "<group>"; };
+		D94A0BC221B0843900ED7807 /* WKMealController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKMealController.swift; sourceTree = "<group>"; };
+		D94A0BC521B0845E00ED7807 /* WKHealthinessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKHealthinessController.swift; sourceTree = "<group>"; };
+		D94A0BC821B084FE00ED7807 /* WKMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKMainController.swift; sourceTree = "<group>"; };
 		D9650EBB219C48C3001CB668 /* Healthiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Healthiness.swift; sourceTree = "<group>"; };
 		D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidePresentationManager.swift; sourceTree = "<group>"; };
 		D9650EC2219C5298001CB668 /* PresentationDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationDirection.swift; sourceTree = "<group>"; };
@@ -137,11 +146,9 @@
 		D99718E5218B7F4000BFD710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		D99718E9218B7F4000BFD710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D99718EE218B7F4000BFD710 /* doof WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "doof WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D99718F3218B7F4000BFD710 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		D99718F5218B7F4000BFD710 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		D99718F7218B7F4000BFD710 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		D99718F9218B7F4000BFD710 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
-		D99718FB218B7F4100BFD710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D99718FD218B7F4100BFD710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D99718FE218B7F4100BFD710 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		D9A574E921A73AD900BF7A2D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -235,6 +242,8 @@
 			isa = PBXGroup;
 			children = (
 				D99718D7218B7F4000BFD710 /* Assets.xcassets */,
+				B5645C5721B01F14002AE802 /* DoofSmiling.atlas */,
+				D9C72EA821AED60D0026C1FC /* Doof.atlas */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -313,7 +322,6 @@
 		D99718F2218B7F4000BFD710 /* doof-watchkit-extension */ = {
 			isa = PBXGroup;
 			children = (
-				D9971913218B805300BFD710 /* Resources */,
 				D9971912218B802000BFD710 /* Controllers */,
 				D99718F5218B7F4000BFD710 /* ExtensionDelegate.swift */,
 				D99718FD218B7F4100BFD710 /* Info.plist */,
@@ -338,8 +346,6 @@
 		D997190E218B7FDF00BFD710 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B5645C5721B01F14002AE802 /* Doof_Smiling.atlas */,
-				D9C72EA821AED60D0026C1FC /* Doof.atlas */,
 				D9650ECB219C644C001CB668 /* BABIL___.TTF */,
 			);
 			path = Resources;
@@ -358,19 +364,13 @@
 		D9971912218B802000BFD710 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D99718F3218B7F4000BFD710 /* InterfaceController.swift */,
 				D99718F7218B7F4000BFD710 /* NotificationController.swift */,
 				D99718F9218B7F4000BFD710 /* ComplicationController.swift */,
+				D94A0BC821B084FE00ED7807 /* WKMainController.swift */,
+				D94A0BC221B0843900ED7807 /* WKMealController.swift */,
+				D94A0BC521B0845E00ED7807 /* WKHealthinessController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		D9971913218B805300BFD710 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				D99718FB218B7F4100BFD710 /* Assets.xcassets */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		D9971915218B80B700BFD710 /* watchos */ = {
@@ -472,6 +472,7 @@
 					};
 					D99718DE218B7F4000BFD710 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					D99718ED218B7F4000BFD710 = {
 						CreatedOnToolsVersion = 10.1;
@@ -510,7 +511,7 @@
 				D9C72EA921AED60D0026C1FC /* Doof.atlas in Resources */,
 				D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */,
 				D91A5F4621AF52BE00F3538B /* StatisticsCell.xib in Resources */,
-				B5645C5821B01F14002AE802 /* Doof_Smiling.atlas in Resources */,
+				B5645C5821B01F14002AE802 /* DoofSmiling.atlas in Resources */,
 				D9650ECC219C644C001CB668 /* BABIL___.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,8 +522,9 @@
 			files = (
 				D91A5F4B21B0303800F3538B /* MainWatch.sks in Resources */,
 				D99718E6218B7F4000BFD710 /* Interface.storyboard in Resources */,
+				D923B58F21B07BD9003EA137 /* DoofSmiling.atlas in Resources */,
+				D923B59021B07BD9003EA137 /* Doof.atlas in Resources */,
 				D91A5F4821B01E7000F3538B /* Assets.xcassets in Resources */,
-				D91A5F4D21B030F700F3538B /* Doof.atlas in Resources */,
 				D9650ECD219C644C001CB668 /* BABIL___.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,11 +533,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D99718FC218B7F4100BFD710 /* Assets.xcassets in Resources */,
 				D91A5F4E21B030F800F3538B /* Doof.atlas in Resources */,
 				D91A5F4921B01E7000F3538B /* Assets.xcassets in Resources */,
 				D9650ECE219C644C001CB668 /* BABIL___.TTF in Resources */,
 				D91A5F4F21B0339700F3538B /* MainWatch.sks in Resources */,
+				D923B59121B07BD9003EA137 /* DoofSmiling.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,10 +579,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D94A0BC921B084FE00ED7807 /* WKMainController.swift in Sources */,
 				D99718F8218B7F4000BFD710 /* NotificationController.swift in Sources */,
+				D94A0BCA21B0878200ED7807 /* Meal.swift in Sources */,
 				D99718FA218B7F4000BFD710 /* ComplicationController.swift in Sources */,
+				D94A0BCC21B0878D00ED7807 /* UIColor.swift in Sources */,
+				D94A0BCB21B0878500ED7807 /* Healthiness.swift in Sources */,
+				D94A0BC721B0846C00ED7807 /* WKMealController.swift in Sources */,
 				D99718F6218B7F4000BFD710 /* ExtensionDelegate.swift in Sources */,
-				D99718F4218B7F4000BFD710 /* InterfaceController.swift in Sources */,
+				D94A0BC621B0845E00ED7807 /* WKHealthinessController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,7 +755,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -770,7 +777,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -792,14 +799,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				IBSC_MODULE = mc4_WatchKit_Extension;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = bdsm.doof.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "watchos/doof-watchkit-extension/Controllers/doof WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.3;
@@ -811,14 +826,21 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				IBSC_MODULE = mc4_WatchKit_Extension;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = bdsm.doof.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "watchos/doof-watchkit-extension/Controllers/doof WatchKit App-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.3;
@@ -830,7 +852,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/ios/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -848,7 +870,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/ios/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

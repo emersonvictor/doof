@@ -8,6 +8,7 @@
 
 import UIKit
 import SpriteKit
+import WatchKit
 
 class DoofNode: SKSpriteNode {
     
@@ -16,8 +17,8 @@ class DoofNode: SKSpriteNode {
     init() {
         let texture = SKTexture(imageNamed: "Doof.atlas/1.png")
         super.init(texture: texture, color: SKColor.clear, size: texture.size())
-        self.name = "doofMain"
         self.isUserInteractionEnabled = true
+        self.name = "doofMain"
         self.animateDoof()
     }
     
@@ -28,10 +29,8 @@ class DoofNode: SKSpriteNode {
     }
     
     func animateDoof() {
-        
         // Texture animation
         var frames:[SKTexture] = []
-        
         let doofAtlas = SKTextureAtlas(named: "Doof")
         
         for index in 1 ... 5 {
@@ -51,12 +50,11 @@ class DoofNode: SKSpriteNode {
         self.run(SKAction.repeatForever(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.1, resize: false, restore: true)))
     }
     
-    
+    // MARK: - Touch animation
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.removeAllActions()
         var frames:[SKTexture] = []
-        
-        let doofAtlas = SKTextureAtlas(named: "Doof_Smiling")
+        let doofAtlas = SKTextureAtlas(named: "DoofSmiling")
         
         for index in 1 ... 5 {
             let textureName = "\(index)"
@@ -65,23 +63,11 @@ class DoofNode: SKSpriteNode {
         }
         
         self.doofFrames = frames
-        
         self.run(SKAction.repeatForever(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.1, resize: false, restore: true)))
-        
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
         self.removeAllActions()
         self.animateDoof()
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }

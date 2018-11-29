@@ -12,7 +12,7 @@
         <!--Doof-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller title="Doof" fullBounds="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="doof_WatchKit_App" customModuleProvider="target">
+                <controller title="Doof" fullBounds="YES" id="AgC-eL-Hgc" customClass="WKMainController" customModule="doof_WatchKit_Extension">
                     <items>
                         <spriteKitScene width="1" height="1" alignment="left" scene="MainWatch.sks" id="kIP-qO-ADe"/>
                     </items>
@@ -23,6 +23,9 @@
                             <menuItem title="Sleep" id="oX5-dc-Haa"/>
                         </items>
                     </menu>
+                    <connections>
+                        <outlet property="doofScene" destination="kIP-qO-ADe" id="Mew-cI-z3K"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="527" y="1184"/>
@@ -30,7 +33,7 @@
         <!--Meal-->
         <scene sceneID="SB0-by-B4H">
             <objects>
-                <controller title="Meal" contentMode="scaleAspectFit" spacing="1" fullBounds="YES" fullScreen="YES" id="SkT-b3-x5D">
+                <controller title="Meal" contentMode="scaleAspectFit" spacing="1" fullBounds="YES" id="SkT-b3-x5D" customClass="WKMealController" customModule="doof_WatchKit_Extension">
                     <items>
                         <group width="1" height="0.39000000000000001" alignment="left" radius="0.0" spacing="15" id="Ga4-AH-LBa">
                             <items>
@@ -38,6 +41,9 @@
                                     <items>
                                         <button width="1" height="1" alignment="left" id="5YE-g8-HXe">
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="eatBreakfast" destination="SkT-b3-x5D" id="Pkc-Th-5Pc"/>
+                                            </connections>
                                         </button>
                                     </items>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -47,6 +53,9 @@
                                     <items>
                                         <button width="1" height="1" alignment="left" id="poK-YX-UJo">
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="eatLunch" destination="SkT-b3-x5D" id="fVs-Z1-z10"/>
+                                            </connections>
                                         </button>
                                     </items>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -60,6 +69,9 @@
                                     <items>
                                         <button width="1" height="1" alignment="left" id="5Jk-GB-gwt">
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="eatDinner" destination="SkT-b3-x5D" id="SYh-7e-j2R"/>
+                                            </connections>
                                         </button>
                                     </items>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -69,6 +81,9 @@
                                     <items>
                                         <button width="1" height="1" alignment="left" id="636-Xe-A5i">
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="eatSnack" destination="SkT-b3-x5D" id="ybj-WI-Zz0"/>
+                                            </connections>
                                         </button>
                                     </items>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -76,25 +91,48 @@
                                 </group>
                             </items>
                         </group>
-                        <button width="1" height="0.22" alignment="left" title="confirm" id="2Jb-TB-pAF"/>
+                        <button width="1" height="0.22" alignment="left" title="confirm" id="2Jb-TB-pAF">
+                            <connections>
+                                <action selector="confirmMeal" destination="SkT-b3-x5D" id="jaH-Vi-eT8"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="breakfastBtn" destination="5YE-g8-HXe" id="wpv-l1-Sop"/>
+                        <outlet property="dinnerBtn" destination="5Jk-GB-gwt" id="iz1-o3-bhk"/>
+                        <outlet property="lunchBtn" destination="poK-YX-UJo" id="GRa-Vx-S8E"/>
+                        <outlet property="snackBtn" destination="636-Xe-A5i" id="gRE-5Q-bTz"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="783" y="1184"/>
+            <point key="canvasLocation" x="735" y="1184"/>
         </scene>
         <!--Healthiness-->
         <scene sceneID="fgs-pn-6Sc">
             <objects>
-                <controller title="Healthiness" id="pqp-nZ-3E1">
+                <controller title="Healthiness" contentMode="scaleAspectFit" fullBounds="YES" id="pqp-nZ-3E1" customClass="WKHealthinessController" customModule="doof_WatchKit_Extension">
                     <items>
-                        <label width="1" height="0.69999999999999996" alignment="left" text="Unhealthy" textAlignment="center" id="7IO-eg-5FW"/>
+                        <label width="1" height="0.40000000000000002" alignment="left" text="Unhealthy" textAlignment="center" id="7IO-eg-5FW"/>
                         <slider width="1" alignment="left" value="1" maximum="4" steps="4" id="bAW-jG-HcC">
                             <color key="color" red="0.76862745099999996" green="0.31372549020000001" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="changeHealthiness:" destination="pqp-nZ-3E1" id="HCu-16-2ic"/>
+                            </connections>
                         </slider>
+                        <group width="1" height="19" alignment="left" id="8pB-D9-zMX"/>
+                        <button width="1" height="0.22" alignment="left" title="confirm" id="CwE-3Y-txz">
+                            <connections>
+                                <action selector="feedDoof" destination="pqp-nZ-3E1" id="WAZ-QO-FBc"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="healthinessLabel" destination="7IO-eg-5FW" id="yfo-iK-NnL"/>
+                        <outlet property="slider" destination="bAW-jG-HcC" id="eXN-do-Pth"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="986" y="1184"/>
+            <point key="canvasLocation" x="944" y="1184"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

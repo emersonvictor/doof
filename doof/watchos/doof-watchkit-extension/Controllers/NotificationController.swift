@@ -1,6 +1,6 @@
 //
 //  NotificationController.swift
-//  mc4 WatchKit Extension
+//  doof WatchKit Extension
 //
 //  Created by Emerson Victor on 01/11/18.
 //  Copyright © 2018 BDSM. All rights reserved.

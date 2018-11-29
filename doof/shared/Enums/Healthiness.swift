@@ -8,6 +8,6 @@
 
 import Foundation
 
-enum Healthiness {
+enum Healthiness: String {
     case unhealthy, lessHealthy, healthy, veryHealthy
 }

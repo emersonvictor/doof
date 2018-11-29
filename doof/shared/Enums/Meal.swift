@@ -8,6 +8,6 @@
 
 import Foundation
 
-enum Meal {
+enum Meal: String {
     case breakfast, lunch, dinner, snack
 }
