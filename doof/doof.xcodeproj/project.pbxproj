@@ -16,6 +16,10 @@
 		D916337821A6D39000D500B4 /* OnBoardingPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916337721A6D39000D500B4 /* OnBoardingPageController.swift */; };
 		D916337A21A6DC4B00D500B4 /* OnBoardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916337921A6DC4B00D500B4 /* OnBoardingController.swift */; };
 		D916461321A2E0EF009FFC80 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916461221A2E0EF009FFC80 /* CircleButton.swift */; };
+		D91A5F4121AF52A500F3538B /* StatisticsWeekCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A5F3F21AF52A500F3538B /* StatisticsWeekCell.swift */; };
+		D91A5F4221AF52A500F3538B /* StatisticsWeekCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4021AF52A500F3538B /* StatisticsWeekCell.xib */; };
+		D91A5F4521AF52BE00F3538B /* StatisticsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A5F4321AF52BE00F3538B /* StatisticsCell.swift */; };
+		D91A5F4621AF52BE00F3538B /* StatisticsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4421AF52BE00F3538B /* StatisticsCell.xib */; };
 		D93CC13421A73006008B7535 /* Doof.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D93CC13221A73006008B7535 /* Doof.xcdatamodeld */; };
 		D9650EBC219C48C3001CB668 /* Healthiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EBB219C48C3001CB668 /* Healthiness.swift */; };
 		D9650EC1219C5245001CB668 /* SlidePresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */; };
@@ -100,6 +104,10 @@
 		D916337721A6D39000D500B4 /* OnBoardingPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnBoardingPageController.swift; path = ios/Controllers/OnBoardingPageController.swift; sourceTree = SOURCE_ROOT; };
 		D916337921A6DC4B00D500B4 /* OnBoardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnBoardingController.swift; path = ios/Controllers/OnBoardingController.swift; sourceTree = SOURCE_ROOT; };
 		D916461221A2E0EF009FFC80 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		D91A5F3F21AF52A500F3538B /* StatisticsWeekCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsWeekCell.swift; sourceTree = "<group>"; };
+		D91A5F4021AF52A500F3538B /* StatisticsWeekCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticsWeekCell.xib; sourceTree = "<group>"; };
+		D91A5F4321AF52BE00F3538B /* StatisticsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsCell.swift; sourceTree = "<group>"; };
+		D91A5F4421AF52BE00F3538B /* StatisticsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticsCell.xib; sourceTree = "<group>"; };
 		D93CC13321A73006008B7535 /* Doof.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Doof.xcdatamodel; sourceTree = "<group>"; };
 		D9650EBB219C48C3001CB668 /* Healthiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Healthiness.swift; sourceTree = "<group>"; };
 		D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidePresentationManager.swift; sourceTree = "<group>"; };
@@ -195,6 +203,24 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+		D91A5F3D21AF524C00F3538B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D91A5F3F21AF52A500F3538B /* StatisticsWeekCell.swift */,
+				D91A5F4321AF52BE00F3538B /* StatisticsCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D91A5F3E21AF525800F3538B /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				D91A5F4021AF52A500F3538B /* StatisticsWeekCell.xib */,
+				D91A5F4421AF52BE00F3538B /* StatisticsCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
 		D93CC13121A72F3C008B7535 /* Coredata */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +271,8 @@
 		D99718CF218B7F3E00BFD710 /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				D91A5F3E21AF525800F3538B /* Xibs */,
+				D91A5F3D21AF524C00F3538B /* Views */,
 				D9FD9257219F0E320080BB89 /* Custom */,
 				D9971919218B81CF00BFD710 /* Application */,
 				D997190E218B7FDF00BFD710 /* Resources */,
@@ -459,8 +487,10 @@
 				D9C72EA721AECE7C0026C1FC /* Main.sks in Resources */,
 				D99718DB218B7F4000BFD710 /* LaunchScreen.storyboard in Resources */,
 				D99718D8218B7F4000BFD710 /* Assets.xcassets in Resources */,
+				D91A5F4221AF52A500F3538B /* StatisticsWeekCell.xib in Resources */,
 				D9C72EA921AED60D0026C1FC /* Doof.atlas in Resources */,
 				D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */,
+				D91A5F4621AF52BE00F3538B /* StatisticsCell.xib in Resources */,
 				D9650ECC219C644C001CB668 /* BABIL___.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +528,7 @@
 				D9C72EAB21AEECFF0026C1FC /* StatisticsController.swift in Sources */,
 				D99718D3218B7F3E00BFD710 /* MainController.swift in Sources */,
 				D9650EBC219C48C3001CB668 /* Healthiness.swift in Sources */,
+				D91A5F4521AF52BE00F3538B /* StatisticsCell.swift in Sources */,
 				B52C2F7A21A63AB500DF6CD1 /* DoofScene.swift in Sources */,
 				D916461321A2E0EF009FFC80 /* CircleButton.swift in Sources */,
 				B593DC852191BD71006E2648 /* Meal.swift in Sources */,
@@ -507,6 +538,7 @@
 				D9650EC7219C560A001CB668 /* SlidePresentationController.swift in Sources */,
 				D9A574EE21A73EC500BF7A2D /* UserObject.swift in Sources */,
 				D9650EC5219C546E001CB668 /* FoodController.swift in Sources */,
+				D91A5F4121AF52A500F3538B /* StatisticsWeekCell.swift in Sources */,
 				D916337A21A6DC4B00D500B4 /* OnBoardingController.swift in Sources */,
 				D9A574EC21A73D8C00BF7A2D /* UserSingletoon.swift in Sources */,
 				D916337821A6D39000D500B4 /* OnBoardingPageController.swift in Sources */,

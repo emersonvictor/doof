@@ -46,7 +46,6 @@ class DoofScene: SKScene {
         self.addChild(doof)
         
         doof.run(SKAction.repeatForever(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.1, resize: false, restore: true)))
-        
     }
     
     
