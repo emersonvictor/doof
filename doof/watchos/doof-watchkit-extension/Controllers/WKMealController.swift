@@ -19,6 +19,7 @@ class WKMealController: WKInterfaceController {
     @IBOutlet var snackBtn: WKInterfaceButton!
     
     // MARK: - Variables
+    let backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.1)
     var selectedMeal:Meal? = nil
     
     // MARK: - Initializers
@@ -36,23 +37,27 @@ class WKMealController: WKInterfaceController {
     
     // MARK: - Actions
     @IBAction func eatBreakfast() {
+        self.selectedMeal = .breakfast
         self.clearButtons()
-        self.breakfastBtn.setBackgroundColor(UIColor(red: 1, green: 1, blue: 1, alpha: 0.3))
+        self.breakfastBtn.setBackgroundColor(self.backgroundColor)
     }
     
     @IBAction func eatLunch() {
+        self.selectedMeal = .lunch
         self.clearButtons()
-        self.lunchBtn.setBackgroundColor(UIColor(red: 1, green: 1, blue: 1, alpha: 0.3))
+        self.lunchBtn.setBackgroundColor(self.backgroundColor)
     }
     
     @IBAction func eatDinner() {
+        self.selectedMeal = .dinner
         self.clearButtons()
-        self.dinnerBtn.setBackgroundColor(UIColor(red: 1, green: 1, blue: 1, alpha: 0.3))
+        self.dinnerBtn.setBackgroundColor(self.backgroundColor)
     }
     
     @IBAction func eatSnack() {
+        self.selectedMeal = .dinner
         self.clearButtons()
-        self.snackBtn.setBackgroundColor(UIColor(red: 1, green: 1, blue: 1, alpha: 0.3))
+        self.snackBtn.setBackgroundColor(self.backgroundColor)
     }
     
     @IBAction func confirmMeal() {
@@ -60,9 +65,9 @@ class WKMealController: WKInterfaceController {
             let ok = WKAlertAction(title: "OK", style: .default) {
                 self.dismiss()
             }
-            self.presentAlert(withTitle: "Refeição não selecionada", message: "Antes de alimentar doof você precisa selecionar uma refeição", preferredStyle: .alert, actions: [ok])
+            self.presentAlert(withTitle: "Choose a meal", message: "Ops, it looks like you didn't choose a meal", preferredStyle: .alert, actions: [ok])
         } else {
-            self.presentController(withName: "WKHealthinessController", context: self.selectedMeal)
+            self.presentController(withName: "HealthinessController", context: self.selectedMeal)
         }
     }
 }

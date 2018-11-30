@@ -15,34 +15,36 @@ class DoofNode: SKSpriteNode {
     var doofFrames:[SKTexture]?
     
     init() {
-        let texture = SKTexture(imageNamed: "Doof.atlas/1.png")
+        let texture = SKTexture(imageNamed: "idle.atlas/1.png")
         super.init(texture: texture, color: SKColor.clear, size: texture.size())
         self.isUserInteractionEnabled = true
         self.name = "doofMain"
-        self.animateDoof()
+        self.animate(withState: .idle)
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.isUserInteractionEnabled = true
-        self.animateDoof()
+        self.animate(withState: .idle)
     }
     
-    func animateDoof() {
+    func animate(withState state: DoofStates) {
         // Texture animation
         var frames:[SKTexture] = []
-        let doofAtlas = SKTextureAtlas(named: "Doof")
-        
+        let doofAtlas = SKTextureAtlas(named: state.rawValue)
+    
         for index in 1 ... 5 {
             let textureName = "\(index)"
             let texture = doofAtlas.textureNamed(textureName)
             frames.append(texture)
         }
         
-        for index in stride(from:5,through:1,by:-1)  {
-            let textureName = "\(index)"
-            let texture = doofAtlas.textureNamed(textureName)
-            frames.append(texture)
+        if state == .idle {
+            for index in stride(from:5,through:1,by:-1)  {
+                let textureName = "\(index)"
+                let texture = doofAtlas.textureNamed(textureName)
+                frames.append(texture)
+            }
         }
         
         self.doofFrames = frames
@@ -53,21 +55,11 @@ class DoofNode: SKSpriteNode {
     // MARK: - Touch animation
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.removeAllActions()
-        var frames:[SKTexture] = []
-        let doofAtlas = SKTextureAtlas(named: "DoofSmiling")
-        
-        for index in 1 ... 5 {
-            let textureName = "\(index)"
-            let texture = doofAtlas.textureNamed(textureName)
-            frames.append(texture)
-        }
-        
-        self.doofFrames = frames
-        self.run(SKAction.repeatForever(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.1, resize: false, restore: true)))
+        self.animate(withState: .smiling)
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.removeAllActions()
-        self.animateDoof()
+        self.animate(withState: .idle)
     }
 }

@@ -40,15 +40,22 @@ class FoodController: UIViewController {
     // MARK: - Modal options
     @IBAction func confirmAction(_ sender: UIButton) {
         if let meal = self.selectedMeal {
+            // Save food stamp
             let foodstamp = FoodstampObject(time: Date(), meal: meal, healthiness: self.selectedHealthiness)
             foodstamp.save()
-            self.presentingViewController?.dismiss(animated: true)
+            
             self.notificationFeedback.notificationOccurred(.success)
+            self.presentingViewController?.dismiss(animated: true) {
+                if let parent = self.presentingViewController {
+                    let main = parent as! MainController
+                    main.doofNode!.animate(withState: .eating)
+                }
+            }
         } else {
             let alert = UIAlertController(title: "Refeição não selecionada", message: "Antes de alimentar doof você precisa selecionar uma refeição", preferredStyle: .alert)
             
             let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
-            
+
             alert.addAction(okAction)
             self.present(alert, animated: true, completion: nil)
         }
@@ -107,7 +114,6 @@ class FoodController: UIViewController {
         }
         self.selectionFeedback.selectionChanged()
     }
-    // TODO: - Touch selection to slider
 }
 
 

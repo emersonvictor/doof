@@ -20,7 +20,7 @@ class WKHealthinessController: WKInterfaceController {
     var selectedMeal: Meal? = nil
     var selectedHealthiness: Healthiness = .unhealthy
     
-    // MARK: - Initializer
+    // MARK: - Initializers
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         self.selectedMeal = context as? Meal
@@ -52,6 +52,6 @@ class WKHealthinessController: WKInterfaceController {
     
     @IBAction func feedDoof() {
         print("comeu")
-        self.presentController(withName: "WKMainController", context: nil)
+        self.presentController(withName: "MainController", context: nil)
     }
 }

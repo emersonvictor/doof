@@ -10,14 +10,10 @@ import UIKit
 import SpriteKit
 
 class DoofScene: SKScene {
-
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
     override init(size: CGSize) {
         super.init(size: size)
     }
-    
-    
 }

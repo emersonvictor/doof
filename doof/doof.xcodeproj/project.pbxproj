@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B52C2F7421A6388600DF6CD1 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */; };
 		B52C2F7A21A63AB500DF6CD1 /* DoofScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52C2F7921A63AB500DF6CD1 /* DoofScene.swift */; };
-		B5645C5821B01F14002AE802 /* DoofSmiling.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B5645C5721B01F14002AE802 /* DoofSmiling.atlas */; };
 		B593DC762191B878006E2648 /* Doof.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC752191B878006E2648 /* Doof.swift */; };
 		B593DC7A2191B992006E2648 /* Foodstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC792191B992006E2648 /* Foodstamp.swift */; };
 		B593DC7C2191BA16006E2648 /* Waterstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7B2191BA16006E2648 /* Waterstamp.swift */; };
@@ -25,11 +24,7 @@
 		D91A5F4821B01E7000F3538B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718D7218B7F4000BFD710 /* Assets.xcassets */; };
 		D91A5F4921B01E7000F3538B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718D7218B7F4000BFD710 /* Assets.xcassets */; };
 		D91A5F4B21B0303800F3538B /* MainWatch.sks in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4A21B0303800F3538B /* MainWatch.sks */; };
-		D91A5F4E21B030F800F3538B /* Doof.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D9C72EA821AED60D0026C1FC /* Doof.atlas */; };
 		D91A5F4F21B0339700F3538B /* MainWatch.sks in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4A21B0303800F3538B /* MainWatch.sks */; };
-		D923B58F21B07BD9003EA137 /* DoofSmiling.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B5645C5721B01F14002AE802 /* DoofSmiling.atlas */; };
-		D923B59021B07BD9003EA137 /* Doof.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D9C72EA821AED60D0026C1FC /* Doof.atlas */; };
-		D923B59121B07BD9003EA137 /* DoofSmiling.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B5645C5721B01F14002AE802 /* DoofSmiling.atlas */; };
 		D93CC13421A73006008B7535 /* Doof.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D93CC13221A73006008B7535 /* Doof.xcdatamodeld */; };
 		D94A0BC621B0845E00ED7807 /* WKHealthinessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BC521B0845E00ED7807 /* WKHealthinessController.swift */; };
 		D94A0BC721B0846C00ED7807 /* WKMealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BC221B0843900ED7807 /* WKMealController.swift */; };
@@ -37,6 +32,10 @@
 		D94A0BCA21B0878200ED7807 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC842191BD71006E2648 /* Meal.swift */; };
 		D94A0BCB21B0878500ED7807 /* Healthiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EBB219C48C3001CB668 /* Healthiness.swift */; };
 		D94A0BCC21B0878D00ED7807 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC9219C6326001CB668 /* UIColor.swift */; };
+		D94A0BCE21B0B9A900ED7807 /* DoofStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BCD21B0B9A900ED7807 /* DoofStates.swift */; };
+		D94A0BCF21B0B9AC00ED7807 /* DoofStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BCD21B0B9A900ED7807 /* DoofStates.swift */; };
+		D94A0BE821B0C88700ED7807 /* MainController+ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BE721B0C88700ED7807 /* MainController+ProgressBar.swift */; };
+		D94A0BEA21B0C8AC00ED7807 /* MainController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BE921B0C8AC00ED7807 /* MainController+Actions.swift */; };
 		D9650EBC219C48C3001CB668 /* Healthiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EBB219C48C3001CB668 /* Healthiness.swift */; };
 		D9650EC1219C5245001CB668 /* SlidePresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */; };
 		D9650EC3219C5298001CB668 /* PresentationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC2219C5298001CB668 /* PresentationDirection.swift */; };
@@ -61,7 +60,6 @@
 		D9A574EC21A73D8C00BF7A2D /* UserSingletoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574EB21A73D8C00BF7A2D /* UserSingletoon.swift */; };
 		D9A574EE21A73EC500BF7A2D /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574ED21A73EC500BF7A2D /* UserObject.swift */; };
 		D9C72EA721AECE7C0026C1FC /* Main.sks in Resources */ = {isa = PBXBuildFile; fileRef = D9C72EA621AECE7C0026C1FC /* Main.sks */; };
-		D9C72EA921AED60D0026C1FC /* Doof.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D9C72EA821AED60D0026C1FC /* Doof.atlas */; };
 		D9C72EAB21AEECFF0026C1FC /* StatisticsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C72EAA21AEECFF0026C1FC /* StatisticsController.swift */; };
 /* End PBXBuildFile section */
 
@@ -110,7 +108,6 @@
 /* Begin PBXFileReference section */
 		B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		B52C2F7921A63AB500DF6CD1 /* DoofScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoofScene.swift; sourceTree = "<group>"; };
-		B5645C5721B01F14002AE802 /* DoofSmiling.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = DoofSmiling.atlas; sourceTree = "<group>"; };
 		B593DC752191B878006E2648 /* Doof.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doof.swift; sourceTree = "<group>"; };
 		B593DC792191B992006E2648 /* Foodstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foodstamp.swift; sourceTree = "<group>"; };
 		B593DC7B2191BA16006E2648 /* Waterstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waterstamp.swift; sourceTree = "<group>"; };
@@ -128,6 +125,9 @@
 		D94A0BC221B0843900ED7807 /* WKMealController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKMealController.swift; sourceTree = "<group>"; };
 		D94A0BC521B0845E00ED7807 /* WKHealthinessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKHealthinessController.swift; sourceTree = "<group>"; };
 		D94A0BC821B084FE00ED7807 /* WKMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKMainController.swift; sourceTree = "<group>"; };
+		D94A0BCD21B0B9A900ED7807 /* DoofStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoofStates.swift; sourceTree = "<group>"; };
+		D94A0BE721B0C88700ED7807 /* MainController+ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainController+ProgressBar.swift"; sourceTree = "<group>"; };
+		D94A0BE921B0C8AC00ED7807 /* MainController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainController+Actions.swift"; sourceTree = "<group>"; };
 		D9650EBB219C48C3001CB668 /* Healthiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Healthiness.swift; sourceTree = "<group>"; };
 		D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidePresentationManager.swift; sourceTree = "<group>"; };
 		D9650EC2219C5298001CB668 /* PresentationDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationDirection.swift; sourceTree = "<group>"; };
@@ -155,7 +155,6 @@
 		D9A574EB21A73D8C00BF7A2D /* UserSingletoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingletoon.swift; sourceTree = "<group>"; };
 		D9A574ED21A73EC500BF7A2D /* UserObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
 		D9C72EA621AECE7C0026C1FC /* Main.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Main.sks; sourceTree = "<group>"; };
-		D9C72EA821AED60D0026C1FC /* Doof.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Doof.atlas; sourceTree = "<group>"; };
 		D9C72EAA21AEECFF0026C1FC /* StatisticsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,6 +215,7 @@
 				B593DC842191BD71006E2648 /* Meal.swift */,
 				D9650EBB219C48C3001CB668 /* Healthiness.swift */,
 				D9650EC2219C5298001CB668 /* PresentationDirection.swift */,
+				D94A0BCD21B0B9A900ED7807 /* DoofStates.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -242,8 +242,6 @@
 			isa = PBXGroup;
 			children = (
 				D99718D7218B7F4000BFD710 /* Assets.xcassets */,
-				B5645C5721B01F14002AE802 /* DoofSmiling.atlas */,
-				D9C72EA821AED60D0026C1FC /* Doof.atlas */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -255,6 +253,16 @@
 				D9A574E921A73AD900BF7A2D /* CoreDataManager.swift */,
 			);
 			path = Coredata;
+			sourceTree = "<group>";
+		};
+		D94A0BE621B0C86300ED7807 /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				D99718D2218B7F3E00BFD710 /* MainController.swift */,
+				D94A0BE721B0C88700ED7807 /* MainController+ProgressBar.swift */,
+				D94A0BE921B0C8AC00ED7807 /* MainController+Actions.swift */,
+			);
+			path = MainController;
 			sourceTree = "<group>";
 		};
 		D9650EBD219C51FB001CB668 /* SlidePresentation */ = {
@@ -303,7 +311,7 @@
 				D9FD9257219F0E320080BB89 /* Custom */,
 				D9971919218B81CF00BFD710 /* Application */,
 				D997190E218B7FDF00BFD710 /* Resources */,
-				D997190F218B7FE800BFD710 /* Storyboards */,
+				D997190F218B7FE800BFD710 /* Interfaces */,
 				D997190C218B7FC800BFD710 /* Controllers */,
 			);
 			path = ios;
@@ -333,9 +341,9 @@
 		D997190C218B7FC800BFD710 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D94A0BE621B0C86300ED7807 /* MainController */,
 				D916337921A6DC4B00D500B4 /* OnBoardingController.swift */,
 				D916337721A6D39000D500B4 /* OnBoardingPageController.swift */,
-				D99718D2218B7F3E00BFD710 /* MainController.swift */,
 				D9650EC4219C546E001CB668 /* FoodController.swift */,
 				B52C2F7921A63AB500DF6CD1 /* DoofScene.swift */,
 				D9C72EAA21AEECFF0026C1FC /* StatisticsController.swift */,
@@ -351,14 +359,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		D997190F218B7FE800BFD710 /* Storyboards */ = {
+		D997190F218B7FE800BFD710 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
 				D9C72EA621AECE7C0026C1FC /* Main.sks */,
 				D99718D4218B7F3E00BFD710 /* Main.storyboard */,
 				D99718D9218B7F4000BFD710 /* LaunchScreen.storyboard */,
 			);
-			path = Storyboards;
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 		D9971912218B802000BFD710 /* Controllers */ = {
@@ -508,10 +516,8 @@
 				D99718DB218B7F4000BFD710 /* LaunchScreen.storyboard in Resources */,
 				D99718D8218B7F4000BFD710 /* Assets.xcassets in Resources */,
 				D91A5F4221AF52A500F3538B /* StatisticsWeekCell.xib in Resources */,
-				D9C72EA921AED60D0026C1FC /* Doof.atlas in Resources */,
 				D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */,
 				D91A5F4621AF52BE00F3538B /* StatisticsCell.xib in Resources */,
-				B5645C5821B01F14002AE802 /* DoofSmiling.atlas in Resources */,
 				D9650ECC219C644C001CB668 /* BABIL___.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,8 +528,6 @@
 			files = (
 				D91A5F4B21B0303800F3538B /* MainWatch.sks in Resources */,
 				D99718E6218B7F4000BFD710 /* Interface.storyboard in Resources */,
-				D923B58F21B07BD9003EA137 /* DoofSmiling.atlas in Resources */,
-				D923B59021B07BD9003EA137 /* Doof.atlas in Resources */,
 				D91A5F4821B01E7000F3538B /* Assets.xcassets in Resources */,
 				D9650ECD219C644C001CB668 /* BABIL___.TTF in Resources */,
 			);
@@ -533,11 +537,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D91A5F4E21B030F800F3538B /* Doof.atlas in Resources */,
 				D91A5F4921B01E7000F3538B /* Assets.xcassets in Resources */,
 				D9650ECE219C644C001CB668 /* BABIL___.TTF in Resources */,
 				D91A5F4F21B0339700F3538B /* MainWatch.sks in Resources */,
-				D923B59121B07BD9003EA137 /* DoofSmiling.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,17 +550,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D94A0BE821B0C88700ED7807 /* MainController+ProgressBar.swift in Sources */,
 				B593DC762191B878006E2648 /* Doof.swift in Sources */,
 				D9650ECA219C6326001CB668 /* UIColor.swift in Sources */,
 				D9650EC1219C5245001CB668 /* SlidePresentationManager.swift in Sources */,
 				D9A574EA21A73AD900BF7A2D /* CoreDataManager.swift in Sources */,
 				D9C72EAB21AEECFF0026C1FC /* StatisticsController.swift in Sources */,
 				D99718D3218B7F3E00BFD710 /* MainController.swift in Sources */,
+				D94A0BEA21B0C8AC00ED7807 /* MainController+Actions.swift in Sources */,
 				D9650EBC219C48C3001CB668 /* Healthiness.swift in Sources */,
 				D91A5F4521AF52BE00F3538B /* StatisticsCell.swift in Sources */,
 				B52C2F7A21A63AB500DF6CD1 /* DoofScene.swift in Sources */,
 				D916461321A2E0EF009FFC80 /* CircleButton.swift in Sources */,
 				B593DC852191BD71006E2648 /* Meal.swift in Sources */,
+				D94A0BCF21B0B9AC00ED7807 /* DoofStates.swift in Sources */,
 				D99718D1218B7F3E00BFD710 /* AppDelegate.swift in Sources */,
 				D9650EC3219C5298001CB668 /* PresentationDirection.swift in Sources */,
 				D93CC13421A73006008B7535 /* Doof.xcdatamodeld in Sources */,
@@ -580,6 +585,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D94A0BC921B084FE00ED7807 /* WKMainController.swift in Sources */,
+				D94A0BCE21B0B9A900ED7807 /* DoofStates.swift in Sources */,
 				D99718F8218B7F4000BFD710 /* NotificationController.swift in Sources */,
 				D94A0BCA21B0878200ED7807 /* Meal.swift in Sources */,
 				D99718FA218B7F4000BFD710 /* ComplicationController.swift in Sources */,
