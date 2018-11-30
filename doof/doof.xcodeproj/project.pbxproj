@@ -21,8 +21,6 @@
 		D91A5F4221AF52A500F3538B /* StatisticsWeekCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4021AF52A500F3538B /* StatisticsWeekCell.xib */; };
 		D91A5F4521AF52BE00F3538B /* StatisticsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A5F4321AF52BE00F3538B /* StatisticsCell.swift */; };
 		D91A5F4621AF52BE00F3538B /* StatisticsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4421AF52BE00F3538B /* StatisticsCell.xib */; };
-		D91A5F4821B01E7000F3538B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718D7218B7F4000BFD710 /* Assets.xcassets */; };
-		D91A5F4921B01E7000F3538B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718D7218B7F4000BFD710 /* Assets.xcassets */; };
 		D91A5F4B21B0303800F3538B /* MainWatch.sks in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4A21B0303800F3538B /* MainWatch.sks */; };
 		D91A5F4F21B0339700F3538B /* MainWatch.sks in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4A21B0303800F3538B /* MainWatch.sks */; };
 		D93CC13421A73006008B7535 /* Doof.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D93CC13221A73006008B7535 /* Doof.xcdatamodeld */; };
@@ -36,6 +34,12 @@
 		D94A0BCF21B0B9AC00ED7807 /* DoofStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BCD21B0B9A900ED7807 /* DoofStates.swift */; };
 		D94A0BE821B0C88700ED7807 /* MainController+ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BE721B0C88700ED7807 /* MainController+ProgressBar.swift */; };
 		D94A0BEA21B0C8AC00ED7807 /* MainController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BE921B0C8AC00ED7807 /* MainController+Actions.swift */; };
+		D94A0BEC21B0CE6200ED7807 /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94A0BEB21B0CE6200ED7807 /* Animations.xcassets */; };
+		D94A0BED21B0CED500ED7807 /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94A0BEB21B0CE6200ED7807 /* Animations.xcassets */; };
+		D94A0BEE21B0CED600ED7807 /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94A0BEB21B0CE6200ED7807 /* Animations.xcassets */; };
+		D94A0BF121B0D23B00ED7807 /* MainProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BF021B0D23B00ED7807 /* MainProgressBar.swift */; };
+		D94A0BF221B0E51300ED7807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718D7218B7F4000BFD710 /* Assets.xcassets */; };
+		D94A0BF321B0E51300ED7807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718D7218B7F4000BFD710 /* Assets.xcassets */; };
 		D9650EBC219C48C3001CB668 /* Healthiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EBB219C48C3001CB668 /* Healthiness.swift */; };
 		D9650EC1219C5245001CB668 /* SlidePresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */; };
 		D9650EC3219C5298001CB668 /* PresentationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC2219C5298001CB668 /* PresentationDirection.swift */; };
@@ -128,6 +132,8 @@
 		D94A0BCD21B0B9A900ED7807 /* DoofStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoofStates.swift; sourceTree = "<group>"; };
 		D94A0BE721B0C88700ED7807 /* MainController+ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainController+ProgressBar.swift"; sourceTree = "<group>"; };
 		D94A0BE921B0C8AC00ED7807 /* MainController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainController+Actions.swift"; sourceTree = "<group>"; };
+		D94A0BEB21B0CE6200ED7807 /* Animations.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Animations.xcassets; sourceTree = "<group>"; };
+		D94A0BF021B0D23B00ED7807 /* MainProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProgressBar.swift; sourceTree = "<group>"; };
 		D9650EBB219C48C3001CB668 /* Healthiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Healthiness.swift; sourceTree = "<group>"; };
 		D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidePresentationManager.swift; sourceTree = "<group>"; };
 		D9650EC2219C5298001CB668 /* PresentationDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationDirection.swift; sourceTree = "<group>"; };
@@ -188,11 +194,11 @@
 		B593DC732191B853006E2648 /* shared */ = {
 			isa = PBXGroup;
 			children = (
-				D91A5F4721B0165900F3538B /* Resources */,
 				D93CC13121A72F3C008B7535 /* Coredata */,
-				D9650EC8219C6314001CB668 /* Extensions */,
 				B593DC812191BD44006E2648 /* Enums */,
+				D9650EC8219C6314001CB668 /* Extensions */,
 				B593DC742191B85B006E2648 /* Models */,
+				D91A5F4721B0165900F3538B /* Resources */,
 			);
 			path = shared;
 			sourceTree = "<group>";
@@ -242,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				D99718D7218B7F4000BFD710 /* Assets.xcassets */,
+				D94A0BEB21B0CE6200ED7807 /* Animations.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -265,6 +272,15 @@
 			path = MainController;
 			sourceTree = "<group>";
 		};
+		D94A0BEF21B0D04D00ED7807 /* SpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				B52C2F7921A63AB500DF6CD1 /* DoofScene.swift */,
+				B5ECBF2C21B0242200D7C858 /* DoofNode.swift */,
+			);
+			path = SpriteKit;
+			sourceTree = "<group>";
+		};
 		D9650EBD219C51FB001CB668 /* SlidePresentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,10 +302,10 @@
 			isa = PBXGroup;
 			children = (
 				B593DC732191B853006E2648 /* shared */,
-				D9971915218B80B700BFD710 /* watchos */,
 				D99718CF218B7F3E00BFD710 /* ios */,
-				D99718CE218B7F3E00BFD710 /* Products */,
+				D9971915218B80B700BFD710 /* watchos */,
 				B52C2F7221A6388600DF6CD1 /* Frameworks */,
+				D99718CE218B7F3E00BFD710 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -306,13 +322,14 @@
 		D99718CF218B7F3E00BFD710 /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				D91A5F3E21AF525800F3538B /* Xibs */,
-				D91A5F3D21AF524C00F3538B /* Views */,
-				D9FD9257219F0E320080BB89 /* Custom */,
 				D9971919218B81CF00BFD710 /* Application */,
-				D997190E218B7FDF00BFD710 /* Resources */,
-				D997190F218B7FE800BFD710 /* Interfaces */,
 				D997190C218B7FC800BFD710 /* Controllers */,
+				D9FD9257219F0E320080BB89 /* Custom */,
+				D997190F218B7FE800BFD710 /* Interfaces */,
+				D997190E218B7FDF00BFD710 /* Resources */,
+				D94A0BEF21B0D04D00ED7807 /* SpriteKit */,
+				D91A5F3D21AF524C00F3538B /* Views */,
+				D91A5F3E21AF525800F3538B /* Xibs */,
 			);
 			path = ios;
 			sourceTree = "<group>";
@@ -341,12 +358,11 @@
 		D997190C218B7FC800BFD710 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D94A0BE621B0C86300ED7807 /* MainController */,
+				D9650EC4219C546E001CB668 /* FoodController.swift */,
 				D916337921A6DC4B00D500B4 /* OnBoardingController.swift */,
 				D916337721A6D39000D500B4 /* OnBoardingPageController.swift */,
-				D9650EC4219C546E001CB668 /* FoodController.swift */,
-				B52C2F7921A63AB500DF6CD1 /* DoofScene.swift */,
 				D9C72EAA21AEECFF0026C1FC /* StatisticsController.swift */,
+				D94A0BE621B0C86300ED7807 /* MainController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -404,7 +420,7 @@
 			children = (
 				D9650EBD219C51FB001CB668 /* SlidePresentation */,
 				D916461221A2E0EF009FFC80 /* CircleButton.swift */,
-				B5ECBF2C21B0242200D7C858 /* DoofNode.swift */,
+				D94A0BF021B0D23B00ED7807 /* MainProgressBar.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -514,6 +530,7 @@
 			files = (
 				D9C72EA721AECE7C0026C1FC /* Main.sks in Resources */,
 				D99718DB218B7F4000BFD710 /* LaunchScreen.storyboard in Resources */,
+				D94A0BEC21B0CE6200ED7807 /* Animations.xcassets in Resources */,
 				D99718D8218B7F4000BFD710 /* Assets.xcassets in Resources */,
 				D91A5F4221AF52A500F3538B /* StatisticsWeekCell.xib in Resources */,
 				D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */,
@@ -527,9 +544,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D91A5F4B21B0303800F3538B /* MainWatch.sks in Resources */,
+				D94A0BED21B0CED500ED7807 /* Animations.xcassets in Resources */,
 				D99718E6218B7F4000BFD710 /* Interface.storyboard in Resources */,
-				D91A5F4821B01E7000F3538B /* Assets.xcassets in Resources */,
 				D9650ECD219C644C001CB668 /* BABIL___.TTF in Resources */,
+				D94A0BF221B0E51300ED7807 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,8 +555,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D91A5F4921B01E7000F3538B /* Assets.xcassets in Resources */,
 				D9650ECE219C644C001CB668 /* BABIL___.TTF in Resources */,
+				D94A0BEE21B0CED600ED7807 /* Animations.xcassets in Resources */,
+				D94A0BF321B0E51300ED7807 /* Assets.xcassets in Resources */,
 				D91A5F4F21B0339700F3538B /* MainWatch.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,6 +588,7 @@
 				D93CC13421A73006008B7535 /* Doof.xcdatamodeld in Sources */,
 				D9650EC7219C560A001CB668 /* SlidePresentationController.swift in Sources */,
 				B5ECBF2D21B0242200D7C858 /* DoofNode.swift in Sources */,
+				D94A0BF121B0D23B00ED7807 /* MainProgressBar.swift in Sources */,
 				D9A574EE21A73EC500BF7A2D /* UserObject.swift in Sources */,
 				D9650EC5219C546E001CB668 /* FoodController.swift in Sources */,
 				D91A5F4121AF52A500F3538B /* StatisticsWeekCell.swift in Sources */,

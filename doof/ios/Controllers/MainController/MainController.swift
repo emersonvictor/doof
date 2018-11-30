@@ -55,12 +55,6 @@ class MainController: UIViewController {
         self.energyTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MainController.energyUpdate), userInfo: nil, repeats: true)
         self.happinessTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MainController.happinessUpdate), userInfo: nil, repeats: true)
         
-        // Custom Progress Bars
-        customProgessBars(progressBar: foodProgressView)
-        customProgessBars(progressBar: waterProgressView)
-        customProgessBars(progressBar: energyProgressView)
-        customProgessBars(progressBar: happinessProgressView)
-        
         // SpriteKit
         let scene = SKScene(fileNamed: "Main.sks")
         scene?.scaleMode = .aspectFill
@@ -74,21 +68,16 @@ class MainController: UIViewController {
         
         super.viewWillAppear(animated)
     }
-
-    // MARK: - Progress Bar customization
-    func customProgessBars(progressBar: UIProgressView) {
-        progressBar.layer.cornerRadius = 5
-        progressBar.clipsToBounds = true
-        progressBar.layer.sublayers![1].cornerRadius = 5
-        progressBar.subviews[1].clipsToBounds = true
-        progressBar.trackTintColor = UIColor.white
-    }
     
     // MARK: Modal segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
         if let controller = segue.destination as? FoodController {
             controller.transitioningDelegate = self.slideTransitioningDelegate
             controller.modalPresentationStyle = .custom
+        } else if let _ = segue.destination as? StatisticsController {
+            self.selectionFeedback.selectionChanged()
         }
     }
 }

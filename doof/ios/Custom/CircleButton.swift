@@ -23,9 +23,9 @@ import UIKit
     func setSelectedState() {
         if self.isSelected {
             UIView.animate(withDuration: 0.6) {
-                self.layer.shadowOpacity = 0.43
+                self.layer.shadowOpacity = 0.5
                 self.layer.shadowOffset = CGSize(width: 0, height: 0)
-                self.layer.shadowRadius = 3
+                self.layer.shadowRadius = 2
             }
         } else {
             UIView.animate(withDuration: 0.6) {

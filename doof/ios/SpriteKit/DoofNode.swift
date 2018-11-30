@@ -34,21 +34,29 @@ class DoofNode: SKSpriteNode {
         let doofAtlas = SKTextureAtlas(named: state.rawValue)
     
         for index in 1 ... 5 {
-            let textureName = "\(index)"
+            let textureName = "\(state.rawValue)\(index)"
             let texture = doofAtlas.textureNamed(textureName)
             frames.append(texture)
         }
         
-        if state == .idle {
+        switch state {
+        case .idle:
             for index in stride(from:5,through:1,by:-1)  {
-                let textureName = "\(index)"
+                let textureName = "\(state.rawValue)\(index)"
                 let texture = doofAtlas.textureNamed(textureName)
                 frames.append(texture)
             }
+        case .smiling:
+            break
+        case .eating:
+            break
+        case .drinking:
+            break
+        case .sleeping:
+            break
         }
         
         self.doofFrames = frames
-        
         self.run(SKAction.repeatForever(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.1, resize: false, restore: true)))
     }
     
