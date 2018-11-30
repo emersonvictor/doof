@@ -63,19 +63,20 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                             </skView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWt-oN-ICZ" customClass="CircleButton" customModule="doof" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWt-oN-ICZ" customClass="CircleButton" customModule="doof" customModuleProvider="target">
                                 <rect key="frame" x="165" y="498" width="45" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Y2h-SN-f5M"/>
                                     <constraint firstAttribute="width" constant="45" id="zI5-ac-rQh"/>
                                 </constraints>
+                                <state key="normal" image="food"/>
                                 <connections>
                                     <action selector="foodButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sej-6o-TX3"/>
                                     <segue destination="j4b-Aa-fVY" kind="presentation" identifier="FoodSegue" id="rwZ-YX-ASq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkA-XV-lbR" customClass="CircleButton" customModule="doof" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkA-XV-lbR" customClass="CircleButton" customModule="doof" customModuleProvider="target">
                                 <rect key="frame" x="240" y="534.5" width="45" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -83,17 +84,19 @@
                                     <constraint firstAttribute="width" constant="45" id="xmY-hb-cnY"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="sleep"/>
                                 <connections>
                                     <action selector="sleepButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lo7-xz-WOr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2S8-7E-T1A" customClass="CircleButton" customModule="doof" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2S8-7E-T1A" customClass="CircleButton" customModule="doof" customModuleProvider="target">
                                 <rect key="frame" x="90" y="534.5" width="45" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="nkK-0m-4ce"/>
                                     <constraint firstAttribute="width" constant="45" id="ty6-ET-qqF"/>
                                 </constraints>
+                                <state key="normal" image="water"/>
                                 <connections>
                                     <action selector="waterButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Nf-dr-m8q"/>
                                 </connections>
@@ -570,12 +573,15 @@
     <resources>
         <image name="breakfast" width="52.5" height="34.5"/>
         <image name="dinner" width="52" height="30.5"/>
+        <image name="food" width="26" height="30"/>
         <image name="lunch" width="48" height="37"/>
         <image name="main" width="54" height="48.5"/>
         <image name="progress-energy" width="20" height="20"/>
         <image name="progress-food" width="20" height="20"/>
         <image name="progress-happiness" width="20" height="20"/>
         <image name="progress-water" width="20" height="20"/>
+        <image name="sleep" width="21" height="23"/>
         <image name="snack" width="46.5" height="41"/>
+        <image name="water" width="20.5" height="26"/>
     </resources>
 </document>

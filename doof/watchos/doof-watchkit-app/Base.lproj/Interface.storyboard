@@ -12,9 +12,9 @@
         <!--Doof-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="MainController" title="Doof" fullBounds="YES" fullScreen="YES" id="AgC-eL-Hgc" customClass="WKMainController" customModule="doof_WatchKit_Extension">
+                <controller identifier="MainController" title="Doof" contentMode="scaleAspectFill" fullBounds="YES" fullScreen="YES" id="AgC-eL-Hgc" customClass="WKMainController" customModule="doof_WatchKit_Extension">
                     <items>
-                        <spriteKitScene width="1" height="1" alignment="left" scene="MainWatch.sks" id="kIP-qO-ADe"/>
+                        <spriteKitScene width="1" height="1" alignment="left" id="kIP-qO-ADe"/>
                     </items>
                     <menu key="menu" id="5RB-7x-bJO">
                         <items>
