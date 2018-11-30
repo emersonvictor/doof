@@ -32,28 +32,74 @@ class DoofNode: SKSpriteNode {
         // Texture animation
         var frames:[SKTexture] = []
         let doofAtlas = SKTextureAtlas(named: state.rawValue)
-    
-        for index in 1 ... 5 {
-            let textureName = "\(state.rawValue)\(index)"
-            let texture = doofAtlas.textureNamed(textureName)
-            frames.append(texture)
-        }
         
         switch state {
         case .idle:
+            
+            for index in 1 ... 5 {
+                let textureName = "\(state.rawValue)\(index)"
+                let texture = doofAtlas.textureNamed(textureName)
+                frames.append(texture)
+            }
+            
             for index in stride(from:5,through:1,by:-1)  {
                 let textureName = "\(state.rawValue)\(index)"
                 let texture = doofAtlas.textureNamed(textureName)
                 frames.append(texture)
             }
+            
+            self.doofFrames = frames
+            self.run(SKAction.repeatForever(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.1, resize: false, restore: true)))
+            
         case .smiling:
-            break
+            for index in 1 ... 5 {
+                let textureName = "\(state.rawValue)\(index)"
+                let texture = doofAtlas.textureNamed(textureName)
+                frames.append(texture)
+            }
+            
+            self.doofFrames = frames
+            self.run(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.1, resize: false, restore: false))
+            
         case .eating:
-            break
+            for index in 1 ... 19 {
+                let textureName = "\(state.rawValue)\(index)"
+                let texture = doofAtlas.textureNamed(textureName)
+                frames.append(texture)
+            }
+            
+            self.doofFrames = frames
+            self.run(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.1, resize: false, restore: true))
+            
         case .drinking:
             break
+            
         case .sleeping:
-            break
+            for index in 1 ... 10 {
+                let textureName = "\(state.rawValue)\(index)"
+                let texture = doofAtlas.textureNamed(textureName)
+                frames.append(texture)
+            }
+            
+            self.doofFrames = frames
+            self.run(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.1, resize: false, restore: false)) {
+                frames = []
+                
+                for index in 11 ... 17 {
+                    let textureName = "\(state.rawValue)\(index)"
+                    let texture = doofAtlas.textureNamed(textureName)
+                    frames.append(texture)
+                }
+                
+                for index in stride(from:17,through:11,by:-1)  {
+                    let textureName = "\(state.rawValue)\(index)"
+                    let texture = doofAtlas.textureNamed(textureName)
+                    frames.append(texture)
+                }
+                
+                self.doofFrames = frames
+                self.run(SKAction.repeatForever(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.1, resize: false, restore: true)))
+            }
         }
         
         self.doofFrames = frames

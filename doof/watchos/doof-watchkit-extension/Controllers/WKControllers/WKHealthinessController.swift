@@ -52,6 +52,6 @@ class WKHealthinessController: WKInterfaceController {
     
     @IBAction func feedDoof() {
         print("comeu")
-        self.presentController(withName: "MainController", context: nil)
+        self.presentController(withName: "MainController", context: DoofStates.eating)
     }
 }

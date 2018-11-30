@@ -26,8 +26,10 @@ extension MainController {
         self.selectionFeedback.selectionChanged()
         isSleeping = !isSleeping
         if isSleeping {
+            self.doofNode?.animate(withState: .idle)
             sleepButton.setTitle("Acordar", for: .normal)
         } else {
+            self.doofNode?.animate(withState: .sleeping)
             sleepButton.setTitle("Dormir", for: .normal)
         }
     }

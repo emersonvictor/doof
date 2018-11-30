@@ -28,21 +28,9 @@ class WKMainController: WKInterfaceController {
             
             self.doofScene.presentScene(scene)
         }
-    }
-    
-    // MARK: - Animate doof
-    func animateDoof(withState state: DoofStates) {
-        switch state {
-        case .eating:
-            print("Doof is eating")
-        case .drinking:
-            print("Doof is drinking")
-        case .sleeping:
-            print("Doof is sleeping")
-        case .smiling:
-            print("Doof is smiling")
-        case .idle:
-            print("Doof is smiling")
+        
+        if context != nil {
+            self.watchScene.doof?.animate(withState: .eating)
         }
     }
     
@@ -56,6 +44,7 @@ class WKMainController: WKInterfaceController {
     }
     
     @IBAction func sleepAction() {
+        self.watchScene.doof?.animate(withState: .sleeping)
         print("Doof is now sleeping")
     }
 }

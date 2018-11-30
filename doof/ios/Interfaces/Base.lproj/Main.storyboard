@@ -76,7 +76,7 @@
                                     <segue destination="j4b-Aa-fVY" kind="presentation" identifier="FoodSegue" id="rwZ-YX-ASq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkA-XV-lbR" customClass="CircleButton" customModule="doof" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkA-XV-lbR" customClass="CircleButton" customModule="doof" customModuleProvider="target">
                                 <rect key="frame" x="240" y="534.5" width="45" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -207,13 +207,13 @@
                             <constraint firstItem="fPt-QU-OjB" firstAttribute="centerY" secondItem="pH3-Ff-RqR" secondAttribute="centerY" id="C1D-Cn-COS"/>
                             <constraint firstItem="ZkA-XV-lbR" firstAttribute="leading" secondItem="jaK-ZN-dxg" secondAttribute="trailing" constant="10" id="CnN-Nk-tDx"/>
                             <constraint firstItem="jaK-ZN-dxg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fpc-ge-0ya"/>
+                            <constraint firstAttribute="bottom" secondItem="JJa-wF-hNY" secondAttribute="bottom" id="TCn-ZY-B6c"/>
                             <constraint firstItem="JJa-wF-hNY" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" id="ZA4-Yc-EBe"/>
                             <constraint firstItem="jaK-ZN-dxg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.8" id="aLV-Kh-ieY"/>
                             <constraint firstItem="JJa-wF-hNY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eaw-ag-f5e"/>
                             <constraint firstItem="pH3-Ff-RqR" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="20" id="ebL-9I-fuh"/>
                             <constraint firstItem="2S8-7E-T1A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.67" id="f6Y-Fh-e2u"/>
                             <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="JJa-wF-hNY" secondAttribute="trailing" id="hmw-hy-jzP"/>
-                            <constraint firstItem="JJa-wF-hNY" firstAttribute="bottom" secondItem="Uee-0j-aNJ" secondAttribute="bottom" id="jhb-7Z-BgQ"/>
                             <constraint firstItem="pH3-Ff-RqR" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" constant="24" id="uzW-rF-ahJ"/>
                             <constraint firstItem="jaK-ZN-dxg" firstAttribute="leading" secondItem="2S8-7E-T1A" secondAttribute="trailing" constant="10" id="v6Q-me-wjW"/>
                         </constraints>
@@ -239,7 +239,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="225" y="68"/>
+            <point key="canvasLocation" x="224.63768115942031" y="67.633928571428569"/>
         </scene>
         <!--Statistics-->
         <scene sceneID="hkT-Qp-QGZ">
