@@ -22,6 +22,9 @@
 		D91A5F4621AF52BE00F3538B /* StatisticsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4421AF52BE00F3538B /* StatisticsCell.xib */; };
 		D91A5F4B21B0303800F3538B /* MainWatch.sks in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4A21B0303800F3538B /* MainWatch.sks */; };
 		D91A5F4F21B0339700F3538B /* MainWatch.sks in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4A21B0303800F3538B /* MainWatch.sks */; };
+		D921733721B1B66100C408DC /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D921733621B1B66100C408DC /* Animations.xcassets */; };
+		D921733821B1B66100C408DC /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D921733621B1B66100C408DC /* Animations.xcassets */; };
+		D921733921B1B66100C408DC /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D921733621B1B66100C408DC /* Animations.xcassets */; };
 		D93CC13421A73006008B7535 /* Doof.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D93CC13221A73006008B7535 /* Doof.xcdatamodeld */; };
 		D94A0BCA21B0878200ED7807 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC842191BD71006E2648 /* Meal.swift */; };
 		D94A0BCB21B0878500ED7807 /* Healthiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EBB219C48C3001CB668 /* Healthiness.swift */; };
@@ -30,9 +33,6 @@
 		D94A0BCF21B0B9AC00ED7807 /* DoofStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BCD21B0B9A900ED7807 /* DoofStates.swift */; };
 		D94A0BE821B0C88700ED7807 /* MainController+ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BE721B0C88700ED7807 /* MainController+ProgressBar.swift */; };
 		D94A0BEA21B0C8AC00ED7807 /* MainController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BE921B0C8AC00ED7807 /* MainController+Actions.swift */; };
-		D94A0BEC21B0CE6200ED7807 /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94A0BEB21B0CE6200ED7807 /* Animations.xcassets */; };
-		D94A0BED21B0CED500ED7807 /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94A0BEB21B0CE6200ED7807 /* Animations.xcassets */; };
-		D94A0BEE21B0CED600ED7807 /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94A0BEB21B0CE6200ED7807 /* Animations.xcassets */; };
 		D94A0BF121B0D23B00ED7807 /* MainProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BF021B0D23B00ED7807 /* MainProgressBar.swift */; };
 		D94A0BF221B0E51300ED7807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718D7218B7F4000BFD710 /* Assets.xcassets */; };
 		D94A0BF321B0E51300ED7807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718D7218B7F4000BFD710 /* Assets.xcassets */; };
@@ -125,11 +125,11 @@
 		D91A5F4321AF52BE00F3538B /* StatisticsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsCell.swift; sourceTree = "<group>"; };
 		D91A5F4421AF52BE00F3538B /* StatisticsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticsCell.xib; sourceTree = "<group>"; };
 		D91A5F4A21B0303800F3538B /* MainWatch.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainWatch.sks; sourceTree = "<group>"; };
+		D921733621B1B66100C408DC /* Animations.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Animations.xcassets; sourceTree = "<group>"; };
 		D93CC13321A73006008B7535 /* Doof.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Doof.xcdatamodel; sourceTree = "<group>"; };
 		D94A0BCD21B0B9A900ED7807 /* DoofStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoofStates.swift; sourceTree = "<group>"; };
 		D94A0BE721B0C88700ED7807 /* MainController+ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainController+ProgressBar.swift"; sourceTree = "<group>"; };
 		D94A0BE921B0C8AC00ED7807 /* MainController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainController+Actions.swift"; sourceTree = "<group>"; };
-		D94A0BEB21B0CE6200ED7807 /* Animations.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Animations.xcassets; sourceTree = "<group>"; };
 		D94A0BF021B0D23B00ED7807 /* MainProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProgressBar.swift; sourceTree = "<group>"; };
 		D94A0BFB21B173E000ED7807 /* WatchScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchScene.swift; sourceTree = "<group>"; };
 		D94A0BFE21B1753E00ED7807 /* WKMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKMainController.swift; sourceTree = "<group>"; };
@@ -250,7 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				D99718D7218B7F4000BFD710 /* Assets.xcassets */,
-				D94A0BEB21B0CE6200ED7807 /* Animations.xcassets */,
+				D921733621B1B66100C408DC /* Animations.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -539,7 +539,7 @@
 			files = (
 				D9C72EA721AECE7C0026C1FC /* Main.sks in Resources */,
 				D99718DB218B7F4000BFD710 /* LaunchScreen.storyboard in Resources */,
-				D94A0BEC21B0CE6200ED7807 /* Animations.xcassets in Resources */,
+				D921733721B1B66100C408DC /* Animations.xcassets in Resources */,
 				D99718D8218B7F4000BFD710 /* Assets.xcassets in Resources */,
 				D91A5F4221AF52A500F3538B /* StatisticsWeekCell.xib in Resources */,
 				D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */,
@@ -553,7 +553,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D91A5F4B21B0303800F3538B /* MainWatch.sks in Resources */,
-				D94A0BED21B0CED500ED7807 /* Animations.xcassets in Resources */,
+				D921733821B1B66100C408DC /* Animations.xcassets in Resources */,
 				D99718E6218B7F4000BFD710 /* Interface.storyboard in Resources */,
 				D9650ECD219C644C001CB668 /* BABIL___.TTF in Resources */,
 				D94A0BF221B0E51300ED7807 /* Assets.xcassets in Resources */,
@@ -565,8 +565,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9650ECE219C644C001CB668 /* BABIL___.TTF in Resources */,
-				D94A0BEE21B0CED600ED7807 /* Animations.xcassets in Resources */,
 				D94A0BF321B0E51300ED7807 /* Assets.xcassets in Resources */,
+				D921733921B1B66100C408DC /* Animations.xcassets in Resources */,
 				D91A5F4F21B0339700F3538B /* MainWatch.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -791,7 +791,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -813,7 +813,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -837,7 +837,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				IBSC_MODULE = mc4_WatchKit_Extension;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -864,7 +864,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				IBSC_MODULE = mc4_WatchKit_Extension;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -888,7 +888,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/ios/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -906,7 +906,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/ios/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

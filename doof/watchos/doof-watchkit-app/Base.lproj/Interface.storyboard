@@ -12,23 +12,23 @@
         <!--Doof-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="MainController" title="Doof" contentMode="scaleAspectFill" fullBounds="YES" fullScreen="YES" id="AgC-eL-Hgc" customClass="WKMainController" customModule="doof_WatchKit_Extension">
+                <controller identifier="MainController" title="Doof" contentMode="scaleAspectFit" fullBounds="YES" fullScreen="YES" id="AgC-eL-Hgc" customClass="WKMainController" customModule="doof_WatchKit_Extension">
                     <items>
                         <spriteKitScene width="1" height="1" alignment="left" id="kIP-qO-ADe"/>
                     </items>
                     <menu key="menu" id="5RB-7x-bJO">
                         <items>
-                            <menuItem title="Food" icon="accept" id="eBR-nR-Aqn">
+                            <menuItem title="Food" image="food" id="eBR-nR-Aqn">
                                 <connections>
                                     <action selector="foodAction" destination="AgC-eL-Hgc" id="gEd-1L-zWl"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Water" icon="info" id="4f9-sL-k2s">
+                            <menuItem title="Water" image="water" id="4f9-sL-k2s">
                                 <connections>
                                     <action selector="waterAction" destination="AgC-eL-Hgc" id="E4G-ls-Gqb"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Sleep" icon="maybe" id="oX5-dc-Haa">
+                            <menuItem title="Sleep" image="sleep" id="oX5-dc-Haa">
                                 <connections>
                                     <action selector="sleepAction" destination="AgC-eL-Hgc" id="yJi-OJ-1z3"/>
                                 </connections>

@@ -45,7 +45,7 @@ class FoodController: UIViewController {
             foodstamp.save()
             
             self.notificationFeedback.notificationOccurred(.success)
-            self.presentingViewController?.dismiss(animated: true, completion: {
+            self.dismiss(animated: true, completion: {
                 if let parent = self.presentingViewController {
                     let main = parent as! MainController
                     main.doofNode!.animate(withState: .eating)

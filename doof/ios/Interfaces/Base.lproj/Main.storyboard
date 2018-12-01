@@ -326,7 +326,7 @@
                                     <color key="titleColor" red="0.76862745099999996" green="0.31372549020000001" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="confirmAction:" destination="j4b-Aa-fVY" eventType="touchUpInside" id="Y8u-fF-3ud"/>
+                                    <action selector="confirmAction:" destination="j4b-Aa-fVY" eventType="touchUpInside" id="nTh-h6-WSE"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="TAl-xb-tuG">
@@ -487,7 +487,7 @@
                             <constraint firstItem="Alc-kH-4Nt" firstAttribute="leading" secondItem="MrZ-gR-0oh" secondAttribute="leading" constant="20" id="gJw-bV-LM7"/>
                             <constraint firstItem="MrZ-gR-0oh" firstAttribute="trailing" secondItem="KA3-i3-rlI" secondAttribute="trailing" constant="14" id="glQ-4W-vJK"/>
                             <constraint firstItem="WDW-ii-egl" firstAttribute="centerX" secondItem="A5g-BV-q4W" secondAttribute="centerX" multiplier="1.26" id="hzP-tT-8NS"/>
-                            <constraint firstItem="alv-PX-xlb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nmJ-2V-wsK" secondAttribute="trailing" symbolic="YES" id="mdd-cP-slO"/>
+                            <constraint firstItem="alv-PX-xlb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nmJ-2V-wsK" secondAttribute="trailing" constant="8" symbolic="YES" id="mdd-cP-slO"/>
                             <constraint firstItem="WDW-ii-egl" firstAttribute="top" secondItem="dHB-1a-45w" secondAttribute="bottom" constant="4" id="soQ-iv-KGh"/>
                             <constraint firstItem="dHB-1a-45w" firstAttribute="leading" secondItem="MrZ-gR-0oh" secondAttribute="leading" constant="30" id="wWm-3t-bGR"/>
                             <constraint firstItem="dHB-1a-45w" firstAttribute="top" secondItem="TAl-xb-tuG" secondAttribute="bottom" constant="25" id="yBv-Dt-zjK"/>

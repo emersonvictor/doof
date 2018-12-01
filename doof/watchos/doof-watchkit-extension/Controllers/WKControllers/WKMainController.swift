@@ -40,11 +40,10 @@ class WKMainController: WKInterfaceController {
     }
     
     @IBAction func waterAction() {
-        print("You give water to doof")
+        self.watchScene.doof?.animate(withState: .drinking)
     }
     
     @IBAction func sleepAction() {
         self.watchScene.doof?.animate(withState: .sleeping)
-        print("Doof is now sleeping")
     }
 }
