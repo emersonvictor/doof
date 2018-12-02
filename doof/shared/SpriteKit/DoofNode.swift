@@ -29,6 +29,8 @@ class DoofNode: SKSpriteNode {
     }
     
     func animate(withState state: DoofStates) {
+        self.removeAllActions()
+        
         // Texture animation
         var frames:[SKTexture] = []
         let doofAtlas = SKTextureAtlas(named: state.rawValue)
@@ -69,7 +71,9 @@ class DoofNode: SKSpriteNode {
             }
             
             self.doofFrames = frames
-            self.run(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.15, resize: false, restore: true), completion: {
+            
+            
+            self.run(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.15, resize: false, restore: false), completion: {
                 let singletonDoof = UserSingleton.shared.doof!
                 singletonDoof.state = .idle
                 self.animate(withState: singletonDoof.state)
@@ -105,9 +109,6 @@ class DoofNode: SKSpriteNode {
                 self.run(SKAction.repeatForever(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.2, resize: false, restore: true)))
             }
         }
-        
-        self.doofFrames = frames
-        self.run(SKAction.repeatForever(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.1, resize: false, restore: true)))
     }
     
     #if os(iOS)
