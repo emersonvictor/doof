@@ -14,6 +14,10 @@ extension MainController {
     @IBAction func waterButtonAction(_ sender: Any) {
         self.selectionFeedback.selectionChanged()
         waterProgressView.progress += 0.1
+        
+        // Save waterstamp
+        let waterstamp = WaterstampObject(time: Date())
+        waterstamp.save()
     }
     
     // Action foodButton
@@ -23,15 +27,28 @@ extension MainController {
     
     // Action sleepButton
     @IBAction func sleepButtonAction(_ sender: Any) {
+//        let darkView = UIView(frame: self.view.frame)
+//        darkView.backgroundColor = UIColor(hue: 0, saturation: 0, brightness: 0, alpha: 0.5)
+//        self.view.addSubview(darkView)
+//        self.willHideInteractionButtons(true)
+        
+        // TODO: - Change scenario when sleep
+        
+        self.mainButton.isSelected = false
+        self.mainButton.setSelectedState()
+        
+        if isSleeping {
+            let singletonDoof = UserSingleton.shared.doof!
+            singletonDoof.state = .idle
+            self.doofNode!.animate(withState: singletonDoof.state)
+        } else {
+            let singletonDoof = UserSingleton.shared.doof!
+            singletonDoof.state = .sleeping
+            self.doofNode!.animate(withState: singletonDoof.state)
+        }
+        
         self.selectionFeedback.selectionChanged()
         isSleeping = !isSleeping
-        if isSleeping {
-            self.doofNode?.animate(withState: .idle)
-            sleepButton.setTitle("Acordar", for: .normal)
-        } else {
-            self.doofNode?.animate(withState: .sleeping)
-            sleepButton.setTitle("Dormir", for: .normal)
-        }
     }
     
     // Main Button Interaction

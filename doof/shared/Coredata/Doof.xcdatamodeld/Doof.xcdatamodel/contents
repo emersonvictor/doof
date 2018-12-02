@@ -4,6 +4,7 @@
         <attribute name="energy" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="food" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="happiness" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="water" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="foodstamp" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Foodstamp" inverseName="doof" inverseEntity="Foodstamp" syncable="YES"/>
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="doof" inverseEntity="User" syncable="YES"/>
@@ -26,7 +27,7 @@
         <relationship name="doof" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Doof" inverseName="waterstamp" inverseEntity="Doof" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Doof" positionX="-54" positionY="18" width="128" height="150"/>
+        <element name="Doof" positionX="-54" positionY="18" width="128" height="165"/>
         <element name="Foodstamp" positionX="-36" positionY="45" width="128" height="105"/>
         <element name="User" positionX="-63" positionY="-18" width="128" height="105"/>
         <element name="Waterstamp" positionX="-18" positionY="63" width="128" height="75"/>

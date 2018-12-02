@@ -67,7 +67,9 @@ class WKMealController: WKInterfaceController {
             }
             self.presentAlert(withTitle: "Choose a meal", message: "Ops, it looks like you didn't choose a meal", preferredStyle: .alert, actions: [ok])
         } else {
-            self.presentController(withName: "HealthinessController", context: self.selectedMeal)
+            self.presentController(withName: "HealthinessController", context: nil)
+            let singletonDoof = UserSingleton.shared.doof!
+            singletonDoof.state = .eating
         }
     }
 }

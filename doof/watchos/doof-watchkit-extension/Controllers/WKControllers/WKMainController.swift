@@ -29,9 +29,8 @@ class WKMainController: WKInterfaceController {
             self.doofScene.presentScene(scene)
         }
         
-        if context != nil {
-            self.watchScene.doof?.animate(withState: .eating)
-        }
+        let singletonDoof = UserSingleton.shared.doof!
+        self.watchScene.doof?.animate(withState: singletonDoof.state)
     }
     
     // MARK: - Menu actions
@@ -40,10 +39,14 @@ class WKMainController: WKInterfaceController {
     }
     
     @IBAction func waterAction() {
-        self.watchScene.doof?.animate(withState: .drinking)
+        let singletonDoof = UserSingleton.shared.doof!
+        singletonDoof.state = .drinking
+        self.watchScene.doof?.animate(withState: singletonDoof.state)
     }
     
     @IBAction func sleepAction() {
-        self.watchScene.doof?.animate(withState: .sleeping)
+        let singletonDoof = UserSingleton.shared.doof!
+        singletonDoof.state = .sleeping
+        self.watchScene.doof?.animate(withState: singletonDoof.state)
     }
 }

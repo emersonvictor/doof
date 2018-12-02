@@ -42,6 +42,17 @@
             </objects>
             <point key="canvasLocation" x="527" y="1184"/>
         </scene>
+        <!--Interface Controller-->
+        <scene sceneID="r63-Ur-AqZ">
+            <objects>
+                <controller id="nz9-5z-hFd">
+                    <items>
+                        <label width="1" height="1" alignment="left" text="Ops, it looks like you didn't  finish your registration! Please, go back to the iPhone :)" textAlignment="center" numberOfLines="5" id="w9a-Ip-3Ok"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="527" y="1454"/>
+        </scene>
         <!--Meal-->
         <scene sceneID="SB0-by-B4H">
             <objects>

@@ -13,6 +13,12 @@
 		B593DC7C2191BA16006E2648 /* Waterstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7B2191BA16006E2648 /* Waterstamp.swift */; };
 		B593DC852191BD71006E2648 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC842191BD71006E2648 /* Meal.swift */; };
 		B5ECBF2D21B0242200D7C858 /* DoofNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECBF2C21B0242200D7C858 /* DoofNode.swift */; };
+		D90941B321B41D2800C03766 /* UserInformationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90941B221B41D2800C03766 /* UserInformationController.swift */; };
+		D90941B521B42CE300C03766 /* UserSingletoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574EB21A73D8C00BF7A2D /* UserSingletoon.swift */; };
+		D90941B721B42D4800C03766 /* Doof.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC752191B878006E2648 /* Doof.swift */; };
+		D90941B821B42D4800C03766 /* Foodstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC792191B992006E2648 /* Foodstamp.swift */; };
+		D90941B921B42D4800C03766 /* Waterstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7B2191BA16006E2648 /* Waterstamp.swift */; };
+		D90941BA21B42D4800C03766 /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574ED21A73EC500BF7A2D /* UserObject.swift */; };
 		D916337821A6D39000D500B4 /* OnBoardingPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916337721A6D39000D500B4 /* OnBoardingPageController.swift */; };
 		D916337A21A6DC4B00D500B4 /* OnBoardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916337921A6DC4B00D500B4 /* OnBoardingController.swift */; };
 		D916461321A2E0EF009FFC80 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916461221A2E0EF009FFC80 /* CircleButton.swift */; };
@@ -117,8 +123,10 @@
 		B593DC7B2191BA16006E2648 /* Waterstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waterstamp.swift; sourceTree = "<group>"; };
 		B593DC842191BD71006E2648 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		B5ECBF2C21B0242200D7C858 /* DoofNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoofNode.swift; sourceTree = "<group>"; };
-		D916337721A6D39000D500B4 /* OnBoardingPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnBoardingPageController.swift; path = ios/Controllers/OnBoardingPageController.swift; sourceTree = SOURCE_ROOT; };
-		D916337921A6DC4B00D500B4 /* OnBoardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnBoardingController.swift; path = ios/Controllers/OnBoardingController.swift; sourceTree = SOURCE_ROOT; };
+		D90941B221B41D2800C03766 /* UserInformationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformationController.swift; sourceTree = "<group>"; };
+		D90941B421B4215800C03766 /* doof.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = doof.entitlements; sourceTree = "<group>"; };
+		D916337721A6D39000D500B4 /* OnBoardingPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnBoardingPageController.swift; path = ios/Controllers/OnBoarding/OnBoardingPageController.swift; sourceTree = SOURCE_ROOT; };
+		D916337921A6DC4B00D500B4 /* OnBoardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnBoardingController.swift; path = ios/Controllers/OnBoarding/OnBoardingController.swift; sourceTree = SOURCE_ROOT; };
 		D916461221A2E0EF009FFC80 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		D91A5F3F21AF52A500F3538B /* StatisticsWeekCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsWeekCell.swift; sourceTree = "<group>"; };
 		D91A5F4021AF52A500F3538B /* StatisticsWeekCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticsWeekCell.xib; sourceTree = "<group>"; };
@@ -211,7 +219,6 @@
 				B593DC752191B878006E2648 /* Doof.swift */,
 				B593DC792191B992006E2648 /* Foodstamp.swift */,
 				B593DC7B2191BA16006E2648 /* Waterstamp.swift */,
-				D9A574EB21A73D8C00BF7A2D /* UserSingletoon.swift */,
 				D9A574ED21A73EC500BF7A2D /* UserObject.swift */,
 			);
 			path = Models;
@@ -226,6 +233,16 @@
 				D94A0BCD21B0B9A900ED7807 /* DoofStates.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		D90941B121B41CD300C03766 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				D916337921A6DC4B00D500B4 /* OnBoardingController.swift */,
+				D916337721A6D39000D500B4 /* OnBoardingPageController.swift */,
+				D90941B221B41D2800C03766 /* UserInformationController.swift */,
+			);
+			path = OnBoarding;
 			sourceTree = "<group>";
 		};
 		D91A5F3D21AF524C00F3538B /* Views */ = {
@@ -260,6 +277,7 @@
 			children = (
 				D93CC13221A73006008B7535 /* Doof.xcdatamodeld */,
 				D9A574E921A73AD900BF7A2D /* CoreDataManager.swift */,
+				D9A574EB21A73D8C00BF7A2D /* UserSingletoon.swift */,
 			);
 			path = Coredata;
 			sourceTree = "<group>";
@@ -312,6 +330,7 @@
 		D99718C4218B7F3E00BFD710 = {
 			isa = PBXGroup;
 			children = (
+				D90941B421B4215800C03766 /* doof.entitlements */,
 				B593DC732191B853006E2648 /* shared */,
 				D99718CF218B7F3E00BFD710 /* ios */,
 				D9971915218B80B700BFD710 /* watchos */,
@@ -369,10 +388,9 @@
 			isa = PBXGroup;
 			children = (
 				D9650EC4219C546E001CB668 /* FoodController.swift */,
-				D916337921A6DC4B00D500B4 /* OnBoardingController.swift */,
-				D916337721A6D39000D500B4 /* OnBoardingPageController.swift */,
 				D9C72EAA21AEECFF0026C1FC /* StatisticsController.swift */,
 				D94A0BE621B0C86300ED7807 /* MainController */,
+				D90941B121B41CD300C03766 /* OnBoarding */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -502,6 +520,11 @@
 				TargetAttributes = {
 					D99718CC218B7F3E00BFD710 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					D99718DE218B7F4000BFD710 = {
 						CreatedOnToolsVersion = 10.1;
@@ -581,6 +604,7 @@
 				D94A0BE821B0C88700ED7807 /* MainController+ProgressBar.swift in Sources */,
 				B593DC762191B878006E2648 /* Doof.swift in Sources */,
 				D9650ECA219C6326001CB668 /* UIColor.swift in Sources */,
+				D90941B321B41D2800C03766 /* UserInformationController.swift in Sources */,
 				D9650EC1219C5245001CB668 /* SlidePresentationManager.swift in Sources */,
 				D9A574EA21A73AD900BF7A2D /* CoreDataManager.swift in Sources */,
 				D9C72EAB21AEECFF0026C1FC /* StatisticsController.swift in Sources */,
@@ -613,16 +637,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				D94A0BCE21B0B9A900ED7807 /* DoofStates.swift in Sources */,
+				D90941B921B42D4800C03766 /* Waterstamp.swift in Sources */,
 				D94A0BF721B161CB00ED7807 /* DoofNode.swift in Sources */,
 				D94A0C0321B1753E00ED7807 /* WKMealController.swift in Sources */,
 				D99718F8218B7F4000BFD710 /* NotificationController.swift in Sources */,
 				D94A0BFC21B173E000ED7807 /* WatchScene.swift in Sources */,
 				D94A0C0121B1753E00ED7807 /* WKMainController.swift in Sources */,
 				D94A0BCA21B0878200ED7807 /* Meal.swift in Sources */,
+				D90941B821B42D4800C03766 /* Foodstamp.swift in Sources */,
 				D94A0C0221B1753E00ED7807 /* WKHealthinessController.swift in Sources */,
 				D99718FA218B7F4000BFD710 /* ComplicationController.swift in Sources */,
+				D90941BA21B42D4800C03766 /* UserObject.swift in Sources */,
+				D90941B521B42CE300C03766 /* UserSingletoon.swift in Sources */,
 				D94A0BCC21B0878D00ED7807 /* UIColor.swift in Sources */,
 				D94A0BCB21B0878500ED7807 /* Healthiness.swift in Sources */,
+				D90941B721B42D4800C03766 /* Doof.swift in Sources */,
 				D99718F6218B7F4000BFD710 /* ExtensionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -887,6 +916,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = doof.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/ios/Application/Info.plist";
@@ -905,6 +935,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = doof.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/ios/Application/Info.plist";

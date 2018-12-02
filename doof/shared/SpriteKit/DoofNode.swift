@@ -70,7 +70,9 @@ class DoofNode: SKSpriteNode {
             
             self.doofFrames = frames
             self.run(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.15, resize: false, restore: true), completion: {
-                self.animate(withState: .idle)
+                let singletonDoof = UserSingleton.shared.doof!
+                singletonDoof.state = .idle
+                self.animate(withState: singletonDoof.state)
             })
             
         case .drinking:
@@ -112,12 +114,16 @@ class DoofNode: SKSpriteNode {
     // MARK: - Touch animation
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.removeAllActions()
-        self.animate(withState: .smiling)
+        let singletonDoof = UserSingleton.shared.doof!
+        singletonDoof.state = .smiling
+        self.animate(withState: singletonDoof.state)
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.removeAllActions()
-        self.animate(withState: .idle)
+        let singletonDoof = UserSingleton.shared.doof!
+        singletonDoof.state = .idle
+        self.animate(withState: singletonDoof.state)
     }
     #endif
 }

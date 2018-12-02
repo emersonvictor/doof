@@ -45,12 +45,13 @@ class FoodController: UIViewController {
             foodstamp.save()
             
             self.notificationFeedback.notificationOccurred(.success)
-            self.dismiss(animated: true, completion: {
-                if let parent = self.presentingViewController {
-                    let main = parent as! MainController
-                    main.doofNode!.animate(withState: .eating)
-                }
-            })
+            
+            let mainController = self.presentingViewController?.children.last as! MainController
+            let singletonDoof = UserSingleton.shared.doof!
+            singletonDoof.state = .eating
+            mainController.doofNode?.animate(withState: singletonDoof.state)
+            self.dismiss(animated: true, completion: nil)
+            
             
         } else {
             let alert = UIAlertController(title: "Refeição não selecionada", message: "Antes de alimentar doof você precisa selecionar uma refeição", preferredStyle: .alert)

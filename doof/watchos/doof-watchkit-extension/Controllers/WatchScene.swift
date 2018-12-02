@@ -25,7 +25,8 @@ class WatchScene: SKScene {
     override func sceneDidLoad() {
         // Animate doof
         self.doof = self.childNode(withName: "doof") as? DoofNode
-        self.doof?.animate(withState: .idle)
+        let singletonDoof = UserSingleton.shared.doof!
+        self.doof?.animate(withState: singletonDoof.state)
         
         // Setup progress bar
         self.drawProgressBars(happinessWidth: limit*0.5, foodWidth: limit*0.8, energyWidth: limit*1, waterWidth: limit*0.2)

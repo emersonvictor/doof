@@ -18,7 +18,7 @@
         <!--On Boarding Page Controller-->
         <scene sceneID="quR-ej-Url">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="NuP-eR-KQ0" customClass="OnBoardingPageController" customModule="doof" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="OnBoarding" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="NuP-eR-KQ0" customClass="OnBoardingPageController" customModule="doof" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kam-IV-KCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1479" y="-661"/>
@@ -73,7 +73,7 @@
                                 <state key="normal" image="food"/>
                                 <connections>
                                     <action selector="foodButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sej-6o-TX3"/>
-                                    <segue destination="j4b-Aa-fVY" kind="presentation" identifier="FoodSegue" id="rwZ-YX-ASq"/>
+                                    <segue destination="j4b-Aa-fVY" kind="presentation" id="l0b-XY-wBm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkA-XV-lbR" customClass="CircleButton" customModule="doof" customModuleProvider="target">
@@ -291,7 +291,7 @@
         <!--Food Controller-->
         <scene sceneID="k4L-7u-Lhh">
             <objects>
-                <viewController id="j4b-Aa-fVY" customClass="FoodController" customModule="doof" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FoodController" id="j4b-Aa-fVY" customClass="FoodController" customModule="doof" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A5g-BV-q4W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -536,10 +536,10 @@
             </objects>
             <point key="canvasLocation" x="-1479" y="90"/>
         </scene>
-        <!--On Boarding Controller-->
+        <!--User Information Controller-->
         <scene sceneID="zVK-HN-fwT">
             <objects>
-                <viewController storyboardIdentifier="Information" id="Ync-no-RPl" customClass="OnBoardingController" customModule="doof" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Information" id="Ync-no-RPl" customClass="UserInformationController" customModule="doof" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wr5-do-0FO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -554,7 +554,7 @@
         <!--Navigation Controller-->
         <scene sceneID="cQS-d8-aR0">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k2i-E7-h1p" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Main" automaticallyAdjustsScrollViewInsets="NO" id="k2i-E7-h1p" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Npy-ZW-zFN">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

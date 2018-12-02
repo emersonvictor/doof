@@ -15,14 +15,16 @@ class DoofObject {
     var energy: Float
     var foodHistory: [FoodstampObject]
     var waterHistory: [WaterstampObject]
+    var state: DoofStates
     
     // MARK: - Initializer
-    init(food: Float, water: Float, happiness: Float, energy: Float, foodHistory: [FoodstampObject], waterHistory: [WaterstampObject]){
+    init(food: Float, water: Float, happiness: Float, energy: Float, foodHistory: [FoodstampObject], waterHistory: [WaterstampObject], state: DoofStates = .idle){
         self.food = food
         self.water = water
         self.happiness = happiness
         self.energy = energy
         self.foodHistory = foodHistory
         self.waterHistory = waterHistory
+        self.state = state
     }
 }

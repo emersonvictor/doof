@@ -33,8 +33,8 @@ class MainController: UIViewController {
     // Sleeping state
     var isSleeping = false
     // User information
-    var userSleepingTime: Float? = 8
-    var userMeals: Float? = 5
+    var userSleepingTime: Float?
+    var userMeals: Float?
     var awake: Float?
     // Haptic Feedback
     let selectionFeedback = UISelectionFeedbackGenerator()
@@ -46,7 +46,12 @@ class MainController: UIViewController {
     // MARK: - Initializer
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.awake = 24 - userSleepingTime!
+        
+        if let user = UserSingleton.shared.user {
+            self.userSleepingTime = user.sleepTime
+            self.userMeals = user.mealsNumber
+            self.awake = 24 - userSleepingTime!
+        }
         
         
         // Progress timers
@@ -60,19 +65,19 @@ class MainController: UIViewController {
         scene?.scaleMode = .aspectFill
         self.mainSKView.presentScene(scene)
         self.doofNode = self.mainSKView.scene?.childNode(withName: "doof") as? DoofNode
+        self.doofNode?.animate(withState: UserSingleton.shared.doof!.state)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.willHideInteractionButtons(true)
+        self.doofNode?.animate(withState: UserSingleton.shared.doof!.state)
         
         super.viewWillAppear(animated)
     }
     
     // MARK: Modal segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        
         if let controller = segue.destination as? FoodController {
             controller.transitioningDelegate = self.slideTransitioningDelegate
             controller.modalPresentationStyle = .custom

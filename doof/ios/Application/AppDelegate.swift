@@ -8,15 +8,35 @@
 
 import UIKit
 import CoreData
+import WatchConnectivity
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // WCSession
+        if WCSession.isSupported() {
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
+        }
+        
+        // Launch view controller
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        var initialControler: UIViewController?
+        
+        if UserSingleton.shared.user == nil {
+            initialControler = storyboard.instantiateViewController(withIdentifier: "OnBoarding")
+        } else {
+            initialControler = storyboard.instantiateViewController(withIdentifier: "Main")
+        }
+        
+        self.window?.rootViewController = initialControler
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
@@ -87,3 +107,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate: WCSessionDelegate {
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) { }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) { }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+}
+}
