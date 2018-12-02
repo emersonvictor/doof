@@ -24,18 +24,18 @@
                 <rect key="frame" x="0.0" y="0.0" width="359" height="253"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omM-E6-yJ8">
-                        <rect key="frame" x="20" y="10" width="75" height="30"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in this week, you were..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omM-E6-yJ8">
+                        <rect key="frame" x="20" y="10" width="191" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="LCv-gD-8XK"/>
-                            <constraint firstAttribute="width" constant="75" id="v1e-Ix-8uT"/>
+                            <constraint firstAttribute="width" constant="191" id="v1e-Ix-8uT"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="BabioleLight" family="Babiole" pointSize="30"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jso-NP-aaG">
-                        <rect key="frame" x="20" y="43" width="319" height="78"/>
+                        <rect key="frame" x="20" y="50" width="319" height="78"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zaM-Xe-W57">
                                 <rect key="frame" x="0.0" y="0.0" width="319" height="12"/>
@@ -132,11 +132,21 @@
                 <constraint firstItem="omM-E6-yJ8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="5cG-iD-Nkd"/>
                 <constraint firstAttribute="trailing" secondItem="Jso-NP-aaG" secondAttribute="trailing" constant="20" id="W1p-Al-0gy"/>
                 <constraint firstItem="omM-E6-yJ8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="ZNi-aO-0Hx"/>
-                <constraint firstItem="Jso-NP-aaG" firstAttribute="top" secondItem="omM-E6-yJ8" secondAttribute="bottom" constant="3" id="fSq-06-0xe"/>
+                <constraint firstItem="Jso-NP-aaG" firstAttribute="top" secondItem="omM-E6-yJ8" secondAttribute="bottom" constant="10" id="fSq-06-0xe"/>
                 <constraint firstItem="Jso-NP-aaG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="iG7-8D-bMC"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="228" height="142"/>
+            <connections>
+                <outlet property="healthyBar" destination="ycC-zw-bLp" id="5C8-Vu-KKT"/>
+                <outlet property="healthyLabel" destination="ePZ-9a-E1e" id="15E-DX-JTv"/>
+                <outlet property="lessHealthyBar" destination="ovX-MF-1VW" id="xt0-JW-ksF"/>
+                <outlet property="lessHealthyLabel" destination="LSK-xQ-ned" id="64a-i4-DJu"/>
+                <outlet property="unhealthyBar" destination="4Dm-VU-lcS" id="cN9-NH-n4a"/>
+                <outlet property="unhealthyLabel" destination="mDJ-ky-rUp" id="7MS-ct-7pw"/>
+                <outlet property="veryHealthyBar" destination="5k4-Ai-8tS" id="G6L-s3-pzf"/>
+                <outlet property="veryHealthyLabel" destination="wjF-r1-ppr" id="bTK-cE-Kse"/>
+            </connections>
             <point key="canvasLocation" x="279.19999999999999" y="194.75262368815595"/>
         </collectionViewCell>
     </objects>
