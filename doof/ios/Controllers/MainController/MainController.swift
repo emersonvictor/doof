@@ -25,40 +25,20 @@ class MainController: UIViewController {
     @IBOutlet weak var sleepButton: UIButton!
     
     // MARK: Variables
-    // Timers
-    var foodTimer = Timer()
-    var waterTimer = Timer()
-    var happinessTimer = Timer()
-    var energyTimer = Timer()
-    // Sleeping state
     var isSleeping = false
-    // User information
-    var userSleepingTime: Float?
-    var userMeals: Float?
-    var awake: Float?
-    // Haptic Feedback
     let selectionFeedback = UISelectionFeedbackGenerator()
-    // Slide transition
     lazy var slideTransitioningDelegate = SlidePresentationManager()
-    // DoofNode
     var doofNode:DoofNode?
     
     // MARK: - Initializer
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let user = UserSingleton.shared.user {
-            self.userSleepingTime = user.sleepTime
-            self.userMeals = user.mealsNumber
-            self.awake = 24 - userSleepingTime!
-        }
-        
-        
+        self.setDoofInfo()
+    
         // Progress timers
-        self.foodTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MainController.foodUpdate), userInfo: nil, repeats: true)
-        self.waterTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MainController.waterUpdate), userInfo: nil, repeats: true)
-        self.energyTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MainController.energyUpdate), userInfo: nil, repeats: true)
-        self.happinessTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MainController.happinessUpdate), userInfo: nil, repeats: true)
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (_) in
+            self.updateDoofInfo()
+        })
         
         // SpriteKit
         let scene = SKScene(fileNamed: "Main.sks")
@@ -76,7 +56,47 @@ class MainController: UIViewController {
         super.viewWillAppear(animated)
     }
     
-    // MARK: Modal segue
+    // MARK: - Update doof information
+    func updateDoofInfo() {
+        guard let user = UserSingleton.shared.user else {
+            return
+        }
+        
+        let sleepTime = user.sleepTime
+        let meals = user.mealsNumber
+        let awake = 24 - sleepTime
+        
+        // Water update
+        let timeSpaceToDrink: Float = 0.6 / 7200
+        waterProgressView.progress -= timeSpaceToDrink
+        
+        // Food update
+        let timeSpaceToEat = (awake / meals) * 3600
+        let fooodProgress = 0.8 / timeSpaceToEat
+        foodProgressView.progress -= fooodProgress
+        
+        // Energy update
+        if isSleeping == true {
+            energyProgressView.progress += 1 / (3600 * sleepTime)
+        } else {
+            energyProgressView.progress -= 1 / (3600 * awake)
+        }
+        
+        // Happiness update
+        happinessProgressView.progress -= 1 / ((awake / 3) * 3600)
+        
+        // Set last time update
+        UserSingleton.shared.doof?.lastTimeUpdated = Date()
+    }
+    
+    func setDoofInfo() {
+        if let user = UserSingleton.shared.user {
+            let doof = user.doof
+            
+        }
+    }
+    
+    // MARK: - Modal segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let controller = segue.destination as? FoodController {
             controller.transitioningDelegate = self.slideTransitioningDelegate

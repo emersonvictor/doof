@@ -16,6 +16,7 @@ class DoofObject {
     var foodHistory: [FoodstampObject]
     var waterHistory: [WaterstampObject]
     var state: DoofStates
+    var lastTimeUpdated: Date
     
     // MARK: - Initializer
     init(food: Float, water: Float, happiness: Float, energy: Float, foodHistory: [FoodstampObject], waterHistory: [WaterstampObject], state: DoofStates = .idle){
@@ -26,5 +27,6 @@ class DoofObject {
         self.foodHistory = foodHistory
         self.waterHistory = waterHistory
         self.state = state
+        self.lastTimeUpdated = Date()
     }
 }

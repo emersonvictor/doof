@@ -37,7 +37,6 @@
 		D94A0BCC21B0878D00ED7807 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC9219C6326001CB668 /* UIColor.swift */; };
 		D94A0BCE21B0B9A900ED7807 /* DoofStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BCD21B0B9A900ED7807 /* DoofStates.swift */; };
 		D94A0BCF21B0B9AC00ED7807 /* DoofStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BCD21B0B9A900ED7807 /* DoofStates.swift */; };
-		D94A0BE821B0C88700ED7807 /* MainController+ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BE721B0C88700ED7807 /* MainController+ProgressBar.swift */; };
 		D94A0BEA21B0C8AC00ED7807 /* MainController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BE921B0C8AC00ED7807 /* MainController+Actions.swift */; };
 		D94A0BF121B0D23B00ED7807 /* MainProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BF021B0D23B00ED7807 /* MainProgressBar.swift */; };
 		D94A0BF221B0E51300ED7807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718D7218B7F4000BFD710 /* Assets.xcassets */; };
@@ -136,7 +135,6 @@
 		D921733621B1B66100C408DC /* Animations.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Animations.xcassets; sourceTree = "<group>"; };
 		D93CC13321A73006008B7535 /* Doof.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Doof.xcdatamodel; sourceTree = "<group>"; };
 		D94A0BCD21B0B9A900ED7807 /* DoofStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoofStates.swift; sourceTree = "<group>"; };
-		D94A0BE721B0C88700ED7807 /* MainController+ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainController+ProgressBar.swift"; sourceTree = "<group>"; };
 		D94A0BE921B0C8AC00ED7807 /* MainController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainController+Actions.swift"; sourceTree = "<group>"; };
 		D94A0BF021B0D23B00ED7807 /* MainProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProgressBar.swift; sourceTree = "<group>"; };
 		D94A0BFB21B173E000ED7807 /* WatchScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchScene.swift; sourceTree = "<group>"; };
@@ -286,7 +284,6 @@
 			isa = PBXGroup;
 			children = (
 				D99718D2218B7F3E00BFD710 /* MainController.swift */,
-				D94A0BE721B0C88700ED7807 /* MainController+ProgressBar.swift */,
 				D94A0BE921B0C8AC00ED7807 /* MainController+Actions.swift */,
 			);
 			path = MainController;
@@ -601,7 +598,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D94A0BE821B0C88700ED7807 /* MainController+ProgressBar.swift in Sources */,
 				B593DC762191B878006E2648 /* Doof.swift in Sources */,
 				D9650ECA219C6326001CB668 /* UIColor.swift in Sources */,
 				D90941B321B41D2800C03766 /* UserInformationController.swift in Sources */,
