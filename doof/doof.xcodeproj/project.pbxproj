@@ -134,6 +134,8 @@
 		D63BE3D14DB53E0F3CC7917E /* Pods_doof_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doof_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90941B221B41D2800C03766 /* UserInformationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformationController.swift; sourceTree = "<group>"; };
 		D90941B421B4215800C03766 /* doof.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = doof.entitlements; sourceTree = "<group>"; };
+		D90941BD21B46F9100C03766 /* doof WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "doof WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		D90941BE21B46FA700C03766 /* doof WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "doof WatchKit App.entitlements"; sourceTree = "<group>"; };
 		D916337721A6D39000D500B4 /* OnBoardingPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnBoardingPageController.swift; path = ios/Controllers/OnBoarding/OnBoardingPageController.swift; sourceTree = SOURCE_ROOT; };
 		D916337921A6DC4B00D500B4 /* OnBoardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnBoardingController.swift; path = ios/Controllers/OnBoarding/OnBoardingController.swift; sourceTree = SOURCE_ROOT; };
 		D916461221A2E0EF009FFC80 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 		B593DC732191B853006E2648 /* shared */ = {
 			isa = PBXGroup;
 			children = (
+				D90941BF21B4706200C03766 /* Application */,
 				D94A0BF621B1617A00ED7807 /* SpriteKit */,
 				D93CC13121A72F3C008B7535 /* Coredata */,
 				B593DC812191BD44006E2648 /* Enums */,
@@ -279,6 +282,14 @@
 				D90941B221B41D2800C03766 /* UserInformationController.swift */,
 			);
 			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		D90941BF21B4706200C03766 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D90941B421B4215800C03766 /* doof.entitlements */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 		D91A5F3D21AF524C00F3538B /* Views */ = {
@@ -365,7 +376,8 @@
 		D99718C4218B7F3E00BFD710 = {
 			isa = PBXGroup;
 			children = (
-				D90941B421B4215800C03766 /* doof.entitlements */,
+				D90941BE21B46FA700C03766 /* doof WatchKit App.entitlements */,
+				D90941BD21B46F9100C03766 /* doof WatchKit Extension.entitlements */,
 				B593DC732191B853006E2648 /* shared */,
 				D99718CF218B7F3E00BFD710 /* ios */,
 				D9971915218B80B700BFD710 /* watchos */,
@@ -563,16 +575,26 @@
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
 					D99718DE218B7F4000BFD710 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					D99718ED218B7F4000BFD710 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -951,8 +973,9 @@
 			baseConfigurationReference = F2CDB65EC9E5559EE6F8F275 /* Pods-doof WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "doof WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -974,8 +997,9 @@
 			baseConfigurationReference = DE7C24A5068E53F1B2CCE881 /* Pods-doof WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "doof WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -999,8 +1023,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "doof WatchKit App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				IBSC_MODULE = mc4_WatchKit_Extension;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1027,8 +1052,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "doof WatchKit App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				IBSC_MODULE = mc4_WatchKit_Extension;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1052,8 +1078,9 @@
 			baseConfigurationReference = 2ED406D632DF8E54555F970D /* Pods-doof.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = shared/Application/doof.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/ios/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1071,8 +1098,9 @@
 			baseConfigurationReference = D268F75B47AAD8200F4E8250 /* Pods-doof.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = shared/Application/doof.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = XP4ML92KUD;
 				INFOPLIST_FILE = "$(SRCROOT)/ios/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
