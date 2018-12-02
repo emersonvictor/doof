@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9EC9DBAA1E36636CEF18D05B /* Pods_doof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16704D4A6E3A302A98892914 /* Pods_doof.framework */; };
 		B52C2F7421A6388600DF6CD1 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */; };
 		B593DC762191B878006E2648 /* Doof.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC752191B878006E2648 /* Doof.swift */; };
 		B593DC7A2191B992006E2648 /* Foodstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC792191B992006E2648 /* Foodstamp.swift */; };
@@ -71,6 +72,8 @@
 		D9A574EE21A73EC500BF7A2D /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574ED21A73EC500BF7A2D /* UserObject.swift */; };
 		D9C72EA721AECE7C0026C1FC /* Main.sks in Resources */ = {isa = PBXBuildFile; fileRef = D9C72EA621AECE7C0026C1FC /* Main.sks */; };
 		D9C72EAB21AEECFF0026C1FC /* StatisticsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C72EAA21AEECFF0026C1FC /* StatisticsController.swift */; };
+		DFCB04EE9DE0B97E3FEAE1DB /* Pods_doof_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E78CC5C715430FE2552652 /* Pods_doof_WatchKit_App.framework */; };
+		F2D5CC4287A37617757CEFFD /* Pods_doof_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63BE3D14DB53E0F3CC7917E /* Pods_doof_WatchKit_Extension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,12 +119,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		06E78CC5C715430FE2552652 /* Pods_doof_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doof_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16704D4A6E3A302A98892914 /* Pods_doof.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doof.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BFAA5EE6656C14CBDD16E7F /* Pods-doof WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doof WatchKit App/Pods-doof WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		2ED406D632DF8E54555F970D /* Pods-doof.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doof/Pods-doof.debug.xcconfig"; sourceTree = "<group>"; };
+		9F43F332F55BD59311C8FC21 /* Pods-doof WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-doof WatchKit App/Pods-doof WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		B593DC752191B878006E2648 /* Doof.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doof.swift; sourceTree = "<group>"; };
 		B593DC792191B992006E2648 /* Foodstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foodstamp.swift; sourceTree = "<group>"; };
 		B593DC7B2191BA16006E2648 /* Waterstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waterstamp.swift; sourceTree = "<group>"; };
 		B593DC842191BD71006E2648 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		B5ECBF2C21B0242200D7C858 /* DoofNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoofNode.swift; sourceTree = "<group>"; };
+		D268F75B47AAD8200F4E8250 /* Pods-doof.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof.release.xcconfig"; path = "Pods/Target Support Files/Pods-doof/Pods-doof.release.xcconfig"; sourceTree = "<group>"; };
+		D63BE3D14DB53E0F3CC7917E /* Pods_doof_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doof_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90941B221B41D2800C03766 /* UserInformationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformationController.swift; sourceTree = "<group>"; };
 		D90941B421B4215800C03766 /* doof.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = doof.entitlements; sourceTree = "<group>"; };
 		D916337721A6D39000D500B4 /* OnBoardingPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnBoardingPageController.swift; path = ios/Controllers/OnBoarding/OnBoardingPageController.swift; sourceTree = SOURCE_ROOT; };
@@ -169,14 +179,25 @@
 		D9A574ED21A73EC500BF7A2D /* UserObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
 		D9C72EA621AECE7C0026C1FC /* Main.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Main.sks; sourceTree = "<group>"; };
 		D9C72EAA21AEECFF0026C1FC /* StatisticsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsController.swift; sourceTree = "<group>"; };
+		DE7C24A5068E53F1B2CCE881 /* Pods-doof WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-doof WatchKit Extension/Pods-doof WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		F2CDB65EC9E5559EE6F8F275 /* Pods-doof WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doof WatchKit Extension/Pods-doof WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7E5A72729B1FF873EBA3A9DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFCB04EE9DE0B97E3FEAE1DB /* Pods_doof_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D99718CA218B7F3E00BFD710 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B52C2F7421A6388600DF6CD1 /* SpriteKit.framework in Frameworks */,
+				9EC9DBAA1E36636CEF18D05B /* Pods_doof.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,16 +205,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D5CC4287A37617757CEFFD /* Pods_doof_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36DDA0853F4F3680A2281FEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2ED406D632DF8E54555F970D /* Pods-doof.debug.xcconfig */,
+				D268F75B47AAD8200F4E8250 /* Pods-doof.release.xcconfig */,
+				1BFAA5EE6656C14CBDD16E7F /* Pods-doof WatchKit App.debug.xcconfig */,
+				9F43F332F55BD59311C8FC21 /* Pods-doof WatchKit App.release.xcconfig */,
+				F2CDB65EC9E5559EE6F8F275 /* Pods-doof WatchKit Extension.debug.xcconfig */,
+				DE7C24A5068E53F1B2CCE881 /* Pods-doof WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B52C2F7221A6388600DF6CD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */,
+				16704D4A6E3A302A98892914 /* Pods_doof.framework */,
+				06E78CC5C715430FE2552652 /* Pods_doof_WatchKit_App.framework */,
+				D63BE3D14DB53E0F3CC7917E /* Pods_doof_WatchKit_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -333,6 +371,7 @@
 				D9971915218B80B700BFD710 /* watchos */,
 				B52C2F7221A6388600DF6CD1 /* Frameworks */,
 				D99718CE218B7F3E00BFD710 /* Products */,
+				36DDA0853F4F3680A2281FEE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -456,10 +495,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9971909218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "doof" */;
 			buildPhases = (
+				B4D3B33F0CAE0AD175743A63 /* [CP] Check Pods Manifest.lock */,
 				D99718C9218B7F3E00BFD710 /* Sources */,
 				D99718CA218B7F3E00BFD710 /* Frameworks */,
 				D99718CB218B7F3E00BFD710 /* Resources */,
 				D9971908218B7F4100BFD710 /* Embed Watch Content */,
+				6AA9E22B59EB124B25E956EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -475,8 +516,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9971905218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "doof WatchKit App" */;
 			buildPhases = (
+				C041ADD3945AC34A495A48C8 /* [CP] Check Pods Manifest.lock */,
 				D99718DD218B7F4000BFD710 /* Resources */,
 				D9971904218B7F4100BFD710 /* Embed App Extensions */,
+				7E5A72729B1FF873EBA3A9DA /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -492,6 +535,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9971901218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "doof WatchKit Extension" */;
 			buildPhases = (
+				DF7F6CCD4E8656F5038545D1 /* [CP] Check Pods Manifest.lock */,
 				D99718EA218B7F4000BFD710 /* Sources */,
 				D99718EB218B7F4000BFD710 /* Frameworks */,
 				D99718EC218B7F4000BFD710 /* Resources */,
@@ -519,7 +563,7 @@
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -592,6 +636,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6AA9E22B59EB124B25E956EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-doof/Pods-doof-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-doof/Pods-doof-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4D3B33F0CAE0AD175743A63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-doof-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C041ADD3945AC34A495A48C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-doof WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF7F6CCD4E8656F5038545D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-doof WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D99718C9218B7F3E00BFD710 /* Sources */ = {
@@ -813,10 +948,11 @@
 		};
 		D9971902218B7F4100BFD710 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2CDB65EC9E5559EE6F8F275 /* Pods-doof WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XP4ML92KUD;
+				DEVELOPMENT_TEAM = 866MXJ7W57;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -835,10 +971,11 @@
 		};
 		D9971903218B7F4100BFD710 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE7C24A5068E53F1B2CCE881 /* Pods-doof WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XP4ML92KUD;
+				DEVELOPMENT_TEAM = 866MXJ7W57;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -857,12 +994,13 @@
 		};
 		D9971906218B7F4100BFD710 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BFAA5EE6656C14CBDD16E7F /* Pods-doof WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XP4ML92KUD;
+				DEVELOPMENT_TEAM = 866MXJ7W57;
 				IBSC_MODULE = mc4_WatchKit_Extension;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -884,12 +1022,13 @@
 		};
 		D9971907218B7F4100BFD710 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F43F332F55BD59311C8FC21 /* Pods-doof WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XP4ML92KUD;
+				DEVELOPMENT_TEAM = 866MXJ7W57;
 				IBSC_MODULE = mc4_WatchKit_Extension;
 				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -910,11 +1049,11 @@
 		};
 		D997190A218B7F4100BFD710 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ED406D632DF8E54555F970D /* Pods-doof.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = doof.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XP4ML92KUD;
+				DEVELOPMENT_TEAM = 866MXJ7W57;
 				INFOPLIST_FILE = "$(SRCROOT)/ios/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -929,11 +1068,11 @@
 		};
 		D997190B218B7F4100BFD710 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D268F75B47AAD8200F4E8250 /* Pods-doof.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = doof.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XP4ML92KUD;
+				DEVELOPMENT_TEAM = 866MXJ7W57;
 				INFOPLIST_FILE = "$(SRCROOT)/ios/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
