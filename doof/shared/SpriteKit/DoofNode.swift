@@ -76,7 +76,18 @@ class DoofNode: SKSpriteNode {
             })
             
         case .drinking:
-            break
+            for index in 1 ... 23 {
+                let textureName = "\(state.rawValue)\(index)"
+                let texture = doofAtlas.textureNamed(textureName)
+                frames.append(texture)
+            }
+            
+            self.doofFrames = frames
+            self.run(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.1, resize: false, restore: true), completion: {
+                let singletonDoof = UserSingleton.shared.doof!
+                singletonDoof.state = .idle
+                self.animate(withState: singletonDoof.state)
+            })
             
         case .sleeping:
             for index in 1 ... 10 {
@@ -105,9 +116,6 @@ class DoofNode: SKSpriteNode {
                 self.run(SKAction.repeatForever(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.2, resize: false, restore: true)))
             }
         }
-        
-        self.doofFrames = frames
-        self.run(SKAction.repeatForever(SKAction.animate(with: self.doofFrames!, timePerFrame: 0.1, resize: false, restore: true)))
     }
     
     #if os(iOS)

@@ -14,6 +14,9 @@ extension MainController {
     @IBAction func waterButtonAction(_ sender: Any) {
         self.selectionFeedback.selectionChanged()
         waterProgressView.progress += 0.1
+        let singletonDoof = UserSingleton.shared.doof!
+        singletonDoof.state = .drinking
+        self.doofNode!.animate(withState: singletonDoof.state)
         
         // Save waterstamp
         let waterstamp = WaterstampObject(time: Date())
