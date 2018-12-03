@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9EC9DBAA1E36636CEF18D05B /* Pods_doof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16704D4A6E3A302A98892914 /* Pods_doof.framework */; };
+		B518A1C421B4C50300679923 /* doof.sks in Resources */ = {isa = PBXBuildFile; fileRef = B518A1C221B4C1C900679923 /* doof.sks */; };
 		B52C2F7421A6388600DF6CD1 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */; };
 		B593DC762191B878006E2648 /* Doof.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC752191B878006E2648 /* Doof.swift */; };
 		B593DC7A2191B992006E2648 /* Foodstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC792191B992006E2648 /* Foodstamp.swift */; };
@@ -124,6 +125,7 @@
 		1BFAA5EE6656C14CBDD16E7F /* Pods-doof WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doof WatchKit App/Pods-doof WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		2ED406D632DF8E54555F970D /* Pods-doof.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doof/Pods-doof.debug.xcconfig"; sourceTree = "<group>"; };
 		9F43F332F55BD59311C8FC21 /* Pods-doof WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-doof WatchKit App/Pods-doof WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		B518A1C221B4C1C900679923 /* doof.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = doof.sks; path = /Users/joaomelo/Documents/ADA/Sprint4/doof/doof/doof/ios/Interfaces/doof.sks; sourceTree = "<absolute>"; };
 		B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		B593DC752191B878006E2648 /* Doof.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doof.swift; sourceTree = "<group>"; };
 		B593DC792191B992006E2648 /* Foodstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foodstamp.swift; sourceTree = "<group>"; };
@@ -454,6 +456,7 @@
 		D997190F218B7FE800BFD710 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				B518A1C221B4C1C900679923 /* doof.sks */,
 				D9C72EA621AECE7C0026C1FC /* Main.sks */,
 				D99718D4218B7F3E00BFD710 /* Main.storyboard */,
 				D99718D9218B7F4000BFD710 /* LaunchScreen.storyboard */,
@@ -625,6 +628,7 @@
 			files = (
 				D9C72EA721AECE7C0026C1FC /* Main.sks in Resources */,
 				D99718DB218B7F4000BFD710 /* LaunchScreen.storyboard in Resources */,
+				B518A1C421B4C50300679923 /* doof.sks in Resources */,
 				D921733721B1B66100C408DC /* Animations.xcassets in Resources */,
 				D99718D8218B7F4000BFD710 /* Assets.xcassets in Resources */,
 				D91A5F4221AF52A500F3538B /* StatisticsWeekCell.xib in Resources */,

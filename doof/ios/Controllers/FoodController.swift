@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SpriteKit
 
 class FoodController: UIViewController {
 
@@ -50,6 +51,9 @@ class FoodController: UIViewController {
             let singletonDoof = UserSingleton.shared.doof!
             singletonDoof.state = .eating
             mainController.doofNode?.animate(withState: singletonDoof.state)
+            let foodAnimatedNode = mainController.mainSKView.scene?.childNode(withName: "foodAnimated")
+            let foodAnimation = SKAction(named: "foodAnimated")
+            foodAnimatedNode?.run(foodAnimation!)
             self.dismiss(animated: true, completion: nil)
             
             
@@ -101,18 +105,26 @@ class FoodController: UIViewController {
     @IBAction func changeHealthiness(_ sender: UISlider) {
         let value = sender.value
         
+        let mainController = self.presentingViewController?.children.last as! MainController
+        let foodAnimatedNode = mainController.mainSKView.scene?.childNode(withName: "foodAnimated") as! SKSpriteNode
+        
         if value <= 0.15 {
+            
             sender.setValue(0, animated: true)
             self.selectedHealthiness = .unhealthy
+            foodAnimatedNode.texture = SKTexture(imageNamed: "unhealthy")
         } else if value <= 0.45 {
             sender.setValue(0.3, animated: true)
             self.selectedHealthiness = .lessHealthy
+            foodAnimatedNode.texture = SKTexture(imageNamed: "lessHealthy")
         } else if value <= 0.75 {
             sender.setValue(0.6, animated: true)
             self.selectedHealthiness = .healthy
+            foodAnimatedNode.texture = SKTexture(imageNamed: "healthy")
         } else {
             sender.setValue(0.9, animated: true)
             self.selectedHealthiness = .veryHealthy
+            foodAnimatedNode.texture = SKTexture(imageNamed: "veryHealthy")
         }
         self.selectionFeedback.selectionChanged()
     }
