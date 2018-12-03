@@ -29,7 +29,7 @@ class WatchScene: SKScene {
         self.doof?.animate(withState: singletonDoof.state)
         
         // Setup progress bar
-        self.drawProgressBars(happinessWidth: limit*0.5, foodWidth: limit*0.8, energyWidth: limit*1, waterWidth: limit*0.2)
+        self.drawProgressBars(happinessWidth: limit*CGFloat(singletonDoof.happiness), foodWidth: limit*1, energyWidth: limit*0.7, waterWidth: limit*0.9)
     }
     
     func drawProgressBars(happinessWidth: CGFloat, foodWidth: CGFloat, energyWidth: CGFloat, waterWidth: CGFloat) {

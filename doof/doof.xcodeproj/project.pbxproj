@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9EC9DBAA1E36636CEF18D05B /* Pods_doof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16704D4A6E3A302A98892914 /* Pods_doof.framework */; };
+		B513F1D321B57FCD00A6DC25 /* foodAnimatedWatch.sks in Resources */ = {isa = PBXBuildFile; fileRef = B513F1D221B57FC300A6DC25 /* foodAnimatedWatch.sks */; };
+		B513F1D421B57FCE00A6DC25 /* foodAnimatedWatch.sks in Resources */ = {isa = PBXBuildFile; fileRef = B513F1D221B57FC300A6DC25 /* foodAnimatedWatch.sks */; };
 		B52C2F7421A6388600DF6CD1 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */; };
 		B593DC762191B878006E2648 /* Doof.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC752191B878006E2648 /* Doof.swift */; };
 		B593DC7A2191B992006E2648 /* Foodstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC792191B992006E2648 /* Foodstamp.swift */; };
@@ -125,6 +127,7 @@
 		1BFAA5EE6656C14CBDD16E7F /* Pods-doof WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doof WatchKit App/Pods-doof WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		2ED406D632DF8E54555F970D /* Pods-doof.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doof/Pods-doof.debug.xcconfig"; sourceTree = "<group>"; };
 		9F43F332F55BD59311C8FC21 /* Pods-doof WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-doof WatchKit App/Pods-doof WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		B513F1D221B57FC300A6DC25 /* foodAnimatedWatch.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = foodAnimatedWatch.sks; path = "/Users/joaomelo/Documents/ADA/Sprint4/doof/doof/doof/watchos/doof-watchkit-app/foodAnimatedWatch.sks"; sourceTree = "<absolute>"; };
 		B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		B593DC752191B878006E2648 /* Doof.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doof.swift; sourceTree = "<group>"; };
 		B593DC792191B992006E2648 /* Foodstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foodstamp.swift; sourceTree = "<group>"; };
@@ -416,6 +419,7 @@
 		D99718E3218B7F4000BFD710 /* doof-watchkit-app */ = {
 			isa = PBXGroup;
 			children = (
+				B513F1D221B57FC300A6DC25 /* foodAnimatedWatch.sks */,
 				D99718E4218B7F4000BFD710 /* Interface.storyboard */,
 				D91A5F4A21B0303800F3538B /* MainWatch.sks */,
 				D99718E9218B7F4000BFD710 /* Info.plist */,
@@ -642,6 +646,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B513F1D321B57FCD00A6DC25 /* foodAnimatedWatch.sks in Resources */,
 				D91A5F4B21B0303800F3538B /* MainWatch.sks in Resources */,
 				D921733821B1B66100C408DC /* Animations.xcassets in Resources */,
 				D99718E6218B7F4000BFD710 /* Interface.storyboard in Resources */,
@@ -657,6 +662,7 @@
 				D9650ECE219C644C001CB668 /* BABIL___.TTF in Resources */,
 				D94A0BF321B0E51300ED7807 /* Assets.xcassets in Resources */,
 				D921733921B1B66100C408DC /* Animations.xcassets in Resources */,
+				B513F1D421B57FCE00A6DC25 /* foodAnimatedWatch.sks in Resources */,
 				D91A5F4F21B0339700F3538B /* MainWatch.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

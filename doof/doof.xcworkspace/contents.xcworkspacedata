@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/joaomelo/Documents/ADA/Sprint4/doof/doof/doof/watchos/doof-watchkit-app/foodAnimatedWatch.sks">
+   </FileRef>
+   <FileRef
       location = "group:doof.xcodeproj">
    </FileRef>
    <FileRef

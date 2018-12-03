@@ -31,6 +31,12 @@ class WKMainController: WKInterfaceController {
         
         let singletonDoof = UserSingleton.shared.doof!
         self.watchScene.doof?.animate(withState: singletonDoof.state)
+        
+        if context != nil {
+            let foodAnimatedNode = self.watchScene.childNode(withName: "foodAnimatedWatch")
+            let foodAnimation = SKAction(named: "foodAnimatedWatch")
+            foodAnimatedNode?.run(foodAnimation!)
+        }
     }
     
     // MARK: - Menu actions
