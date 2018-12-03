@@ -10,11 +10,13 @@ import UIKit
 
 class MainProgressBar: UIProgressView {
     override func draw(_ rect: CGRect) {
-        super.draw(rect)
+        
         self.layer.cornerRadius = 5
         self.clipsToBounds = true
         self.layer.sublayers![1].cornerRadius = 5
         self.subviews[1].clipsToBounds = true
         self.trackTintColor = UIColor.white
+        
+        super.draw(rect)
     }
 }

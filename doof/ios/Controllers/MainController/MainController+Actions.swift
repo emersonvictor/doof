@@ -30,10 +30,10 @@ extension MainController {
     
     // Action sleepButton
     @IBAction func sleepButtonAction(_ sender: Any) {
-//        let darkView = UIView(frame: self.view.frame)
-//        darkView.backgroundColor = UIColor(hue: 0, saturation: 0, brightness: 0, alpha: 0.5)
-//        self.view.addSubview(darkView)
-//        self.willHideInteractionButtons(true)
+        let darkView = UIView(frame: self.view.frame)
+        darkView.backgroundColor = UIColor(hue: 0, saturation: 0, brightness: 0, alpha: 0.5)
+        self.view.addSubview(darkView)
+        self.willHideInteractionButtons(true)
         
         // TODO: - Change scenario when sleep
         

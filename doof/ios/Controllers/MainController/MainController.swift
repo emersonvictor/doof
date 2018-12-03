@@ -93,6 +93,10 @@ class MainController: UIViewController {
         if let user = UserSingleton.shared.user {
             let doof = user.doof
             
+            self.happinessProgressView.progress = doof.happiness
+            self.foodProgressView.progress = doof.food
+            self.energyProgressView.progress = doof.energy
+            self.waterProgressView.progress = doof.water
         }
     }
     

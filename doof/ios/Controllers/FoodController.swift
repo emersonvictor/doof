@@ -49,11 +49,21 @@ class FoodController: UIViewController {
             
             let mainController = self.presentingViewController?.children.last as! MainController
             let singletonDoof = UserSingleton.shared.doof!
+            
+            // Doof animation
             singletonDoof.state = .eating
             mainController.doofNode?.animate(withState: singletonDoof.state)
+            
+            // Food animation
             let foodAnimatedNode = mainController.mainSKView.scene?.childNode(withName: "foodAnimated")
             let foodAnimation = SKAction(named: "foodAnimated")
             foodAnimatedNode?.run(foodAnimation!)
+            
+            // Increase food progress
+            singletonDoof.food = 1
+            mainController.setDoofInfo()
+            mainController.foodProgressView.layoutSubviews()
+            
             self.dismiss(animated: true, completion: nil)
             
             

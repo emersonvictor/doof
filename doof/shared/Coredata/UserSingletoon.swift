@@ -17,7 +17,7 @@ class UserSingleton {
     #endif
     
     private init() {
-        self.user = UserObject(username: "Emerson", mealsNumber: 6, sleepTime: 7, doof: DoofObject(food: 1, water: 1, happiness: 1, energy: 1, foodHistory: [], waterHistory: [], state: .idle))
+        self.user = UserObject(username: "Emerson", mealsNumber: 6, sleepTime: 7, doof: DoofObject(food: 0.2, water: 0.9, happiness: 1, energy: 0.7, foodHistory: [], waterHistory: [], state: .idle))
         self.doof = self.user!.doof
     }
 }

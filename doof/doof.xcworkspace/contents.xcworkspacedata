@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/joaomelo/Documents/ADA/Sprint4/doof/doof/doof/ios/Interfaces/doof.sks">
-   </FileRef>
-   <FileRef
       location = "group:doof.xcodeproj">
    </FileRef>
    <FileRef
