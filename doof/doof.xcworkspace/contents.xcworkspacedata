@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ios/Interfaces/MyActions.sks">
+   </FileRef>
+   <FileRef
       location = "group:doof.xcodeproj">
    </FileRef>
    <FileRef
