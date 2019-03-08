@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9EC9DBAA1E36636CEF18D05B /* Pods_doof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16704D4A6E3A302A98892914 /* Pods_doof.framework */; };
-		B513F1D321B57FCD00A6DC25 /* foodAnimatedWatch.sks in Resources */ = {isa = PBXBuildFile; fileRef = B513F1D221B57FC300A6DC25 /* foodAnimatedWatch.sks */; };
-		B513F1D421B57FCE00A6DC25 /* foodAnimatedWatch.sks in Resources */ = {isa = PBXBuildFile; fileRef = B513F1D221B57FC300A6DC25 /* foodAnimatedWatch.sks */; };
+		A40C7B122226B9350089A230 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40C7B112226B9350089A230 /* Intents.framework */; };
 		B52C2F7421A6388600DF6CD1 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */; };
 		B593DC762191B878006E2648 /* Doof.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC752191B878006E2648 /* Doof.swift */; };
 		B593DC7A2191B992006E2648 /* Foodstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC792191B992006E2648 /* Foodstamp.swift */; };
@@ -17,11 +16,6 @@
 		B593DC852191BD71006E2648 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC842191BD71006E2648 /* Meal.swift */; };
 		B5ECBF2D21B0242200D7C858 /* DoofNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECBF2C21B0242200D7C858 /* DoofNode.swift */; };
 		D90941B321B41D2800C03766 /* UserInformationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90941B221B41D2800C03766 /* UserInformationController.swift */; };
-		D90941B521B42CE300C03766 /* UserSingletoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574EB21A73D8C00BF7A2D /* UserSingletoon.swift */; };
-		D90941B721B42D4800C03766 /* Doof.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC752191B878006E2648 /* Doof.swift */; };
-		D90941B821B42D4800C03766 /* Foodstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC792191B992006E2648 /* Foodstamp.swift */; };
-		D90941B921B42D4800C03766 /* Waterstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7B2191BA16006E2648 /* Waterstamp.swift */; };
-		D90941BA21B42D4800C03766 /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574ED21A73EC500BF7A2D /* UserObject.swift */; };
 		D916337821A6D39000D500B4 /* OnBoardingPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916337721A6D39000D500B4 /* OnBoardingPageController.swift */; };
 		D916337A21A6DC4B00D500B4 /* OnBoardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916337921A6DC4B00D500B4 /* OnBoardingController.swift */; };
 		D916461321A2E0EF009FFC80 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916461221A2E0EF009FFC80 /* CircleButton.swift */; };
@@ -29,26 +23,11 @@
 		D91A5F4221AF52A500F3538B /* StatisticsWeekCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4021AF52A500F3538B /* StatisticsWeekCell.xib */; };
 		D91A5F4521AF52BE00F3538B /* StatisticsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A5F4321AF52BE00F3538B /* StatisticsCell.swift */; };
 		D91A5F4621AF52BE00F3538B /* StatisticsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4421AF52BE00F3538B /* StatisticsCell.xib */; };
-		D91A5F4B21B0303800F3538B /* MainWatch.sks in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4A21B0303800F3538B /* MainWatch.sks */; };
-		D91A5F4F21B0339700F3538B /* MainWatch.sks in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4A21B0303800F3538B /* MainWatch.sks */; };
 		D921733721B1B66100C408DC /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D921733621B1B66100C408DC /* Animations.xcassets */; };
-		D921733821B1B66100C408DC /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D921733621B1B66100C408DC /* Animations.xcassets */; };
-		D921733921B1B66100C408DC /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D921733621B1B66100C408DC /* Animations.xcassets */; };
 		D93CC13421A73006008B7535 /* Doof.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D93CC13221A73006008B7535 /* Doof.xcdatamodeld */; };
-		D94A0BCA21B0878200ED7807 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC842191BD71006E2648 /* Meal.swift */; };
-		D94A0BCB21B0878500ED7807 /* Healthiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EBB219C48C3001CB668 /* Healthiness.swift */; };
-		D94A0BCC21B0878D00ED7807 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC9219C6326001CB668 /* UIColor.swift */; };
-		D94A0BCE21B0B9A900ED7807 /* DoofStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BCD21B0B9A900ED7807 /* DoofStates.swift */; };
 		D94A0BCF21B0B9AC00ED7807 /* DoofStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BCD21B0B9A900ED7807 /* DoofStates.swift */; };
 		D94A0BEA21B0C8AC00ED7807 /* MainController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BE921B0C8AC00ED7807 /* MainController+Actions.swift */; };
 		D94A0BF121B0D23B00ED7807 /* MainProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BF021B0D23B00ED7807 /* MainProgressBar.swift */; };
-		D94A0BF221B0E51300ED7807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718D7218B7F4000BFD710 /* Assets.xcassets */; };
-		D94A0BF321B0E51300ED7807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718D7218B7F4000BFD710 /* Assets.xcassets */; };
-		D94A0BF721B161CB00ED7807 /* DoofNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECBF2C21B0242200D7C858 /* DoofNode.swift */; };
-		D94A0BFC21B173E000ED7807 /* WatchScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BFB21B173E000ED7807 /* WatchScene.swift */; };
-		D94A0C0121B1753E00ED7807 /* WKMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BFE21B1753E00ED7807 /* WKMainController.swift */; };
-		D94A0C0221B1753E00ED7807 /* WKHealthinessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BFF21B1753E00ED7807 /* WKHealthinessController.swift */; };
-		D94A0C0321B1753E00ED7807 /* WKMealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0C0021B1753E00ED7807 /* WKMealController.swift */; };
 		D9650EBC219C48C3001CB668 /* Healthiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EBB219C48C3001CB668 /* Healthiness.swift */; };
 		D9650EC1219C5245001CB668 /* SlidePresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */; };
 		D9650EC3219C5298001CB668 /* PresentationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC2219C5298001CB668 /* PresentationDirection.swift */; };
@@ -56,54 +35,26 @@
 		D9650EC7219C560A001CB668 /* SlidePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC6219C560A001CB668 /* SlidePresentationController.swift */; };
 		D9650ECA219C6326001CB668 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC9219C6326001CB668 /* UIColor.swift */; };
 		D9650ECC219C644C001CB668 /* BABIL___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D9650ECB219C644C001CB668 /* BABIL___.TTF */; };
-		D9650ECD219C644C001CB668 /* BABIL___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D9650ECB219C644C001CB668 /* BABIL___.TTF */; };
-		D9650ECE219C644C001CB668 /* BABIL___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D9650ECB219C644C001CB668 /* BABIL___.TTF */; };
 		D99718D1218B7F3E00BFD710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718D0218B7F3E00BFD710 /* AppDelegate.swift */; };
 		D99718D3218B7F3E00BFD710 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718D2218B7F3E00BFD710 /* MainController.swift */; };
 		D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99718D4218B7F3E00BFD710 /* Main.storyboard */; };
 		D99718D8218B7F4000BFD710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718D7218B7F4000BFD710 /* Assets.xcassets */; };
 		D99718DB218B7F4000BFD710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99718D9218B7F4000BFD710 /* LaunchScreen.storyboard */; };
-		D99718E0218B7F4000BFD710 /* doof WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D99718DF218B7F4000BFD710 /* doof WatchKit App.app */; };
-		D99718E6218B7F4000BFD710 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99718E4218B7F4000BFD710 /* Interface.storyboard */; };
-		D99718EF218B7F4000BFD710 /* doof WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D99718EE218B7F4000BFD710 /* doof WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		D99718F6218B7F4000BFD710 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718F5218B7F4000BFD710 /* ExtensionDelegate.swift */; };
-		D99718F8218B7F4000BFD710 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718F7218B7F4000BFD710 /* NotificationController.swift */; };
-		D99718FA218B7F4000BFD710 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718F9218B7F4000BFD710 /* ComplicationController.swift */; };
 		D9A574EA21A73AD900BF7A2D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574E921A73AD900BF7A2D /* CoreDataManager.swift */; };
 		D9A574EC21A73D8C00BF7A2D /* UserSingletoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574EB21A73D8C00BF7A2D /* UserSingletoon.swift */; };
 		D9A574EE21A73EC500BF7A2D /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574ED21A73EC500BF7A2D /* UserObject.swift */; };
 		D9C72EA721AECE7C0026C1FC /* Main.sks in Resources */ = {isa = PBXBuildFile; fileRef = D9C72EA621AECE7C0026C1FC /* Main.sks */; };
 		D9C72EAB21AEECFF0026C1FC /* StatisticsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C72EAA21AEECFF0026C1FC /* StatisticsController.swift */; };
 		D9CCDE1E21B55DEA00B1A0FA /* doof.sks in Resources */ = {isa = PBXBuildFile; fileRef = D9CCDE1D21B55DEA00B1A0FA /* doof.sks */; };
-		DFCB04EE9DE0B97E3FEAE1DB /* Pods_doof_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E78CC5C715430FE2552652 /* Pods_doof_WatchKit_App.framework */; };
-		F2D5CC4287A37617757CEFFD /* Pods_doof_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63BE3D14DB53E0F3CC7917E /* Pods_doof_WatchKit_Extension.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D99718E1218B7F4000BFD710 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D99718C5218B7F3E00BFD710 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D99718DE218B7F4000BFD710;
-			remoteInfo = "mc4 WatchKit App";
-		};
-		D99718F0218B7F4000BFD710 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D99718C5218B7F3E00BFD710 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D99718ED218B7F4000BFD710;
-			remoteInfo = "mc4 WatchKit Extension";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		D9971904218B7F4100BFD710 /* Embed App Extensions */ = {
+		A4745C112227197D003A2653 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				D99718EF218B7F4000BFD710 /* doof WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,7 +65,6 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				D99718E0218B7F4000BFD710 /* doof WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +77,8 @@
 		1BFAA5EE6656C14CBDD16E7F /* Pods-doof WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doof WatchKit App/Pods-doof WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		2ED406D632DF8E54555F970D /* Pods-doof.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doof/Pods-doof.debug.xcconfig"; sourceTree = "<group>"; };
 		9F43F332F55BD59311C8FC21 /* Pods-doof WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-doof WatchKit App/Pods-doof WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		A40C7B112226B9350089A230 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		A4745BFC2227197D003A2653 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		B513F1D221B57FC300A6DC25 /* foodAnimatedWatch.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = foodAnimatedWatch.sks; path = "/Users/joaomelo/Documents/ADA/Sprint4/doof/doof/doof/watchos/doof-watchkit-app/foodAnimatedWatch.sks"; sourceTree = "<absolute>"; };
 		B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		B593DC752191B878006E2648 /* Doof.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doof.swift; sourceTree = "<group>"; };
@@ -138,8 +90,6 @@
 		D63BE3D14DB53E0F3CC7917E /* Pods_doof_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doof_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90941B221B41D2800C03766 /* UserInformationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformationController.swift; sourceTree = "<group>"; };
 		D90941B421B4215800C03766 /* doof.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = doof.entitlements; sourceTree = "<group>"; };
-		D90941BD21B46F9100C03766 /* doof WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "doof WatchKit Extension.entitlements"; sourceTree = "<group>"; };
-		D90941BE21B46FA700C03766 /* doof WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "doof WatchKit App.entitlements"; sourceTree = "<group>"; };
 		D916337721A6D39000D500B4 /* OnBoardingPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnBoardingPageController.swift; path = ios/Controllers/OnBoarding/OnBoardingPageController.swift; sourceTree = SOURCE_ROOT; };
 		D916337921A6DC4B00D500B4 /* OnBoardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnBoardingController.swift; path = ios/Controllers/OnBoarding/OnBoardingController.swift; sourceTree = SOURCE_ROOT; };
 		D916461221A2E0EF009FFC80 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
@@ -171,10 +121,8 @@
 		D99718D7218B7F4000BFD710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D99718DA218B7F4000BFD710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D99718DC218B7F4000BFD710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D99718DF218B7F4000BFD710 /* doof WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "doof WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99718E5218B7F4000BFD710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		D99718E9218B7F4000BFD710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D99718EE218B7F4000BFD710 /* doof WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "doof WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99718F5218B7F4000BFD710 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		D99718F7218B7F4000BFD710 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		D99718F9218B7F4000BFD710 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
@@ -191,28 +139,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7E5A72729B1FF873EBA3A9DA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DFCB04EE9DE0B97E3FEAE1DB /* Pods_doof_WatchKit_App.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D99718CA218B7F3E00BFD710 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A40C7B122226B9350089A230 /* Intents.framework in Frameworks */,
 				B52C2F7421A6388600DF6CD1 /* SpriteKit.framework in Frameworks */,
 				9EC9DBAA1E36636CEF18D05B /* Pods_doof.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D99718EB218B7F4000BFD710 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F2D5CC4287A37617757CEFFD /* Pods_doof_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,10 +168,12 @@
 		B52C2F7221A6388600DF6CD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A40C7B112226B9350089A230 /* Intents.framework */,
 				B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */,
 				16704D4A6E3A302A98892914 /* Pods_doof.framework */,
 				06E78CC5C715430FE2552652 /* Pods_doof_WatchKit_App.framework */,
 				D63BE3D14DB53E0F3CC7917E /* Pods_doof_WatchKit_Extension.framework */,
+				A4745BFC2227197D003A2653 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -381,8 +316,6 @@
 		D99718C4218B7F3E00BFD710 = {
 			isa = PBXGroup;
 			children = (
-				D90941BE21B46FA700C03766 /* doof WatchKit App.entitlements */,
-				D90941BD21B46F9100C03766 /* doof WatchKit Extension.entitlements */,
 				B593DC732191B853006E2648 /* shared */,
 				D99718CF218B7F3E00BFD710 /* ios */,
 				D9971915218B80B700BFD710 /* watchos */,
@@ -396,8 +329,6 @@
 			isa = PBXGroup;
 			children = (
 				D99718CD218B7F3E00BFD710 /* doof.app */,
-				D99718DF218B7F4000BFD710 /* doof WatchKit App.app */,
-				D99718EE218B7F4000BFD710 /* doof WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -519,54 +450,16 @@
 				D99718CA218B7F3E00BFD710 /* Frameworks */,
 				D99718CB218B7F3E00BFD710 /* Resources */,
 				D9971908218B7F4100BFD710 /* Embed Watch Content */,
-				6AA9E22B59EB124B25E956EB /* [CP] Embed Pods Frameworks */,
+				A4745C112227197D003A2653 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D99718E2218B7F4000BFD710 /* PBXTargetDependency */,
 			);
 			name = doof;
 			productName = mc4;
 			productReference = D99718CD218B7F3E00BFD710 /* doof.app */;
 			productType = "com.apple.product-type.application";
-		};
-		D99718DE218B7F4000BFD710 /* doof WatchKit App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D9971905218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "doof WatchKit App" */;
-			buildPhases = (
-				C041ADD3945AC34A495A48C8 /* [CP] Check Pods Manifest.lock */,
-				D99718DD218B7F4000BFD710 /* Resources */,
-				D9971904218B7F4100BFD710 /* Embed App Extensions */,
-				7E5A72729B1FF873EBA3A9DA /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D99718F1218B7F4000BFD710 /* PBXTargetDependency */,
-			);
-			name = "doof WatchKit App";
-			productName = "mc4 WatchKit App";
-			productReference = D99718DF218B7F4000BFD710 /* doof WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		D99718ED218B7F4000BFD710 /* doof WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D9971901218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "doof WatchKit Extension" */;
-			buildPhases = (
-				DF7F6CCD4E8656F5038545D1 /* [CP] Check Pods Manifest.lock */,
-				D99718EA218B7F4000BFD710 /* Sources */,
-				D99718EB218B7F4000BFD710 /* Frameworks */,
-				D99718EC218B7F4000BFD710 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "doof WatchKit Extension";
-			productName = "mc4 WatchKit Extension";
-			productReference = D99718EE218B7F4000BFD710 /* doof WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -582,24 +475,10 @@
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 0;
+								enabled = 1;
 							};
-						};
-					};
-					D99718DE218B7F4000BFD710 = {
-						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 0;
-							};
-						};
-					};
-					D99718ED218B7F4000BFD710 = {
-						CreatedOnToolsVersion = 10.1;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 0;
+							com.apple.Siri = {
+								enabled = 1;
 							};
 						};
 					};
@@ -619,8 +498,6 @@
 			projectRoot = "";
 			targets = (
 				D99718CC218B7F3E00BFD710 /* doof */,
-				D99718DE218B7F4000BFD710 /* doof WatchKit App */,
-				D99718ED218B7F4000BFD710 /* doof WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -642,116 +519,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D99718DD218B7F4000BFD710 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B513F1D321B57FCD00A6DC25 /* foodAnimatedWatch.sks in Resources */,
-				D91A5F4B21B0303800F3538B /* MainWatch.sks in Resources */,
-				D921733821B1B66100C408DC /* Animations.xcassets in Resources */,
-				D99718E6218B7F4000BFD710 /* Interface.storyboard in Resources */,
-				D9650ECD219C644C001CB668 /* BABIL___.TTF in Resources */,
-				D94A0BF221B0E51300ED7807 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D99718EC218B7F4000BFD710 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D9650ECE219C644C001CB668 /* BABIL___.TTF in Resources */,
-				D94A0BF321B0E51300ED7807 /* Assets.xcassets in Resources */,
-				D921733921B1B66100C408DC /* Animations.xcassets in Resources */,
-				B513F1D421B57FCE00A6DC25 /* foodAnimatedWatch.sks in Resources */,
-				D91A5F4F21B0339700F3538B /* MainWatch.sks in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6AA9E22B59EB124B25E956EB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-doof/Pods-doof-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-doof/Pods-doof-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B4D3B33F0CAE0AD175743A63 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-doof-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C041ADD3945AC34A495A48C8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-doof WatchKit App-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DF7F6CCD4E8656F5038545D1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-doof WatchKit Extension-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -795,44 +577,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D99718EA218B7F4000BFD710 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D94A0BCE21B0B9A900ED7807 /* DoofStates.swift in Sources */,
-				D90941B921B42D4800C03766 /* Waterstamp.swift in Sources */,
-				D94A0BF721B161CB00ED7807 /* DoofNode.swift in Sources */,
-				D94A0C0321B1753E00ED7807 /* WKMealController.swift in Sources */,
-				D99718F8218B7F4000BFD710 /* NotificationController.swift in Sources */,
-				D94A0BFC21B173E000ED7807 /* WatchScene.swift in Sources */,
-				D94A0C0121B1753E00ED7807 /* WKMainController.swift in Sources */,
-				D94A0BCA21B0878200ED7807 /* Meal.swift in Sources */,
-				D90941B821B42D4800C03766 /* Foodstamp.swift in Sources */,
-				D94A0C0221B1753E00ED7807 /* WKHealthinessController.swift in Sources */,
-				D99718FA218B7F4000BFD710 /* ComplicationController.swift in Sources */,
-				D90941BA21B42D4800C03766 /* UserObject.swift in Sources */,
-				D90941B521B42CE300C03766 /* UserSingletoon.swift in Sources */,
-				D94A0BCC21B0878D00ED7807 /* UIColor.swift in Sources */,
-				D94A0BCB21B0878500ED7807 /* Healthiness.swift in Sources */,
-				D90941B721B42D4800C03766 /* Doof.swift in Sources */,
-				D99718F6218B7F4000BFD710 /* ExtensionDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D99718E2218B7F4000BFD710 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D99718DE218B7F4000BFD710 /* doof WatchKit App */;
-			targetProxy = D99718E1218B7F4000BFD710 /* PBXContainerItemProxy */;
-		};
-		D99718F1218B7F4000BFD710 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D99718ED218B7F4000BFD710 /* doof WatchKit Extension */;
-			targetProxy = D99718F0218B7F4000BFD710 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D99718D4218B7F3E00BFD710 /* Main.storyboard */ = {
@@ -978,120 +723,21 @@
 			};
 			name = Release;
 		};
-		D9971902218B7F4100BFD710 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2CDB65EC9E5559EE6F8F275 /* Pods-doof WatchKit Extension.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
-				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = bdsm.doof.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
-			};
-			name = Debug;
-		};
-		D9971903218B7F4100BFD710 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE7C24A5068E53F1B2CCE881 /* Pods-doof WatchKit Extension.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
-				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = bdsm.doof.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
-			};
-			name = Release;
-		};
-		D9971906218B7F4100BFD710 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BFAA5EE6656C14CBDD16E7F /* Pods-doof WatchKit App.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
-				IBSC_MODULE = mc4_WatchKit_Extension;
-				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-app/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = bdsm.doof.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "watchos/doof-watchkit-extension/Controllers/doof WatchKit App-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
-			};
-			name = Debug;
-		};
-		D9971907218B7F4100BFD710 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F43F332F55BD59311C8FC21 /* Pods-doof WatchKit App.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
-				IBSC_MODULE = mc4_WatchKit_Extension;
-				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-app/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = bdsm.doof.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "watchos/doof-watchkit-extension/Controllers/doof WatchKit App-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
-			};
-			name = Release;
-		};
 		D997190A218B7F4100BFD710 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED406D632DF8E54555F970D /* Pods-doof.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = shared/Application/doof.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = NEW6GCULKR;
 				INFOPLIST_FILE = "$(SRCROOT)/ios/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = bdsm.doof;
+				PRODUCT_BUNDLE_IDENTIFIER = bdsm.doof.SiriShortcuts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1102,15 +748,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D268F75B47AAD8200F4E8250 /* Pods-doof.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = shared/Application/doof.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 866MXJ7W57;
+				DEVELOPMENT_TEAM = NEW6GCULKR;
 				INFOPLIST_FILE = "$(SRCROOT)/ios/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = bdsm.doof;
+				PRODUCT_BUNDLE_IDENTIFIER = bdsm.doof.SiriShortcuts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1125,24 +773,6 @@
 			buildConfigurations = (
 				D99718FF218B7F4100BFD710 /* Debug */,
 				D9971900218B7F4100BFD710 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D9971901218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "doof WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D9971902218B7F4100BFD710 /* Debug */,
-				D9971903218B7F4100BFD710 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D9971905218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "doof WatchKit App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D9971906218B7F4100BFD710 /* Debug */,
-				D9971907218B7F4100BFD710 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

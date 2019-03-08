@@ -6,7 +6,6 @@ target 'doof' do
   use_frameworks!
 
   # Pods for doof
-  pod 'UICircularProgressRing'
 
 end
 

@@ -8,16 +8,19 @@
 
 import SpriteKit
 import UIKit
+import Intents
 
 class MainController: UIViewController {
     
-    // MARK: Outlets
+    // MARK: - Outlets
     @IBOutlet weak var mainSKView: SKView!
+
     // Progress bars
     @IBOutlet weak var foodProgressView: UIProgressView!
     @IBOutlet weak var waterProgressView: UIProgressView!
     @IBOutlet weak var happinessProgressView: UIProgressView!
     @IBOutlet weak var energyProgressView: UIProgressView!
+   
     // Buttons
     @IBOutlet weak var mainButton: CircleButton!
     @IBOutlet weak var waterButton: UIButton!
@@ -34,6 +37,7 @@ class MainController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setDoofInfo()
+        self.setupIntents()
     
         // Progress timers
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (_) in
@@ -54,6 +58,21 @@ class MainController: UIViewController {
         self.doofNode?.animate(withState: UserSingleton.shared.doof!.state)
         
         super.viewWillAppear(animated)
+    }
+    
+    // MARK: - Siri Shortcuts
+    func setupIntents() {
+        let activity = NSUserActivity(activityType: "bdsm.doof.SiriShortcuts.logWaterShortcut")
+        activity.title = "Log Water"
+        
+        // Eligibility
+        activity.isEligibleForSearch = true
+        activity.isEligibleForPrediction = true
+        
+        activity.persistentIdentifier = NSUserActivityPersistentIdentifier("bdsm.doof.SiriShortcuts.logWaterShortcut")
+        self.view.userActivity = activity
+        
+        activity.becomeCurrent()
     }
     
     // MARK: - Update doof information

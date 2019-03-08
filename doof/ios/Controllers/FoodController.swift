@@ -8,6 +8,7 @@
 
 import UIKit
 import SpriteKit
+import Intents
 
 class FoodController: UIViewController {
 
@@ -39,6 +40,7 @@ class FoodController: UIViewController {
     }
     
     // MARK: - Modal options
+    
     @IBAction func confirmAction(_ sender: UIButton) {
         if let meal = self.selectedMeal {
             // Save food stamp
