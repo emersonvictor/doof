@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/joaomelo/Documents/ADA/Sprint4/doof/doof/doof/watchos/doof-watchkit-app/foodAnimatedWatch.sks">
+   </FileRef>
+   <FileRef
+      location = "group:doof.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

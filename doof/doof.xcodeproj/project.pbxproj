@@ -1,0 +1,1175 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EC9DBAA1E36636CEF18D05B /* Pods_doof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16704D4A6E3A302A98892914 /* Pods_doof.framework */; };
+		B513F1D321B57FCD00A6DC25 /* foodAnimatedWatch.sks in Resources */ = {isa = PBXBuildFile; fileRef = B513F1D221B57FC300A6DC25 /* foodAnimatedWatch.sks */; };
+		B513F1D421B57FCE00A6DC25 /* foodAnimatedWatch.sks in Resources */ = {isa = PBXBuildFile; fileRef = B513F1D221B57FC300A6DC25 /* foodAnimatedWatch.sks */; };
+		B52C2F7421A6388600DF6CD1 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */; };
+		B593DC762191B878006E2648 /* Doof.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC752191B878006E2648 /* Doof.swift */; };
+		B593DC7A2191B992006E2648 /* Foodstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC792191B992006E2648 /* Foodstamp.swift */; };
+		B593DC7C2191BA16006E2648 /* Waterstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7B2191BA16006E2648 /* Waterstamp.swift */; };
+		B593DC852191BD71006E2648 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC842191BD71006E2648 /* Meal.swift */; };
+		B5ECBF2D21B0242200D7C858 /* DoofNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECBF2C21B0242200D7C858 /* DoofNode.swift */; };
+		D90941B321B41D2800C03766 /* UserInformationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90941B221B41D2800C03766 /* UserInformationController.swift */; };
+		D90941B521B42CE300C03766 /* UserSingletoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574EB21A73D8C00BF7A2D /* UserSingletoon.swift */; };
+		D90941B721B42D4800C03766 /* Doof.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC752191B878006E2648 /* Doof.swift */; };
+		D90941B821B42D4800C03766 /* Foodstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC792191B992006E2648 /* Foodstamp.swift */; };
+		D90941B921B42D4800C03766 /* Waterstamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC7B2191BA16006E2648 /* Waterstamp.swift */; };
+		D90941BA21B42D4800C03766 /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574ED21A73EC500BF7A2D /* UserObject.swift */; };
+		D916337821A6D39000D500B4 /* OnBoardingPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916337721A6D39000D500B4 /* OnBoardingPageController.swift */; };
+		D916337A21A6DC4B00D500B4 /* OnBoardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916337921A6DC4B00D500B4 /* OnBoardingController.swift */; };
+		D916461321A2E0EF009FFC80 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916461221A2E0EF009FFC80 /* CircleButton.swift */; };
+		D91A5F4121AF52A500F3538B /* StatisticsWeekCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A5F3F21AF52A500F3538B /* StatisticsWeekCell.swift */; };
+		D91A5F4221AF52A500F3538B /* StatisticsWeekCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4021AF52A500F3538B /* StatisticsWeekCell.xib */; };
+		D91A5F4521AF52BE00F3538B /* StatisticsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A5F4321AF52BE00F3538B /* StatisticsCell.swift */; };
+		D91A5F4621AF52BE00F3538B /* StatisticsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4421AF52BE00F3538B /* StatisticsCell.xib */; };
+		D91A5F4B21B0303800F3538B /* MainWatch.sks in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4A21B0303800F3538B /* MainWatch.sks */; };
+		D91A5F4F21B0339700F3538B /* MainWatch.sks in Resources */ = {isa = PBXBuildFile; fileRef = D91A5F4A21B0303800F3538B /* MainWatch.sks */; };
+		D921733721B1B66100C408DC /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D921733621B1B66100C408DC /* Animations.xcassets */; };
+		D921733821B1B66100C408DC /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D921733621B1B66100C408DC /* Animations.xcassets */; };
+		D921733921B1B66100C408DC /* Animations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D921733621B1B66100C408DC /* Animations.xcassets */; };
+		D93CC13421A73006008B7535 /* Doof.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D93CC13221A73006008B7535 /* Doof.xcdatamodeld */; };
+		D94A0BCA21B0878200ED7807 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B593DC842191BD71006E2648 /* Meal.swift */; };
+		D94A0BCB21B0878500ED7807 /* Healthiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EBB219C48C3001CB668 /* Healthiness.swift */; };
+		D94A0BCC21B0878D00ED7807 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC9219C6326001CB668 /* UIColor.swift */; };
+		D94A0BCE21B0B9A900ED7807 /* DoofStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BCD21B0B9A900ED7807 /* DoofStates.swift */; };
+		D94A0BCF21B0B9AC00ED7807 /* DoofStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BCD21B0B9A900ED7807 /* DoofStates.swift */; };
+		D94A0BEA21B0C8AC00ED7807 /* MainController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BE921B0C8AC00ED7807 /* MainController+Actions.swift */; };
+		D94A0BF121B0D23B00ED7807 /* MainProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BF021B0D23B00ED7807 /* MainProgressBar.swift */; };
+		D94A0BF221B0E51300ED7807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718D7218B7F4000BFD710 /* Assets.xcassets */; };
+		D94A0BF321B0E51300ED7807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718D7218B7F4000BFD710 /* Assets.xcassets */; };
+		D94A0BF721B161CB00ED7807 /* DoofNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECBF2C21B0242200D7C858 /* DoofNode.swift */; };
+		D94A0BFC21B173E000ED7807 /* WatchScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BFB21B173E000ED7807 /* WatchScene.swift */; };
+		D94A0C0121B1753E00ED7807 /* WKMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BFE21B1753E00ED7807 /* WKMainController.swift */; };
+		D94A0C0221B1753E00ED7807 /* WKHealthinessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0BFF21B1753E00ED7807 /* WKHealthinessController.swift */; };
+		D94A0C0321B1753E00ED7807 /* WKMealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A0C0021B1753E00ED7807 /* WKMealController.swift */; };
+		D9650EBC219C48C3001CB668 /* Healthiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EBB219C48C3001CB668 /* Healthiness.swift */; };
+		D9650EC1219C5245001CB668 /* SlidePresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */; };
+		D9650EC3219C5298001CB668 /* PresentationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC2219C5298001CB668 /* PresentationDirection.swift */; };
+		D9650EC5219C546E001CB668 /* FoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC4219C546E001CB668 /* FoodController.swift */; };
+		D9650EC7219C560A001CB668 /* SlidePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC6219C560A001CB668 /* SlidePresentationController.swift */; };
+		D9650ECA219C6326001CB668 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9650EC9219C6326001CB668 /* UIColor.swift */; };
+		D9650ECC219C644C001CB668 /* BABIL___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D9650ECB219C644C001CB668 /* BABIL___.TTF */; };
+		D9650ECD219C644C001CB668 /* BABIL___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D9650ECB219C644C001CB668 /* BABIL___.TTF */; };
+		D9650ECE219C644C001CB668 /* BABIL___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D9650ECB219C644C001CB668 /* BABIL___.TTF */; };
+		D99718D1218B7F3E00BFD710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718D0218B7F3E00BFD710 /* AppDelegate.swift */; };
+		D99718D3218B7F3E00BFD710 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718D2218B7F3E00BFD710 /* MainController.swift */; };
+		D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99718D4218B7F3E00BFD710 /* Main.storyboard */; };
+		D99718D8218B7F4000BFD710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99718D7218B7F4000BFD710 /* Assets.xcassets */; };
+		D99718DB218B7F4000BFD710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99718D9218B7F4000BFD710 /* LaunchScreen.storyboard */; };
+		D99718E0218B7F4000BFD710 /* doof WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D99718DF218B7F4000BFD710 /* doof WatchKit App.app */; };
+		D99718E6218B7F4000BFD710 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99718E4218B7F4000BFD710 /* Interface.storyboard */; };
+		D99718EF218B7F4000BFD710 /* doof WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D99718EE218B7F4000BFD710 /* doof WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D99718F6218B7F4000BFD710 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718F5218B7F4000BFD710 /* ExtensionDelegate.swift */; };
+		D99718F8218B7F4000BFD710 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718F7218B7F4000BFD710 /* NotificationController.swift */; };
+		D99718FA218B7F4000BFD710 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99718F9218B7F4000BFD710 /* ComplicationController.swift */; };
+		D9A574EA21A73AD900BF7A2D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574E921A73AD900BF7A2D /* CoreDataManager.swift */; };
+		D9A574EC21A73D8C00BF7A2D /* UserSingletoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574EB21A73D8C00BF7A2D /* UserSingletoon.swift */; };
+		D9A574EE21A73EC500BF7A2D /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A574ED21A73EC500BF7A2D /* UserObject.swift */; };
+		D9C72EA721AECE7C0026C1FC /* Main.sks in Resources */ = {isa = PBXBuildFile; fileRef = D9C72EA621AECE7C0026C1FC /* Main.sks */; };
+		D9C72EAB21AEECFF0026C1FC /* StatisticsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C72EAA21AEECFF0026C1FC /* StatisticsController.swift */; };
+		D9CCDE1E21B55DEA00B1A0FA /* doof.sks in Resources */ = {isa = PBXBuildFile; fileRef = D9CCDE1D21B55DEA00B1A0FA /* doof.sks */; };
+		DFCB04EE9DE0B97E3FEAE1DB /* Pods_doof_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E78CC5C715430FE2552652 /* Pods_doof_WatchKit_App.framework */; };
+		F2D5CC4287A37617757CEFFD /* Pods_doof_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63BE3D14DB53E0F3CC7917E /* Pods_doof_WatchKit_Extension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D99718E1218B7F4000BFD710 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D99718C5218B7F3E00BFD710 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D99718DE218B7F4000BFD710;
+			remoteInfo = "mc4 WatchKit App";
+		};
+		D99718F0218B7F4000BFD710 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D99718C5218B7F3E00BFD710 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D99718ED218B7F4000BFD710;
+			remoteInfo = "mc4 WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D9971904218B7F4100BFD710 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D99718EF218B7F4000BFD710 /* doof WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9971908218B7F4100BFD710 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D99718E0218B7F4000BFD710 /* doof WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		06E78CC5C715430FE2552652 /* Pods_doof_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doof_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16704D4A6E3A302A98892914 /* Pods_doof.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doof.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BFAA5EE6656C14CBDD16E7F /* Pods-doof WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doof WatchKit App/Pods-doof WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		2ED406D632DF8E54555F970D /* Pods-doof.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doof/Pods-doof.debug.xcconfig"; sourceTree = "<group>"; };
+		9F43F332F55BD59311C8FC21 /* Pods-doof WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-doof WatchKit App/Pods-doof WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		B513F1D221B57FC300A6DC25 /* foodAnimatedWatch.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = foodAnimatedWatch.sks; path = "/Users/joaomelo/Documents/ADA/Sprint4/doof/doof/doof/watchos/doof-watchkit-app/foodAnimatedWatch.sks"; sourceTree = "<absolute>"; };
+		B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		B593DC752191B878006E2648 /* Doof.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doof.swift; sourceTree = "<group>"; };
+		B593DC792191B992006E2648 /* Foodstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foodstamp.swift; sourceTree = "<group>"; };
+		B593DC7B2191BA16006E2648 /* Waterstamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waterstamp.swift; sourceTree = "<group>"; };
+		B593DC842191BD71006E2648 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		B5ECBF2C21B0242200D7C858 /* DoofNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoofNode.swift; sourceTree = "<group>"; };
+		D268F75B47AAD8200F4E8250 /* Pods-doof.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof.release.xcconfig"; path = "Pods/Target Support Files/Pods-doof/Pods-doof.release.xcconfig"; sourceTree = "<group>"; };
+		D63BE3D14DB53E0F3CC7917E /* Pods_doof_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doof_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90941B221B41D2800C03766 /* UserInformationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformationController.swift; sourceTree = "<group>"; };
+		D90941B421B4215800C03766 /* doof.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = doof.entitlements; sourceTree = "<group>"; };
+		D90941BD21B46F9100C03766 /* doof WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "doof WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		D90941BE21B46FA700C03766 /* doof WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "doof WatchKit App.entitlements"; sourceTree = "<group>"; };
+		D916337721A6D39000D500B4 /* OnBoardingPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnBoardingPageController.swift; path = ios/Controllers/OnBoarding/OnBoardingPageController.swift; sourceTree = SOURCE_ROOT; };
+		D916337921A6DC4B00D500B4 /* OnBoardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnBoardingController.swift; path = ios/Controllers/OnBoarding/OnBoardingController.swift; sourceTree = SOURCE_ROOT; };
+		D916461221A2E0EF009FFC80 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		D91A5F3F21AF52A500F3538B /* StatisticsWeekCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsWeekCell.swift; sourceTree = "<group>"; };
+		D91A5F4021AF52A500F3538B /* StatisticsWeekCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticsWeekCell.xib; sourceTree = "<group>"; };
+		D91A5F4321AF52BE00F3538B /* StatisticsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsCell.swift; sourceTree = "<group>"; };
+		D91A5F4421AF52BE00F3538B /* StatisticsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticsCell.xib; sourceTree = "<group>"; };
+		D91A5F4A21B0303800F3538B /* MainWatch.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainWatch.sks; sourceTree = "<group>"; };
+		D921733621B1B66100C408DC /* Animations.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Animations.xcassets; sourceTree = "<group>"; };
+		D93CC13321A73006008B7535 /* Doof.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Doof.xcdatamodel; sourceTree = "<group>"; };
+		D94A0BCD21B0B9A900ED7807 /* DoofStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoofStates.swift; sourceTree = "<group>"; };
+		D94A0BE921B0C8AC00ED7807 /* MainController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainController+Actions.swift"; sourceTree = "<group>"; };
+		D94A0BF021B0D23B00ED7807 /* MainProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProgressBar.swift; sourceTree = "<group>"; };
+		D94A0BFB21B173E000ED7807 /* WatchScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchScene.swift; sourceTree = "<group>"; };
+		D94A0BFE21B1753E00ED7807 /* WKMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKMainController.swift; sourceTree = "<group>"; };
+		D94A0BFF21B1753E00ED7807 /* WKHealthinessController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKHealthinessController.swift; sourceTree = "<group>"; };
+		D94A0C0021B1753E00ED7807 /* WKMealController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKMealController.swift; sourceTree = "<group>"; };
+		D9650EBB219C48C3001CB668 /* Healthiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Healthiness.swift; sourceTree = "<group>"; };
+		D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidePresentationManager.swift; sourceTree = "<group>"; };
+		D9650EC2219C5298001CB668 /* PresentationDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationDirection.swift; sourceTree = "<group>"; };
+		D9650EC4219C546E001CB668 /* FoodController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodController.swift; sourceTree = "<group>"; };
+		D9650EC6219C560A001CB668 /* SlidePresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidePresentationController.swift; sourceTree = "<group>"; };
+		D9650EC9219C6326001CB668 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		D9650ECB219C644C001CB668 /* BABIL___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BABIL___.TTF"; sourceTree = "<group>"; };
+		D99718CD218B7F3E00BFD710 /* doof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doof.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99718D0218B7F3E00BFD710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D99718D2218B7F3E00BFD710 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		D99718D5218B7F3E00BFD710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D99718D7218B7F4000BFD710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D99718DA218B7F4000BFD710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D99718DC218B7F4000BFD710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D99718DF218B7F4000BFD710 /* doof WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "doof WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99718E5218B7F4000BFD710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D99718E9218B7F4000BFD710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D99718EE218B7F4000BFD710 /* doof WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "doof WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99718F5218B7F4000BFD710 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D99718F7218B7F4000BFD710 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D99718F9218B7F4000BFD710 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		D99718FD218B7F4100BFD710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D99718FE218B7F4100BFD710 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D9A574E921A73AD900BF7A2D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		D9A574EB21A73D8C00BF7A2D /* UserSingletoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingletoon.swift; sourceTree = "<group>"; };
+		D9A574ED21A73EC500BF7A2D /* UserObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
+		D9C72EA621AECE7C0026C1FC /* Main.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Main.sks; sourceTree = "<group>"; };
+		D9C72EAA21AEECFF0026C1FC /* StatisticsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsController.swift; sourceTree = "<group>"; };
+		D9CCDE1D21B55DEA00B1A0FA /* doof.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = doof.sks; sourceTree = "<group>"; };
+		DE7C24A5068E53F1B2CCE881 /* Pods-doof WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-doof WatchKit Extension/Pods-doof WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		F2CDB65EC9E5559EE6F8F275 /* Pods-doof WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doof WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doof WatchKit Extension/Pods-doof WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E5A72729B1FF873EBA3A9DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFCB04EE9DE0B97E3FEAE1DB /* Pods_doof_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99718CA218B7F3E00BFD710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B52C2F7421A6388600DF6CD1 /* SpriteKit.framework in Frameworks */,
+				9EC9DBAA1E36636CEF18D05B /* Pods_doof.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99718EB218B7F4000BFD710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D5CC4287A37617757CEFFD /* Pods_doof_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36DDA0853F4F3680A2281FEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2ED406D632DF8E54555F970D /* Pods-doof.debug.xcconfig */,
+				D268F75B47AAD8200F4E8250 /* Pods-doof.release.xcconfig */,
+				1BFAA5EE6656C14CBDD16E7F /* Pods-doof WatchKit App.debug.xcconfig */,
+				9F43F332F55BD59311C8FC21 /* Pods-doof WatchKit App.release.xcconfig */,
+				F2CDB65EC9E5559EE6F8F275 /* Pods-doof WatchKit Extension.debug.xcconfig */,
+				DE7C24A5068E53F1B2CCE881 /* Pods-doof WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B52C2F7221A6388600DF6CD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B52C2F7321A6388600DF6CD1 /* SpriteKit.framework */,
+				16704D4A6E3A302A98892914 /* Pods_doof.framework */,
+				06E78CC5C715430FE2552652 /* Pods_doof_WatchKit_App.framework */,
+				D63BE3D14DB53E0F3CC7917E /* Pods_doof_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B593DC732191B853006E2648 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				D90941BF21B4706200C03766 /* Application */,
+				D94A0BF621B1617A00ED7807 /* SpriteKit */,
+				D93CC13121A72F3C008B7535 /* Coredata */,
+				B593DC812191BD44006E2648 /* Enums */,
+				D9650EC8219C6314001CB668 /* Extensions */,
+				B593DC742191B85B006E2648 /* Models */,
+				D91A5F4721B0165900F3538B /* Resources */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+		B593DC742191B85B006E2648 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B593DC752191B878006E2648 /* Doof.swift */,
+				B593DC792191B992006E2648 /* Foodstamp.swift */,
+				B593DC7B2191BA16006E2648 /* Waterstamp.swift */,
+				D9A574ED21A73EC500BF7A2D /* UserObject.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B593DC812191BD44006E2648 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				B593DC842191BD71006E2648 /* Meal.swift */,
+				D9650EBB219C48C3001CB668 /* Healthiness.swift */,
+				D9650EC2219C5298001CB668 /* PresentationDirection.swift */,
+				D94A0BCD21B0B9A900ED7807 /* DoofStates.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		D90941B121B41CD300C03766 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				D916337921A6DC4B00D500B4 /* OnBoardingController.swift */,
+				D916337721A6D39000D500B4 /* OnBoardingPageController.swift */,
+				D90941B221B41D2800C03766 /* UserInformationController.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		D90941BF21B4706200C03766 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D90941B421B4215800C03766 /* doof.entitlements */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D91A5F3D21AF524C00F3538B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D91A5F3F21AF52A500F3538B /* StatisticsWeekCell.swift */,
+				D91A5F4321AF52BE00F3538B /* StatisticsCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D91A5F3E21AF525800F3538B /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				D91A5F4021AF52A500F3538B /* StatisticsWeekCell.xib */,
+				D91A5F4421AF52BE00F3538B /* StatisticsCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		D91A5F4721B0165900F3538B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D99718D7218B7F4000BFD710 /* Assets.xcassets */,
+				D921733621B1B66100C408DC /* Animations.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D93CC13121A72F3C008B7535 /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				D93CC13221A73006008B7535 /* Doof.xcdatamodeld */,
+				D9A574E921A73AD900BF7A2D /* CoreDataManager.swift */,
+				D9A574EB21A73D8C00BF7A2D /* UserSingletoon.swift */,
+			);
+			path = Coredata;
+			sourceTree = "<group>";
+		};
+		D94A0BE621B0C86300ED7807 /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				D99718D2218B7F3E00BFD710 /* MainController.swift */,
+				D94A0BE921B0C8AC00ED7807 /* MainController+Actions.swift */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
+		D94A0BF621B1617A00ED7807 /* SpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				B5ECBF2C21B0242200D7C858 /* DoofNode.swift */,
+			);
+			path = SpriteKit;
+			sourceTree = "<group>";
+		};
+		D94A0BFD21B174D900ED7807 /* WKControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D94A0BFF21B1753E00ED7807 /* WKHealthinessController.swift */,
+				D94A0BFE21B1753E00ED7807 /* WKMainController.swift */,
+				D94A0C0021B1753E00ED7807 /* WKMealController.swift */,
+			);
+			path = WKControllers;
+			sourceTree = "<group>";
+		};
+		D9650EBD219C51FB001CB668 /* SlidePresentation */ = {
+			isa = PBXGroup;
+			children = (
+				D9650EC0219C5245001CB668 /* SlidePresentationManager.swift */,
+				D9650EC6219C560A001CB668 /* SlidePresentationController.swift */,
+			);
+			path = SlidePresentation;
+			sourceTree = "<group>";
+		};
+		D9650EC8219C6314001CB668 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D9650EC9219C6326001CB668 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D99718C4218B7F3E00BFD710 = {
+			isa = PBXGroup;
+			children = (
+				D90941BE21B46FA700C03766 /* doof WatchKit App.entitlements */,
+				D90941BD21B46F9100C03766 /* doof WatchKit Extension.entitlements */,
+				B593DC732191B853006E2648 /* shared */,
+				D99718CF218B7F3E00BFD710 /* ios */,
+				D9971915218B80B700BFD710 /* watchos */,
+				B52C2F7221A6388600DF6CD1 /* Frameworks */,
+				D99718CE218B7F3E00BFD710 /* Products */,
+				36DDA0853F4F3680A2281FEE /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D99718CE218B7F3E00BFD710 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D99718CD218B7F3E00BFD710 /* doof.app */,
+				D99718DF218B7F4000BFD710 /* doof WatchKit App.app */,
+				D99718EE218B7F4000BFD710 /* doof WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D99718CF218B7F3E00BFD710 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				D9971919218B81CF00BFD710 /* Application */,
+				D997190C218B7FC800BFD710 /* Controllers */,
+				D9FD9257219F0E320080BB89 /* Custom */,
+				D997190F218B7FE800BFD710 /* Interfaces */,
+				D997190E218B7FDF00BFD710 /* Resources */,
+				D91A5F3D21AF524C00F3538B /* Views */,
+				D91A5F3E21AF525800F3538B /* Xibs */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		D99718E3218B7F4000BFD710 /* doof-watchkit-app */ = {
+			isa = PBXGroup;
+			children = (
+				B513F1D221B57FC300A6DC25 /* foodAnimatedWatch.sks */,
+				D99718E4218B7F4000BFD710 /* Interface.storyboard */,
+				D91A5F4A21B0303800F3538B /* MainWatch.sks */,
+				D99718E9218B7F4000BFD710 /* Info.plist */,
+			);
+			path = "doof-watchkit-app";
+			sourceTree = "<group>";
+		};
+		D99718F2218B7F4000BFD710 /* doof-watchkit-extension */ = {
+			isa = PBXGroup;
+			children = (
+				D9971912218B802000BFD710 /* Controllers */,
+				D99718F5218B7F4000BFD710 /* ExtensionDelegate.swift */,
+				D99718FD218B7F4100BFD710 /* Info.plist */,
+				D99718FE218B7F4100BFD710 /* PushNotificationPayload.apns */,
+			);
+			path = "doof-watchkit-extension";
+			sourceTree = "<group>";
+		};
+		D997190C218B7FC800BFD710 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D9650EC4219C546E001CB668 /* FoodController.swift */,
+				D9C72EAA21AEECFF0026C1FC /* StatisticsController.swift */,
+				D94A0BE621B0C86300ED7807 /* MainController */,
+				D90941B121B41CD300C03766 /* OnBoarding */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D997190E218B7FDF00BFD710 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D9650ECB219C644C001CB668 /* BABIL___.TTF */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D997190F218B7FE800BFD710 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				D9C72EA621AECE7C0026C1FC /* Main.sks */,
+				D9CCDE1D21B55DEA00B1A0FA /* doof.sks */,
+				D99718D4218B7F3E00BFD710 /* Main.storyboard */,
+				D99718D9218B7F4000BFD710 /* LaunchScreen.storyboard */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		D9971912218B802000BFD710 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D94A0BFD21B174D900ED7807 /* WKControllers */,
+				D99718F9218B7F4000BFD710 /* ComplicationController.swift */,
+				D99718F7218B7F4000BFD710 /* NotificationController.swift */,
+				D94A0BFB21B173E000ED7807 /* WatchScene.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D9971915218B80B700BFD710 /* watchos */ = {
+			isa = PBXGroup;
+			children = (
+				D99718E3218B7F4000BFD710 /* doof-watchkit-app */,
+				D99718F2218B7F4000BFD710 /* doof-watchkit-extension */,
+			);
+			path = watchos;
+			sourceTree = "<group>";
+		};
+		D9971919218B81CF00BFD710 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D99718D0218B7F3E00BFD710 /* AppDelegate.swift */,
+				D99718DC218B7F4000BFD710 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D9FD9257219F0E320080BB89 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				D9650EBD219C51FB001CB668 /* SlidePresentation */,
+				D916461221A2E0EF009FFC80 /* CircleButton.swift */,
+				D94A0BF021B0D23B00ED7807 /* MainProgressBar.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D99718CC218B7F3E00BFD710 /* doof */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9971909218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "doof" */;
+			buildPhases = (
+				B4D3B33F0CAE0AD175743A63 /* [CP] Check Pods Manifest.lock */,
+				D99718C9218B7F3E00BFD710 /* Sources */,
+				D99718CA218B7F3E00BFD710 /* Frameworks */,
+				D99718CB218B7F3E00BFD710 /* Resources */,
+				D9971908218B7F4100BFD710 /* Embed Watch Content */,
+				6AA9E22B59EB124B25E956EB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D99718E2218B7F4000BFD710 /* PBXTargetDependency */,
+			);
+			name = doof;
+			productName = mc4;
+			productReference = D99718CD218B7F3E00BFD710 /* doof.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D99718DE218B7F4000BFD710 /* doof WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9971905218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "doof WatchKit App" */;
+			buildPhases = (
+				C041ADD3945AC34A495A48C8 /* [CP] Check Pods Manifest.lock */,
+				D99718DD218B7F4000BFD710 /* Resources */,
+				D9971904218B7F4100BFD710 /* Embed App Extensions */,
+				7E5A72729B1FF873EBA3A9DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D99718F1218B7F4000BFD710 /* PBXTargetDependency */,
+			);
+			name = "doof WatchKit App";
+			productName = "mc4 WatchKit App";
+			productReference = D99718DF218B7F4000BFD710 /* doof WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D99718ED218B7F4000BFD710 /* doof WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9971901218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "doof WatchKit Extension" */;
+			buildPhases = (
+				DF7F6CCD4E8656F5038545D1 /* [CP] Check Pods Manifest.lock */,
+				D99718EA218B7F4000BFD710 /* Sources */,
+				D99718EB218B7F4000BFD710 /* Frameworks */,
+				D99718EC218B7F4000BFD710 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "doof WatchKit Extension";
+			productName = "mc4 WatchKit Extension";
+			productReference = D99718EE218B7F4000BFD710 /* doof WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D99718C5218B7F3E00BFD710 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = BDSM;
+				TargetAttributes = {
+					D99718CC218B7F3E00BFD710 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					D99718DE218B7F4000BFD710 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					D99718ED218B7F4000BFD710 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D99718C8218B7F3E00BFD710 /* Build configuration list for PBXProject "doof" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D99718C4218B7F3E00BFD710;
+			productRefGroup = D99718CE218B7F3E00BFD710 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D99718CC218B7F3E00BFD710 /* doof */,
+				D99718DE218B7F4000BFD710 /* doof WatchKit App */,
+				D99718ED218B7F4000BFD710 /* doof WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D99718CB218B7F3E00BFD710 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C72EA721AECE7C0026C1FC /* Main.sks in Resources */,
+				D99718DB218B7F4000BFD710 /* LaunchScreen.storyboard in Resources */,
+				D9CCDE1E21B55DEA00B1A0FA /* doof.sks in Resources */,
+				D921733721B1B66100C408DC /* Animations.xcassets in Resources */,
+				D99718D8218B7F4000BFD710 /* Assets.xcassets in Resources */,
+				D91A5F4221AF52A500F3538B /* StatisticsWeekCell.xib in Resources */,
+				D99718D6218B7F3E00BFD710 /* Main.storyboard in Resources */,
+				D91A5F4621AF52BE00F3538B /* StatisticsCell.xib in Resources */,
+				D9650ECC219C644C001CB668 /* BABIL___.TTF in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99718DD218B7F4000BFD710 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B513F1D321B57FCD00A6DC25 /* foodAnimatedWatch.sks in Resources */,
+				D91A5F4B21B0303800F3538B /* MainWatch.sks in Resources */,
+				D921733821B1B66100C408DC /* Animations.xcassets in Resources */,
+				D99718E6218B7F4000BFD710 /* Interface.storyboard in Resources */,
+				D9650ECD219C644C001CB668 /* BABIL___.TTF in Resources */,
+				D94A0BF221B0E51300ED7807 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99718EC218B7F4000BFD710 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9650ECE219C644C001CB668 /* BABIL___.TTF in Resources */,
+				D94A0BF321B0E51300ED7807 /* Assets.xcassets in Resources */,
+				D921733921B1B66100C408DC /* Animations.xcassets in Resources */,
+				B513F1D421B57FCE00A6DC25 /* foodAnimatedWatch.sks in Resources */,
+				D91A5F4F21B0339700F3538B /* MainWatch.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6AA9E22B59EB124B25E956EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-doof/Pods-doof-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-doof/Pods-doof-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4D3B33F0CAE0AD175743A63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-doof-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C041ADD3945AC34A495A48C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-doof WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF7F6CCD4E8656F5038545D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-doof WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D99718C9218B7F3E00BFD710 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B593DC762191B878006E2648 /* Doof.swift in Sources */,
+				D9650ECA219C6326001CB668 /* UIColor.swift in Sources */,
+				D90941B321B41D2800C03766 /* UserInformationController.swift in Sources */,
+				D9650EC1219C5245001CB668 /* SlidePresentationManager.swift in Sources */,
+				D9A574EA21A73AD900BF7A2D /* CoreDataManager.swift in Sources */,
+				D9C72EAB21AEECFF0026C1FC /* StatisticsController.swift in Sources */,
+				D99718D3218B7F3E00BFD710 /* MainController.swift in Sources */,
+				D94A0BEA21B0C8AC00ED7807 /* MainController+Actions.swift in Sources */,
+				D9650EBC219C48C3001CB668 /* Healthiness.swift in Sources */,
+				D91A5F4521AF52BE00F3538B /* StatisticsCell.swift in Sources */,
+				D916461321A2E0EF009FFC80 /* CircleButton.swift in Sources */,
+				B593DC852191BD71006E2648 /* Meal.swift in Sources */,
+				D94A0BCF21B0B9AC00ED7807 /* DoofStates.swift in Sources */,
+				D99718D1218B7F3E00BFD710 /* AppDelegate.swift in Sources */,
+				D9650EC3219C5298001CB668 /* PresentationDirection.swift in Sources */,
+				D93CC13421A73006008B7535 /* Doof.xcdatamodeld in Sources */,
+				D9650EC7219C560A001CB668 /* SlidePresentationController.swift in Sources */,
+				B5ECBF2D21B0242200D7C858 /* DoofNode.swift in Sources */,
+				D94A0BF121B0D23B00ED7807 /* MainProgressBar.swift in Sources */,
+				D9A574EE21A73EC500BF7A2D /* UserObject.swift in Sources */,
+				D9650EC5219C546E001CB668 /* FoodController.swift in Sources */,
+				D91A5F4121AF52A500F3538B /* StatisticsWeekCell.swift in Sources */,
+				D916337A21A6DC4B00D500B4 /* OnBoardingController.swift in Sources */,
+				D9A574EC21A73D8C00BF7A2D /* UserSingletoon.swift in Sources */,
+				D916337821A6D39000D500B4 /* OnBoardingPageController.swift in Sources */,
+				B593DC7C2191BA16006E2648 /* Waterstamp.swift in Sources */,
+				B593DC7A2191B992006E2648 /* Foodstamp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99718EA218B7F4000BFD710 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D94A0BCE21B0B9A900ED7807 /* DoofStates.swift in Sources */,
+				D90941B921B42D4800C03766 /* Waterstamp.swift in Sources */,
+				D94A0BF721B161CB00ED7807 /* DoofNode.swift in Sources */,
+				D94A0C0321B1753E00ED7807 /* WKMealController.swift in Sources */,
+				D99718F8218B7F4000BFD710 /* NotificationController.swift in Sources */,
+				D94A0BFC21B173E000ED7807 /* WatchScene.swift in Sources */,
+				D94A0C0121B1753E00ED7807 /* WKMainController.swift in Sources */,
+				D94A0BCA21B0878200ED7807 /* Meal.swift in Sources */,
+				D90941B821B42D4800C03766 /* Foodstamp.swift in Sources */,
+				D94A0C0221B1753E00ED7807 /* WKHealthinessController.swift in Sources */,
+				D99718FA218B7F4000BFD710 /* ComplicationController.swift in Sources */,
+				D90941BA21B42D4800C03766 /* UserObject.swift in Sources */,
+				D90941B521B42CE300C03766 /* UserSingletoon.swift in Sources */,
+				D94A0BCC21B0878D00ED7807 /* UIColor.swift in Sources */,
+				D94A0BCB21B0878500ED7807 /* Healthiness.swift in Sources */,
+				D90941B721B42D4800C03766 /* Doof.swift in Sources */,
+				D99718F6218B7F4000BFD710 /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D99718E2218B7F4000BFD710 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D99718DE218B7F4000BFD710 /* doof WatchKit App */;
+			targetProxy = D99718E1218B7F4000BFD710 /* PBXContainerItemProxy */;
+		};
+		D99718F1218B7F4000BFD710 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D99718ED218B7F4000BFD710 /* doof WatchKit Extension */;
+			targetProxy = D99718F0218B7F4000BFD710 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D99718D4218B7F3E00BFD710 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D99718D5218B7F3E00BFD710 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D99718D9218B7F4000BFD710 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D99718DA218B7F4000BFD710 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D99718E4218B7F4000BFD710 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D99718E5218B7F4000BFD710 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D99718FF218B7F4100BFD710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9971900218B7F4100BFD710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9971902218B7F4100BFD710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2CDB65EC9E5559EE6F8F275 /* Pods-doof WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 866MXJ7W57;
+				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bdsm.doof.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		D9971903218B7F4100BFD710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE7C24A5068E53F1B2CCE881 /* Pods-doof WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 866MXJ7W57;
+				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bdsm.doof.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		D9971906218B7F4100BFD710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BFAA5EE6656C14CBDD16E7F /* Pods-doof WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 866MXJ7W57;
+				IBSC_MODULE = mc4_WatchKit_Extension;
+				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bdsm.doof.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "watchos/doof-watchkit-extension/Controllers/doof WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		D9971907218B7F4100BFD710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F43F332F55BD59311C8FC21 /* Pods-doof WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 866MXJ7W57;
+				IBSC_MODULE = mc4_WatchKit_Extension;
+				INFOPLIST_FILE = "$(SRCROOT)/watchos/doof-watchkit-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bdsm.doof.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "watchos/doof-watchkit-extension/Controllers/doof WatchKit App-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		D997190A218B7F4100BFD710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ED406D632DF8E54555F970D /* Pods-doof.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 866MXJ7W57;
+				INFOPLIST_FILE = "$(SRCROOT)/ios/Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bdsm.doof;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D997190B218B7F4100BFD710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D268F75B47AAD8200F4E8250 /* Pods-doof.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 866MXJ7W57;
+				INFOPLIST_FILE = "$(SRCROOT)/ios/Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bdsm.doof;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D99718C8218B7F3E00BFD710 /* Build configuration list for PBXProject "doof" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D99718FF218B7F4100BFD710 /* Debug */,
+				D9971900218B7F4100BFD710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9971901218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "doof WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9971902218B7F4100BFD710 /* Debug */,
+				D9971903218B7F4100BFD710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9971905218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "doof WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9971906218B7F4100BFD710 /* Debug */,
+				D9971907218B7F4100BFD710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9971909218B7F4100BFD710 /* Build configuration list for PBXNativeTarget "doof" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D997190A218B7F4100BFD710 /* Debug */,
+				D997190B218B7F4100BFD710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D93CC13221A73006008B7535 /* Doof.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D93CC13321A73006008B7535 /* Doof.xcdatamodel */,
+			);
+			currentVersion = D93CC13321A73006008B7535 /* Doof.xcdatamodel */;
+			path = Doof.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D99718C5218B7F3E00BFD710 /* Project object */;
+}
